@@ -2873,11 +2873,28 @@
 									"model": {
 										"$ref": "AAAAAAGBpb0926NIlDg="
 									},
+									"subViews": [
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGBpeWfiqjS8QQ=",
+											"_parent": {
+												"$ref": "AAAAAAGBpb093KNM8gI="
+											},
+											"model": {
+												"$ref": "AAAAAAGBpeWfg6jPmAY="
+											},
+											"font": "Arial;13;0",
+											"left": 781,
+											"top": 108,
+											"width": 431,
+											"height": 13
+										}
+									],
 									"font": "Arial;13;0",
 									"left": 776,
 									"top": 103,
 									"width": 441,
-									"height": 10
+									"height": 23
 								}
 							],
 							"font": "Arial;13;0",
@@ -2960,7 +2977,7 @@
 										"$ref": "AAAAAAGBpb1KdKNivPA="
 									},
 									"font": "Arial;13;1",
-									"left": 592,
+									"left": 584,
 									"top": 405,
 									"width": 345,
 									"height": 13,
@@ -2976,14 +2993,14 @@
 										"$ref": "AAAAAAGBpb1KdKNgb38="
 									},
 									"font": "Arial;13;0",
-									"left": 592,
+									"left": 584,
 									"top": 423,
 									"width": 345,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
-							"left": 592,
+							"left": 584,
 							"top": 400,
 							"width": 345,
 							"height": 257,
@@ -3040,8 +3057,8 @@
 							"font": "Arial;13;0",
 							"left": 616,
 							"top": 464,
-							"width": 121.28076171875,
-							"height": 169,
+							"width": 217,
+							"height": 145,
 							"text": "title: VARCHAR                                           rating: float                                                     description: VARCHAR                                          isVerifiedPurchase: BOOLEAN"
 						},
 						{
@@ -3064,8 +3081,8 @@
 								"$ref": "AAAAAAGBpQR7ZAFmcfs="
 							},
 							"font": "Arial;13;0",
-							"left": 832,
-							"top": 112,
+							"left": 848,
+							"top": 200,
 							"width": 249,
 							"height": 65,
 							"text": "id: LONG.                                                    time_of_purchase: TIMESTAMP                          "
@@ -3233,7 +3250,19 @@
 					"_parent": {
 						"$ref": "AAAAAAGBpQR7ZAFlCrI="
 					},
-					"name": "purchases"
+					"name": "purchases",
+					"columns": [
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGBpeWfg6jPmAY=",
+							"_parent": {
+								"$ref": "AAAAAAGBpb0926NIlDg="
+							},
+							"name": "id",
+							"type": "sada",
+							"length": 0
+						}
+					]
 				},
 				{
 					"_type": "ERDEntity",
