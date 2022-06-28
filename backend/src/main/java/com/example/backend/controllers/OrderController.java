@@ -30,7 +30,7 @@ public class OrderController {
     }
 
     // get one order
-    @GetMapping("/{id}")
+    @GetMapping("/{id}") //http://localhost:8080/orders/1
     public ResponseEntity<Optional<Order>> getOrder(@PathVariable Long id) {
         var order = orderRepository.findById(id);
         return new ResponseEntity<>(order, order.isEmpty() ? HttpStatus.NOT_FOUND : HttpStatus.OK);
