@@ -32,7 +32,7 @@ public class Review {
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
-    
+
 
     // DEFAULT CONSTRUCTOR
     public Review() {
