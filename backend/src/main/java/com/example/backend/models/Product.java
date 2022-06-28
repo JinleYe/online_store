@@ -26,9 +26,6 @@ public class Product {
     private String image;
 
     @Column
-    private int orderQuantity;
-
-    @Column
     private int stockQuantity;
 
     @Column
@@ -51,12 +48,11 @@ public class Product {
     }
 
     // CONSTRUCTOR
-    public Product(String title, Double price, String description, String image, int orderQuantity, int stockQuantity, Category category) {
+    public Product(String title, Double price, String description, String image,  int stockQuantity, Category category) {
         this.title = title;
         this.price = price;
         this.description = description;
         this.image = image;
-        this.orderQuantity = orderQuantity;
         this.stockQuantity = stockQuantity;
         this.category = category;
         this.reviews = new ArrayList<>();
@@ -100,14 +96,6 @@ public class Product {
         this.image = image;
     }
 
-    public int getOrderQuantity() {
-        return orderQuantity;
-    }
-
-    public void setOrderQuantity(int orderQuantity) {
-        this.orderQuantity = orderQuantity;
-    }
-
     public int getStockQuantity() {
         return stockQuantity;
     }
@@ -148,7 +136,6 @@ public class Product {
                 ", price=" + price +
                 ", description='" + description + '\'' +
                 ", image='" + image + '\'' +
-                ", orderQuantity=" + orderQuantity +
                 ", stockQuantity=" + stockQuantity +
                 ", category=" + category +
                 ", reviews=" + reviews +
