@@ -1,8 +1,5 @@
 package com.example.backend.models;
-
-
 import javax.persistence.*;
-
 
 @Entity
 @Table(name = "admins")
@@ -20,22 +17,20 @@ public class Admin {
     @Column
     private int permissionLevel;
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-
+    // DEFAULT CONSTRUCTOR
     protected Admin () {}
 
+    // CONSTRUCTOR
     public Admin(User user, int permissionLevel) {
-
         this.user = user;
         this.permissionLevel = permissionLevel;
+    }
 
+
+    // GETTERS & SETTERS
+    public Long getId() {
+        return id;
     }
 
     public User getUser() {
@@ -50,4 +45,13 @@ public class Admin {
         this.permissionLevel = permissionLevel;
     }
 
+
+    @Override
+    public String toString() {
+        return "Admin{" +
+                "id=" + id +
+                ", user=" + user +
+                ", permissionLevel=" + permissionLevel +
+                '}';
+    }
 }

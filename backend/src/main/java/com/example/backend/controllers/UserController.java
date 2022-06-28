@@ -18,7 +18,7 @@ public class UserController {
     private UserRepository userRepository;
 
     // INDEX
-    @GetMapping // http://localhost:8080/users
+    @GetMapping // localhost:8080/users
     public ResponseEntity<List<User>> getAllUsers(){
         return new ResponseEntity<>(userRepository.findAll(), HttpStatus.OK);
     }

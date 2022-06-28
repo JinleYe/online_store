@@ -69,7 +69,6 @@ public class ProductController {
             productToUpdate.setPrice(product.getPrice());
             productToUpdate.setDescription(product.getDescription());
             productToUpdate.setImage(product.getImage());
-//            productToUpdate.setOrderQuantity(product.getOrderQuantity());
             productToUpdate.setStockQuantity(product.getStockQuantity());
             productToUpdate.setCategory(product.getCategory());
             productRepository.save(productToUpdate);
@@ -85,14 +84,14 @@ public class ProductController {
             return new ResponseEntity<>(product, HttpStatus.NOT_FOUND);
         } else {
 
-            // remove product from order
+            // REMOVE PRODUCT FROM ORDER
             var orders = product.get().getOrders();
             orders.stream().forEach(o -> o.removeProduct(product.get()));
 
-            // set order to empty
+            // SET ORDER TO EMPTY
             product.get().setOrders(new ArrayList<>());
 
-            // delete reviews
+            // DELETE REVIEWS
             var reviews = product.get().getReviews();
             reviews.stream().forEach(r -> reviewRepository.deleteById(r.getId()));
 

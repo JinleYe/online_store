@@ -1,8 +1,5 @@
 package com.example.backend.models;
 
-
-import org.hibernate.annotations.GeneratorType;
-
 import javax.persistence.*;
 
 @Entity
@@ -22,18 +19,19 @@ public class User {
     @Column(name = "email")
     private String email;
 
+
+    // DEFAULT CONSTRUCTOR
     protected User () {}
 
+    // CONSTRUCTOR
     public User (String username, String password, String email){
         this.username = username;
         this.password = password;
         this.email = email;
-
     }
 
 
-    // getters and setters
-
+    // GETTERS & SETTERS
     public Long getId() {
         return id;
     }
@@ -50,7 +48,6 @@ public class User {
         return email;
     }
 
-
     public void setUsername(String username) {
         this.username = username;
     }
@@ -62,6 +59,7 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+
 
     @Override
     public String toString() {

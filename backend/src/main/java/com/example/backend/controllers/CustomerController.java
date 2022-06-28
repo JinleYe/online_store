@@ -1,7 +1,5 @@
 package com.example.backend.controllers;
 
-
-import com.example.backend.models.Admin;
 import com.example.backend.models.Customer;
 import com.example.backend.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,27 +23,27 @@ public class CustomerController {
     @Autowired
     ReviewRepository reviewRepository;
 
-    // all customers
-    @GetMapping //http://localhost:8080/customers
+    // INDEX
+    @GetMapping // localhost:8080/customers
     public ResponseEntity<List<Customer>> getCustomers(){
         return new ResponseEntity<>(customerRepository.findAll(), HttpStatus.OK);
     }
 
 
-    // get one customer
-    @GetMapping("/{id}") //http://localhost:8080/customers/1
+    // SHOW - GET ONE CUSTOMER
+    @GetMapping("/{id}") // localhost:8080/customers/1
     public ResponseEntity<Optional<Customer>> getCustomerById(@PathVariable Long id){
         var customer = customerRepository.findById(id);
         return new ResponseEntity<>(customer, customer.isEmpty() ? HttpStatus.NOT_FOUND : HttpStatus.FOUND);
     }
 
-    // add a new customer
+    // POST
     @PostMapping
     public ResponseEntity<Customer> createNewCustomer(@RequestBody Customer customer){
         return new ResponseEntity<>(customerRepository.save(customer), HttpStatus.CREATED);
     }
 
-    // update a customer
+    // UPDATE
     @PutMapping("/{id}")
     public ResponseEntity<Optional<Customer>> updateCustomer(@RequestBody Customer customer, @PathVariable Long id){
         var result = customerRepository.findById(id);
@@ -64,8 +62,8 @@ public class CustomerController {
         }
     }
 
-    // delete an customer
-    @DeleteMapping("/{id}") //http://localhost:8080/customers/1
+    // DELETE
+    @DeleteMapping("/{id}") // localhost:8080/customers/1
     public ResponseEntity<Long> deleteAdmin(@PathVariable Long id){
 
         var result = customerRepository.findById(id);
@@ -74,12 +72,5 @@ public class CustomerController {
         }
         customerRepository.deleteById(id);
         return new ResponseEntity<>(id, HttpStatus.OK);
-
     }
-
-
-
-
-
-
 }

@@ -5,8 +5,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Map;
-
 
 @Entity
 @Table(name ="orders")
@@ -33,14 +31,16 @@ public class Order {
     )
     private List<Product> products;
 
-
     @ManyToOne
     @JoinColumn(name = "customer")
     @JsonIgnoreProperties(value = "orders")
     private Customer customer;
 
+
+    // DEFAULT CONSTRUCTOR
     protected Order () {}
 
+    // CONSTRUCTOR
     public Order(LocalDate timeOfPurchase, List<Product> products, Customer customer) {
         this.timeOfPurchase = timeOfPurchase;
         this.products = products;
@@ -48,6 +48,8 @@ public class Order {
         this.customer = customer;
     }
 
+
+    // GETTERS & SETTERS
     public Long getId() {
         return id;
     }
@@ -85,10 +87,11 @@ public class Order {
     }
 
 
-    // newly added
+    // REMOVE PRODUCT
     public void removeProduct(Product product){
         this.products.remove(product);
     }
+
 
     @Override
     public String toString() {

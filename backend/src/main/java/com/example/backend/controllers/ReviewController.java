@@ -21,8 +21,7 @@ public class ReviewController {
     private ReviewRepository reviewRepository;
 
 
-    //INDEX and MULTIPLE FILTERS
-
+    // INDEX
     @GetMapping
     public ResponseEntity<List<Review>> getAllReviewsAndFilters(
             @RequestParam Map<String, String> requestParams, Double rating, LocalDate datePosted, Boolean isVerifiedPurchase
@@ -64,7 +63,7 @@ public class ReviewController {
     }
 
 
-    //UPDATE
+    // UPDATE
     @PutMapping(value = "/{id}") // localhost:8080/reviews/1 (or any other id number instead of 1)
     public ResponseEntity<Optional<Review>> putReview(@RequestBody Review review, @PathVariable Long id) {
         if (reviewRepository.findById(id).isEmpty()) {
@@ -89,6 +88,7 @@ public class ReviewController {
     }
 
 
+    // DELETE
     @DeleteMapping("/{id}")
     public ResponseEntity<Optional<Review>> deleteReview(@PathVariable Long id) {
         var review = reviewRepository.findById(id);
@@ -99,5 +99,4 @@ public class ReviewController {
             return new ResponseEntity(reviewRepository.findAll(), HttpStatus.OK);
         }
     }
-
 }
