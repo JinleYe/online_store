@@ -7,6 +7,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "reviews")
+@JsonIgnoreProperties({"customer"})
 public class Review {
 
     @Id

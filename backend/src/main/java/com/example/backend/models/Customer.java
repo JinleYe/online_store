@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "customers")
+//@JsonIgnoreProperties({"customers"})
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -10,6 +10,7 @@ import java.util.Map;
 
 @Entity
 @Table(name ="orders")
+@JsonIgnoreProperties({"customer"})
 public class Order {
 
     @Id
@@ -24,7 +25,7 @@ public class Order {
     private Status status;
 
     @ManyToMany
-    @JsonIgnoreProperties({"orders", "products"})
+    @JsonIgnoreProperties({"orders"})
     @JoinTable(
             name = "orders_products",
             joinColumns = {@JoinColumn(name = "order_id", nullable = false)},
