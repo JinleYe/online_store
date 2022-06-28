@@ -49,7 +49,7 @@ public class ProductController {
         return new ResponseEntity<>(newProduct, HttpStatus.CREATED);
     }
 
-    //UPDATE
+    // UPDATE
     @PutMapping(value = "/{id}") // localhost:8080/products/1 (or any other id number instead of 1)
     public ResponseEntity<Optional<Product>> updateProduct(@RequestBody Product product, @PathVariable Long id) {
         if (productRepository.findById(id).isEmpty()) {
@@ -79,7 +79,5 @@ public class ProductController {
             return new ResponseEntity(productRepository.findAll(), HttpStatus.OK);
         }
     }
-
-
 }
 
