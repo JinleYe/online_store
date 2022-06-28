@@ -1,6 +1,7 @@
 package com.example.backend.components;
 
 import com.example.backend.models.Category;
+import com.example.backend.models.Customer;
 import com.example.backend.models.Product;
 import com.example.backend.models.User;
 import com.example.backend.repositories.*;
@@ -73,7 +74,6 @@ public class DataLoader implements ApplicationRunner {
         Product product26 = new Product("Razer Tarok PRO", 219.00, fakeDescription, "img", 5, 5, Category.GAMINGCHAIR);
         Product product27 = new Product("ADX Firebase Entry", 119.00, fakeDescription, "img", 5, 5, Category.GAMINGCHAIR);
         Product product28 = new Product("NOBLECHAIRS Hero TX", 219.00, fakeDescription, "img", 5, 5, Category.GAMINGCHAIR);
-
         productRepository.saveAll(Arrays.asList(product1, product2, product3, product4, product5, product6, product7, product8, product9, product10, product11,
                 product12, product13, product14, product15, product16, product17, product18, product19, product20, product21, product22, product23, product24,
                 product25, product26, product27, product28));
@@ -85,6 +85,14 @@ public class DataLoader implements ApplicationRunner {
         User Mark = new User("Mark_Dupree", "MD@66.54321", "Mark_Dupree@icloud.com");
         User Ashley = new User("Ashley_A", "Admin_123_jv", "Ashley_A@hotmail.co.uk");
         userRepository.saveAll(Arrays.asList(SarahJane, Bailey, Craig, Mark, Ashley));
+
+        // ADD CUSTOMERS
+        Customer customer1 = new Customer(SarahJane, "Sarah Jane", "123 Summer Avenue, London");
+        Customer customer2 = new Customer(Bailey, "Bailey Bennett", "88 Griffen Avenue, Birmingham");
+        Customer customer3 = new Customer(Craig, "Craig Allen", "9 Green Lane, Glasgow");
+        customerRepository.saveAll(Arrays.asList(customer1, customer2, customer3));
+
+
     }
 
 }
