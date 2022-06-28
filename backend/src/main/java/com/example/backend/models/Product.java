@@ -1,5 +1,7 @@
 package com.example.backend.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,14 +35,11 @@ public class Product {
     private Category category;
 
     @OneToMany(mappedBy = "product")
+    @JsonIgnoreProperties(value = "product")
     private List<Review> reviews;
 
-    @ManyToMany
-    @JoinTable(
-          name = "orders_products",
-          joinColumns = {@JoinColumn(name = "order_id", nullable = false)},
-          inverseJoinColumns = {@JoinColumn(name = "product_id", nullable = false)}
-    )
+    @ManyToMany(mappedBy = "products")
+    @JsonIgnoreProperties(value = {"products", "orders"})
     private List<Order> orders;
 
     // DEFAULT CONSTRUCTOR
@@ -126,6 +125,15 @@ public class Product {
 
     public void setOrders(List<Order> orders) {
         this.orders = orders;
+    }
+
+    // newly added
+    public void removerOrder (Order order){
+        this.orders.remove(order);
+    }
+
+    public void removeReview(Review review){
+        this.reviews.remove(review);
     }
 
     @Override

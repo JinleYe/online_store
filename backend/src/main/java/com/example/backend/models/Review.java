@@ -7,6 +7,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "reviews")
+@JsonIgnoreProperties({"customer"})
 public class Review {
 
     @Id
@@ -32,6 +33,7 @@ public class Review {
 
     @ManyToOne
     @JoinColumn(name = "customer")
+    @JsonIgnoreProperties(value = "reviews")
     private Customer customer;
 
     @ManyToOne

@@ -2,12 +2,15 @@ package com.example.backend.controllers;
 
 import com.example.backend.models.Category;
 import com.example.backend.models.Product;
+import com.example.backend.repositories.OrderRepository;
 import com.example.backend.repositories.ProductRepository;
+import com.example.backend.repositories.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,6 +20,12 @@ public class ProductController {
 
     @Autowired
     private ProductRepository productRepository;
+
+    @Autowired
+    private OrderRepository orderRepository;
+
+    @Autowired
+    private ReviewRepository reviewRepository;
 
     // INDEX
     @GetMapping // localhost:8080/products
@@ -75,7 +84,20 @@ public class ProductController {
         if (product.isEmpty()) {
             return new ResponseEntity<>(product, HttpStatus.NOT_FOUND);
         } else {
+
+            // remove product from order
+            var orders = product.get().getOrders();
+            orders.stream().forEach(o -> o.removeProduct(product.get()));
+
+            // set order to empty
+            product.get().setOrders(new ArrayList<>());
+
+            // delete reviews
+            var reviews = product.get().getReviews();
+            reviews.stream().forEach(r -> reviewRepository.deleteById(r.getId()));
+
             productRepository.deleteById(id);
+
             return new ResponseEntity(productRepository.findAll(), HttpStatus.OK);
         }
     }

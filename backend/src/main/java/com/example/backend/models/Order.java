@@ -1,5 +1,7 @@
 package com.example.backend.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
@@ -8,6 +10,7 @@ import java.util.Map;
 
 @Entity
 @Table(name ="orders")
+@JsonIgnoreProperties({"customer"})
 public class Order {
 
     @Id
@@ -21,14 +24,19 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private Status status;
 
-    @ManyToMany(mappedBy = "orders")
+    @ManyToMany
+    @JsonIgnoreProperties({"orders"})
+    @JoinTable(
+            name = "orders_products",
+            joinColumns = {@JoinColumn(name = "order_id", nullable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "product_id", nullable = false)}
+    )
     private List<Product> products;
 
 
-//    private Map<Product, Long> products;
-
     @ManyToOne
     @JoinColumn(name = "customer")
+    @JsonIgnoreProperties(value = "orders")
     private Customer customer;
 
     protected Order () {}
@@ -74,6 +82,12 @@ public class Order {
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
+    }
+
+
+    // newly added
+    public void removeProduct(Product product){
+        this.products.remove(product);
     }
 
     @Override
