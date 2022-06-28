@@ -7,6 +7,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 
 
@@ -36,7 +37,7 @@ public class DataLoader implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
 
         // ADD PRODUCTS
-        String fakeDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+        String fakeDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
         Product product1 = new Product("Acer Nitro 5", 699.99, fakeDescription, "img", 5, 5, Category.LAPTOP);
         Product product2 = new Product("Alienware 5 M15 R7", 1699.00, fakeDescription, "img", 5, 5, Category.LAPTOP);
         Product product3 = new Product("HP Omen", 1599.99, fakeDescription, "img", 5, 5, Category.LAPTOP);
@@ -93,6 +94,15 @@ public class DataLoader implements ApplicationRunner {
         Admin admin1 = new Admin(Craig, 1);
         Admin admin2 = new Admin(Ashley, 1);
         adminRepository.saveAll(Arrays.asList(admin1, admin2));
+
+        // ADD REVIEWS
+        Review review1 = new Review("Gift For My Son", 5, fakeDescription, true, LocalDate.of(2022, 6, 8), product1);
+        Review review2 = new Review("Sleek Gaming Mouse", 3, fakeDescription, false, LocalDate.of(2022, 5,10), product12);
+        Review review3 = new Review("Comfy Gaming Chair", 4, fakeDescription, true, LocalDate.of(2022, 2,2), product25);
+        Review review4 = new Review("New Nintendo Switch Pro", 5, fakeDescription, true, LocalDate.of(2022, 1,1), product9);
+        Review review5 = new Review("Birthday present for my son", 4, fakeDescription, true, LocalDate.of(2022, 1,4), product17);
+        Review review6 = new Review("New Headset", 2, fakeDescription, false, LocalDate.of(2022, 4,4), product21);
+        reviewRepository.saveAll(Arrays.asList(review1, review2, review3, review4, review5, review6));
     }
 
 }
