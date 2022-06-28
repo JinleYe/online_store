@@ -10,6 +10,10 @@ import com.example.backend.models.User;
 @Entity
 @Table(name = "customers")
 public class Customer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
+    private Long id;
 
     @Column
     @OneToOne
@@ -27,6 +31,14 @@ public class Customer {
 
     @OneToMany(mappedBy = "customer")
     private List<Review> reviews;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
 
     // Empty Constructor
