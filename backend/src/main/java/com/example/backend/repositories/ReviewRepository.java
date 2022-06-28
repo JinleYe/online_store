@@ -9,18 +9,12 @@ import java.util.List;
 
 public interface ReviewRepository extends JpaRepository<Review, Long> {
 
-    //DERIVED QUERIES
-
+    // DERIVED QUERIES
     List<Review> findReviewByTitleContainingIgnoreCase(String title);
-
     List<Review> findReviewByDescriptionContainingIgnoreCase (String description);
-
     List<Review> findReviewByDatePosted(LocalDate datePosted);
-
     List<Review> findReviewByRating(double rating);
-
     List<Review> findReviewByRatingGreaterThan(double rating);
-
     List<Review> findReviewByIsVerifiedPurchase(boolean isVerifiedPurchase);
 
 }
