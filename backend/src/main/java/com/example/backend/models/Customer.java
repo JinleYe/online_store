@@ -1,29 +1,48 @@
 package com.example.backend.models;
 
-import javax.persistence.Column;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
+import com.example.backend.models.User;
 
+
+@Entity
+@Table(name = "customers")
 public class Customer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
+    private Long id;
 
-    @Column
+    @OneToOne
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
+
     @Column
     private String name;
+
     @Column
     private String address;
-    @OneToMany(mappedBy = "order")
+
+    @OneToMany(mappedBy = "customer")
     private List<Order> orders;
-    @OneToMany(mappedBy = "review")
+
+    @OneToMany(mappedBy = "customer")
     private List<Review> reviews;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
 
     // Empty Constructor
 
-    private Customer(){}
+    protected Customer(){}
 
     //Constructor
     public Customer(User user, String name, String address) {

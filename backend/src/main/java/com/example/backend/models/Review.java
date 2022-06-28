@@ -29,23 +29,27 @@ public class Review {
 
 
     @ManyToOne
-    @JoinColumn(name = "customer_id")
+    @JoinColumn(name = "customer")
     private Customer customer;
 
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product product;
 
 
     // DEFAULT CONSTRUCTOR
-    public Review() {
+    protected Review() {
 
     }
 
     //CONSTRUCTOR
-    public Review(String title, double rating, String description, boolean isVerifiedPurchase, LocalDate datePosted) {
+    public Review(String title, double rating, String description, boolean isVerifiedPurchase, LocalDate datePosted, Product product) {
         this.title = title;
         this.rating = rating;
         this.description = description;
         this.isVerifiedPurchase = isVerifiedPurchase;
         this.datePosted = datePosted;
+        this.product = product;
     }
 
 
@@ -94,6 +98,21 @@ public class Review {
         this.datePosted = datePosted;
     }
 
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
 
     @Override
     public String toString() {

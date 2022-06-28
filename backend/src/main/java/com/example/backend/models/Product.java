@@ -1,7 +1,5 @@
 package com.example.backend.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +11,7 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private Long productId;
+    private Long id;
 
     @Column
     private String title;
@@ -37,8 +35,16 @@ public class Product {
     @Enumerated(EnumType.STRING)
     private Category category;
 
-    @OneToMany(mappedBy = "reviews")
+    @OneToMany(mappedBy = "product")
     private List<Review> reviews;
+
+    @ManyToMany
+    @JoinTable(
+          name = "orders_products",
+          joinColumns = {@JoinColumn(name = "order_id", nullable = false)},
+          inverseJoinColumns = {@JoinColumn(name = "product_id", nullable = false)}
+    )
+    private List<Order> orders;
 
     // DEFAULT CONSTRUCTOR
     public Product() {
@@ -54,11 +60,12 @@ public class Product {
         this.stockQuantity = stockQuantity;
         this.category = category;
         this.reviews = new ArrayList<>();
+        this.orders = new ArrayList<>();
     }
 
     // GETTERS & SETTERS
-    public Long getProductId() {
-        return productId;
+    public Long getId() {
+        return id;
     }
 
     public String getTitle() {
@@ -125,11 +132,18 @@ public class Product {
         this.reviews = reviews;
     }
 
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
+    }
 
     @Override
     public String toString() {
         return "Product{" +
-                "productId=" + productId +
+                "id=" + id +
                 ", title='" + title + '\'' +
                 ", price=" + price +
                 ", description='" + description + '\'' +
