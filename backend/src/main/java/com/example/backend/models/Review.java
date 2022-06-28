@@ -43,13 +43,14 @@ public class Review {
     }
 
     //CONSTRUCTOR
-    public Review(String title, double rating, String description, boolean isVerifiedPurchase, LocalDate datePosted, Product product) {
+    public Review(String title, double rating, String description, boolean isVerifiedPurchase, LocalDate datePosted, Product product, Customer customer) {
         this.title = title;
         this.rating = rating;
         this.description = description;
         this.isVerifiedPurchase = isVerifiedPurchase;
         this.datePosted = datePosted;
         this.product = product;
+        this.customer = customer;
     }
 
 
