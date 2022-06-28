@@ -86,15 +86,15 @@ public class OrderController {
 
 // DELETE (delete order by id)
 
-    @DeleteMapping("/delete-{id}")
-    public void deleteOrderById(@PathVariable Long id){
-        Optional<Order> order = orderRepository.findById(id);
-        if (order.isPresent()) {
-            Order found = order.get();
-            found.getCustomer().removeOrder(found);
-            orderRepository.deleteById(id);
-        }
-    }
+//    @DeleteMapping("/delete-{id}")
+//    public void deleteOrderById(@PathVariable Long id){
+//        Optional<Order> order = orderRepository.findById(id);
+//        if (order.isPresent()) {
+//            Order found = order.get();
+//            found.getCustomer().removeOrder(found);
+//            orderRepository.deleteById(id);
+//        }
+//    }
 
 
 

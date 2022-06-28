@@ -1,9 +1,6 @@
 package com.example.backend.components;
 
-import com.example.backend.models.Category;
-import com.example.backend.models.Customer;
-import com.example.backend.models.Product;
-import com.example.backend.models.User;
+import com.example.backend.models.*;
 import com.example.backend.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -92,7 +89,10 @@ public class DataLoader implements ApplicationRunner {
         Customer customer3 = new Customer(Craig, "Craig Allen", "9 Green Lane, Glasgow");
         customerRepository.saveAll(Arrays.asList(customer1, customer2, customer3));
 
-
+        // ADD ADMINS
+        Admin admin1 = new Admin(Craig, 1);
+        Admin admin2 = new Admin(Ashley, 1);
+        adminRepository.saveAll(Arrays.asList(admin1, admin2));
     }
 
 }
