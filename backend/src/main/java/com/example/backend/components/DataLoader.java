@@ -2,17 +2,29 @@ package com.example.backend.components;
 
 import com.example.backend.models.Category;
 import com.example.backend.models.Product;
+import com.example.backend.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
 
 
 @Component
 public class DataLoader implements ApplicationRunner {
+
     @Autowired
-    prov
+    private ProductRepository productRepository;
+
+    @Autowired
+    private CustomerRepository customerRepository;
+
+    @Autowired
+    private AdminRepository adminRepository;
+
+    @Autowired
+    private ReviewRepository reviewRepository;
 
     @Autowired
     private OrderRepository orderRepository;
@@ -20,9 +32,11 @@ public class DataLoader implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
+
+        // ADD PRODUCTS
         String fakeDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
         Product product1 = new Product("Acer Nitro 5", 699.99, fakeDescription, "img", 5, 5, Category.LAPTOP);
-        Product product2 = new Product("Alienware 5 M15 R7", 1699.00, fakeDescription "img", 5, 5, Category.LAPTOP);
+        Product product2 = new Product("Alienware 5 M15 R7", 1699.00, fakeDescription, "img", 5, 5, Category.LAPTOP);
         Product product3 = new Product("HP Omen", 1599.99, fakeDescription, "img", 5, 5, Category.LAPTOP);
         Product product4 = new Product("MSI Creator Z16", 999.00, fakeDescription, "img", 5, 5, Category.LAPTOP);
 
@@ -56,16 +70,8 @@ public class DataLoader implements ApplicationRunner {
         Product product27 = new Product("ADX Firebase Entry", 119.00, fakeDescription, "img", 5, 5, Category.GAMINGCHAIR);
         Product product28 = new Product("NOBLECHAIRS Hero TX", 219.00, fakeDescription, "img", 5, 5, Category.GAMINGCHAIR);
 
-
-
-
-
-
-
-
-
-
-
+        productRepository.saveAll(Arrays.asList(product1, product2, product3, product4, product5, product6, product7, product8, product9, product10, product11,
+                product12, product13, product14, product15, product16, product17, product18, product19, product20, product21, product22, product23, product24, product25, product26, product27, product28));
     }
 
 }
