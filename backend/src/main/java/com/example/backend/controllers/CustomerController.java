@@ -3,7 +3,7 @@ package com.example.backend.controllers;
 
 import com.example.backend.models.Admin;
 import com.example.backend.models.Customer;
-import com.example.backend.repositories.CustomerRepository;
+import com.example.backend.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
