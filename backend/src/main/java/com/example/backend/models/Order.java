@@ -23,8 +23,13 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private Status status;
 
-    @ManyToMany(mappedBy = "orders")
-//    @JsonIgnoreProperties(value = "orders")
+    @ManyToMany
+    @JsonIgnoreProperties({"orders", "products"})
+    @JoinTable(
+            name = "orders_products",
+            joinColumns = {@JoinColumn(name = "order_id", nullable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "product_id", nullable = false)}
+    )
     private List<Product> products;
 
 

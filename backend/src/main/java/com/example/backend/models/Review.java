@@ -37,7 +37,7 @@ public class Review {
 
     @ManyToOne
     @JoinColumn(name = "product_id")
-//    @JsonIgnoreProperties(value = "reviews")
+    @JsonIgnoreProperties(value = "reviews")
     private Product product;
 
 

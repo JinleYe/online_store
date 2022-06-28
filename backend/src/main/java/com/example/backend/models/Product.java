@@ -38,13 +38,8 @@ public class Product {
     @JsonIgnoreProperties(value = "product")
     private List<Review> reviews;
 
-    @ManyToMany
-//    @JsonIgnoreProperties(value = "products")
-    @JoinTable(
-          name = "orders_products",
-          joinColumns = {@JoinColumn(name = "order_id", nullable = false)},
-          inverseJoinColumns = {@JoinColumn(name = "product_id", nullable = false)}
-    )
+    @ManyToMany(mappedBy = "products")
+    @JsonIgnoreProperties(value = {"products", "orders"})
     private List<Order> orders;
 
     // DEFAULT CONSTRUCTOR

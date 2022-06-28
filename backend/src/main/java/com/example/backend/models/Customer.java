@@ -31,6 +31,7 @@ public class Customer {
     private List<Order> orders;
 
     @OneToMany(mappedBy = "customer")
+    @JsonIgnoreProperties(value = "customer")
     private List<Review> reviews;
 
     public Long getId() {

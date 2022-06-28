@@ -2,6 +2,7 @@ package com.example.backend.controllers;
 
 
 import com.example.backend.models.Order;
+import com.example.backend.models.Product;
 import com.example.backend.models.Status;
 import com.example.backend.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,13 @@ public class OrderController {
     @GetMapping
     public ResponseEntity<List<Order>> getAllOrders() {
         return new ResponseEntity<>(orderRepository.findAll(), HttpStatus.OK);
+    }
+
+    // get one order
+    @GetMapping("/{id}")
+    public ResponseEntity<Optional<Order>> getOrder(@PathVariable Long id) {
+        var order = orderRepository.findById(id);
+        return new ResponseEntity<>(order, order.isEmpty() ? HttpStatus.NOT_FOUND : HttpStatus.OK);
     }
 
 // SHOW
