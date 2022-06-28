@@ -2,6 +2,7 @@ package com.example.backend.models;
 
 import javax.persistence.Column;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,9 +15,9 @@ public class Customer {
     private String name;
     @Column
     private String address;
-    @ManyToMany
+    @OneToMany(mappedBy = "order")
     private List<Order> orders;
-    @ManyToMany
+    @OneToMany(mappedBy = "review")
     private List<Review> reviews;
 
 
