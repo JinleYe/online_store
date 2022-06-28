@@ -5,6 +5,7 @@ import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 import com.example.backend.models.User;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 @Entity
@@ -26,6 +27,7 @@ public class Customer {
     private String address;
 
     @OneToMany(mappedBy = "customer")
+    @JsonIgnoreProperties(value = "customer")
     private List<Order> orders;
 
     @OneToMany(mappedBy = "customer")

@@ -1,5 +1,7 @@
 package com.example.backend.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
@@ -22,13 +24,13 @@ public class Order {
     private Status status;
 
     @ManyToMany(mappedBy = "orders")
+//    @JsonIgnoreProperties(value = "orders")
     private List<Product> products;
 
 
-//    private Map<Product, Long> products;
-
     @ManyToOne
     @JoinColumn(name = "customer")
+    @JsonIgnoreProperties(value = "orders")
     private Customer customer;
 
     protected Order () {}
@@ -74,6 +76,12 @@ public class Order {
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
+    }
+
+
+    // newly added
+    public void removeProduct(Product product){
+        this.products.remove(product);
     }
 
     @Override
