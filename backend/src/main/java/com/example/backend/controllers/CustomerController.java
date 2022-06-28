@@ -71,13 +71,6 @@ public class CustomerController {
         var result = customerRepository.findById(id);
         if(result.isPresent()){
             Customer customer = result.get();
-
-//            // delete orders
-//            customer.getOrders().stream().forEach(o -> orderRepository.deleteById(o.getId()));
-//
-//            // delete reviews
-//            customer.getReviews().stream().forEach(r -> reviewRepository.deleteById(r.getId()));
-
         }
         customerRepository.deleteById(id);
         return new ResponseEntity<>(id, HttpStatus.OK);
