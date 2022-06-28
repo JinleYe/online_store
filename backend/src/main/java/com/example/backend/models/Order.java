@@ -20,10 +20,8 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private Status status;
 
-
     @ManyToMany(mappedBy = "orders")
     private List<Product> products;
-
 
     @ManyToOne
     @JoinColumn(name = "customer")
