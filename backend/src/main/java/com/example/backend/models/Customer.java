@@ -15,7 +15,6 @@ public class Customer {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
