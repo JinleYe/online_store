@@ -60,7 +60,7 @@ public class ProductController {
             productToUpdate.setPrice(product.getPrice());
             productToUpdate.setDescription(product.getDescription());
             productToUpdate.setImage(product.getImage());
-            productToUpdate.setOrderQuantity(product.getOrderQuantity());
+//            productToUpdate.setOrderQuantity(product.getOrderQuantity());
             productToUpdate.setStockQuantity(product.getStockQuantity());
             productToUpdate.setCategory(product.getCategory());
             productRepository.save(productToUpdate);
