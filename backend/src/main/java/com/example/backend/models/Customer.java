@@ -1,19 +1,22 @@
 package com.example.backend.models;
 
+import javax.persistence.Column;
+import javax.persistence.ManyToMany;
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
 
+    @Column
     private User user;
-
+    @Column
     private String name;
-
+    @Column
     private String address;
-
+    @ManyToMany
     private List<Order> orders;
-
+    @ManyToMany
     private List<Review> reviews;
 
 
