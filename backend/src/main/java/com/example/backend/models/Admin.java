@@ -15,6 +15,7 @@ public class Admin {
     @Column
     private int permissonLevel;
 
+
     protected Admin () {}
 
     public Admin(User user, int permissonLevel) {
