@@ -2,6 +2,7 @@ package com.example.backend.components;
 
 import com.example.backend.models.Category;
 import com.example.backend.models.Product;
+import com.example.backend.models.User;
 import com.example.backend.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -28,6 +29,9 @@ public class DataLoader implements ApplicationRunner {
 
     @Autowired
     private OrderRepository orderRepository;
+
+    @Autowired
+    private UserRepository userRepository;
 
 
     @Override
@@ -71,7 +75,16 @@ public class DataLoader implements ApplicationRunner {
         Product product28 = new Product("NOBLECHAIRS Hero TX", 219.00, fakeDescription, "img", 5, 5, Category.GAMINGCHAIR);
 
         productRepository.saveAll(Arrays.asList(product1, product2, product3, product4, product5, product6, product7, product8, product9, product10, product11,
-                product12, product13, product14, product15, product16, product17, product18, product19, product20, product21, product22, product23, product24, product25, product26, product27, product28));
+                product12, product13, product14, product15, product16, product17, product18, product19, product20, product21, product22, product23, product24,
+                product25, product26, product27, product28));
+
+        // ADD USERS
+        User SarahJane = new User("Sarah123", "Cakebakefake!340", "SarahJane123@gmail.com");
+        User Bailey = new User("Bailey_B", "ajdogenwof.34/", "Bailey.Buntin@gmail.com");
+        User Craig = new User("CAllen2", "hghghghj786@@0", "Craig_Allen@yahoo.com");
+        User Mark = new User("Mark_Dupree", "MD@66.54321", "Mark_Dupree@icloud.com");
+        User Ashley = new User("Ashley_A", "Admin_123_jv", "Ashley_A@hotmail.co.uk");
+        userRepository.saveAll(Arrays.asList(SarahJane, Bailey, Craig, Mark, Ashley));
     }
 
 }
