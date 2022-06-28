@@ -3,6 +3,7 @@ package com.example.backend.models;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 
 @Entity
@@ -22,6 +23,9 @@ public class Order {
 
     @ManyToMany(mappedBy = "orders")
     private List<Product> products;
+
+
+//    private Map<Product, Long> products;
 
     @ManyToOne
     @JoinColumn(name = "customer")
