@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
+
 @Entity
 @Table(name ="orders")
 public class Order {
@@ -20,13 +21,21 @@ public class Order {
     private Status status;
 
 
-    //    @ManyToMany(mappedBy = "")
+    @ManyToMany(mappedBy = "orders")
     private List<Product> products;
 
-    public Order(LocalDate timeOfPurchase, List<Product> products) {
+
+    @ManyToOne
+    @JoinColumn(name = "customer")
+    private Customer customer;
+
+    protected Order () {}
+
+    public Order(LocalDate timeOfPurchase, List<Product> products, Customer customer) {
         this.timeOfPurchase = timeOfPurchase;
         this.products = products;
         this.status = Status.INPROGRESS;
+        this.customer = customer;
     }
 
     public Long getId() {
@@ -57,6 +66,14 @@ public class Order {
         this.products = products;
     }
 
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
     @Override
     public String toString() {
         return "Order{" +
@@ -64,6 +81,7 @@ public class Order {
                 ", timeOfPurchase=" + timeOfPurchase +
                 ", status=" + status +
                 ", products=" + products +
+                ", customer=" + customer +
                 '}';
     }
 }

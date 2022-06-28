@@ -10,31 +10,31 @@ public class Admin {
 
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
-    private User info;
+    private User user;
 
     @Column
-    private int permissonLevel;
+    private int permissionLevel;
 
 
     protected Admin () {}
 
-    public Admin(User user, int permissonLevel) {
+    public Admin(User user, int permissionLevel) {
 
-        this.info = user;
-        this.permissonLevel = permissonLevel;
+        this.user = user;
+        this.permissionLevel = permissionLevel;
 
     }
 
-    public User getInfo() {
-        return info;
+    public User getUser() {
+        return user;
     }
 
-    public int getPermissonLevel() {
-        return permissonLevel;
+    public int getPermissionLevel() {
+        return permissionLevel;
     }
 
-    public void setPermissonLevel(int permissonLevel) {
-        this.permissonLevel = permissonLevel;
+    public void setPermissionLevel(int permissionLevel) {
+        this.permissionLevel = permissionLevel;
     }
 
 }
