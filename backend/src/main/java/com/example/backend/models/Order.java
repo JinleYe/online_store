@@ -2,6 +2,7 @@ package com.example.backend.models;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table(name ="orders")
@@ -19,10 +20,10 @@ public class Order {
     private Status status;
 
 
-//    @ManyToMany(mappedBy = "")
-    private List <Products> products;
+    //    @ManyToMany(mappedBy = "")
+    private List<Product> products;
 
-    public Order(LocalDate timeOfPurchase,List<Products> products) {
+    public Order(LocalDate timeOfPurchase, List<Product> products) {
         this.timeOfPurchase = timeOfPurchase;
         this.products = products;
         this.status = Status.INPROGRESS;
@@ -48,11 +49,11 @@ public class Order {
         this.status = status;
     }
 
-    public List<Products> getProducts() {
+    public List<Product> getProducts() {
         return products;
     }
 
-    public void setProducts(List<Products> products) {
+    public void setProducts(List<Product> products) {
         this.products = products;
     }
 
@@ -65,6 +66,7 @@ public class Order {
                 ", products=" + products +
                 '}';
     }
+}
 
 
 //    default constructor
