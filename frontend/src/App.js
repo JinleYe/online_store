@@ -12,14 +12,11 @@ import MyDetails from './containers/MyDetails';
 
 function App() {
 
-<<<<<<< HEAD
-
-=======
   // set is Login condition
   const [isLogin, setIsLogin] = usePersistedState('isLogin',false);
   
   const [currCustomerUser, setCurrCustomerUser] = usePersistedState('currCustomerUser', {});
->>>>>>> 1e5039b2524c9028211526eee408b0c5b6c5fe61
+
 
   return (
     <Router>
