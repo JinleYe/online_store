@@ -1,7 +1,7 @@
 package com.example.backend.controllers;
 
 import com.example.backend.models.Review;
-import com.example.backend.derivedQueryTests.ReviewRepository;
+import com.example.backend.repositories.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

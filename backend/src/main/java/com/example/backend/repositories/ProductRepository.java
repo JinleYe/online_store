@@ -1,4 +1,4 @@
-package com.example.backend.derivedQueryTests;
+package com.example.backend.repositories;
 
 import com.example.backend.models.Category;
 import com.example.backend.models.Product;

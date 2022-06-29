@@ -2,6 +2,7 @@ package com.example.backend.derivedQueryTests;
 
 import com.example.backend.models.Category;
 import com.example.backend.models.Product;
+import com.example.backend.repositories.ProductRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

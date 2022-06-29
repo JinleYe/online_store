@@ -2,9 +2,9 @@ package com.example.backend.controllers;
 
 import com.example.backend.models.Category;
 import com.example.backend.models.Product;
-import com.example.backend.derivedQueryTests.OrderRepository;
-import com.example.backend.derivedQueryTests.ProductRepository;
-import com.example.backend.derivedQueryTests.ReviewRepository;
+import com.example.backend.repositories.OrderRepository;
+import com.example.backend.repositories.ProductRepository;
+import com.example.backend.repositories.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -3,7 +3,7 @@ package com.example.backend.controllers;
 
 import com.example.backend.models.Order;
 import com.example.backend.models.Status;
-import com.example.backend.derivedQueryTests.OrderRepository;
+import com.example.backend.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
