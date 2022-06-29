@@ -1,7 +1,6 @@
 package com.example.backend.components;
 
 import com.example.backend.models.*;
-import com.example.backend.derivedQueryTests.*;
 import com.example.backend.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
