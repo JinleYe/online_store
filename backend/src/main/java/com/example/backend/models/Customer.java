@@ -1,12 +1,9 @@
 package com.example.backend.models;
 
 import javax.persistence.*;
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
-import com.example.backend.models.User;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 
 @Entity
 @Table(name = "customers")
@@ -35,20 +32,11 @@ public class Customer {
     @JsonIgnoreProperties(value = "customer")
     private List<Review> reviews;
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-
-    // Empty Constructor
-
+    // DEFAULT CONSTRUCTOR
     protected Customer(){}
 
-    //Constructor
+    // CONSTRUCTOR
     public Customer(User user, String name, String address) {
         this.user = user;
         this.name = name;
@@ -57,7 +45,11 @@ public class Customer {
         this.reviews = new ArrayList<>();
     }
 
-    //Getters and Setters
+
+    // GETTERS & SETTERS
+    public Long getId() {
+        return id;
+    }
 
     public User getUser() {
         return user;
@@ -98,6 +90,7 @@ public class Customer {
     public void setReviews(List<Review> reviews) {
         this.reviews = reviews;
     }
+
 
     @Override
     public String toString() {

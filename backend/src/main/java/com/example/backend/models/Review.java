@@ -43,11 +43,9 @@ public class Review {
 
 
     // DEFAULT CONSTRUCTOR
-    protected Review() {
+    protected Review() {}
 
-    }
-
-    //CONSTRUCTOR
+    // CONSTRUCTOR
     public Review(String title, double rating, String description, boolean isVerifiedPurchase, LocalDate datePosted, Product product, Customer customer) {
         this.title = title;
         this.rating = rating;
@@ -59,7 +57,7 @@ public class Review {
     }
 
 
-    //GETTERS & SETTERS
+    // GETTERS & SETTERS
     public Long getId() {
         return id;
     }
@@ -119,6 +117,7 @@ public class Review {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
+
 
     @Override
     public String toString() {

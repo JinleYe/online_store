@@ -42,9 +42,9 @@ public class Product {
     @JsonIgnoreProperties(value = {"products", "orders"})
     private List<Order> orders;
 
+
     // DEFAULT CONSTRUCTOR
-    public Product() {
-    }
+    public Product() {}
 
     // CONSTRUCTOR
     public Product(String title, Double price, String description, String image,  int stockQuantity, Category category) {
@@ -57,6 +57,7 @@ public class Product {
         this.reviews = new ArrayList<>();
         this.orders = new ArrayList<>();
     }
+
 
     // GETTERS & SETTERS
     public Long getId() {
@@ -127,7 +128,7 @@ public class Product {
         this.orders = orders;
     }
 
-    // newly added
+    // REMOVE ORDER/REVIEW METHODS
     public void removerOrder (Order order){
         this.orders.remove(order);
     }
@@ -135,6 +136,7 @@ public class Product {
     public void removeReview(Review review){
         this.reviews.remove(review);
     }
+
 
     @Override
     public String toString() {

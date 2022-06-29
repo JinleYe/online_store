@@ -12,8 +12,8 @@ import java.util.List;
 
 public interface OrderRepository extends JpaRepository<Order, Long> {
 
+    // DERIVED QUERIES
     List<Order> findByTimeOfPurchaseEquals (LocalDate date);
-
     List<Order>findOrderByStatus (Status status);
 
     @Modifying

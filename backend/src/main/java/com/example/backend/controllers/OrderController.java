@@ -2,7 +2,6 @@ package com.example.backend.controllers;
 
 
 import com.example.backend.models.Order;
-import com.example.backend.models.Product;
 import com.example.backend.models.Status;
 import com.example.backend.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,23 +21,21 @@ public class OrderController {
     @Autowired
     OrderRepository orderRepository;
 
-// INDEX: display all orders
-
+    // INDEX
     @GetMapping
     public ResponseEntity<List<Order>> getAllOrders() {
         return new ResponseEntity<>(orderRepository.findAll(), HttpStatus.OK);
     }
 
-    // get one order
-    @GetMapping("/{id}") //http://localhost:8080/orders/1
+    // SHOW
+    @GetMapping("/{id}") // localhost:8080/orders/1
     public ResponseEntity<Optional<Order>> getOrder(@PathVariable Long id) {
         var order = orderRepository.findById(id);
         return new ResponseEntity<>(order, order.isEmpty() ? HttpStatus.NOT_FOUND : HttpStatus.OK);
     }
 
-// SHOW
 
-    //findByTimeOfPurchaseEquals
+    // FindByTimeOfPurchaseEquals
     @GetMapping(value = "/timeofpurchase") //localhost:8080/timeofpurchase?timeofpurchase=2022-06-28
     public ResponseEntity<List<Order>> getAllOrdersoOfTimeOfPurchase(
             @RequestParam (name = "timeofpurchase") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)LocalDate timeOfPurchase){
@@ -55,29 +52,15 @@ public class OrderController {
         return new ResponseEntity<>(found, HttpStatus.OK);
     }
 
-    //findOrderByProducts
 
-// CREATE
-
+    // POST
     @PostMapping
     public ResponseEntity<Order> createNewOrder(@RequestBody Order order){
         return new ResponseEntity<>(orderRepository.save(order), HttpStatus.CREATED);
     }
 
-// UPDATE (update order by id)
 
-//    @PutMapping("/update/{id}")
-//    public ResponseEntity<Optional<Order>> updateOrderStatusById(@PathVariable Long id, @RequestBody String status){
-//        Optional<Order> found = orderRepository.findById(id);
-//        if(found.isPresent()){
-//            Order order = found.get();
-//            order.setProducts(Status.valueOf(status.toUpperCase()));
-//            orderRepository.save(order);
-//        }
-//        return new ResponseEntity<>(found, found.isPresent() ? HttpStatus.NOT_FOUND : HttpStatus.ACCEPTED);
-//    }
-
-    @PutMapping(value = "/{id}") // localhost:8080/podcasts/1 (or any other id number instead of 1)
+    @PutMapping(value = "/{id}") // localhost:8080/users/1 (or any other id number instead of 1)
     public ResponseEntity<Optional<Order>> putOrder(@RequestBody Order order, @PathVariable Long id) {
         if (orderRepository.findById(id).isEmpty()) {
             return new ResponseEntity<>(orderRepository.findById(id), HttpStatus.NOT_FOUND);
@@ -92,19 +75,15 @@ public class OrderController {
         }
     }
 
-// DELETE (delete order by id)
 
+    // DELETE
     @DeleteMapping("/{id}")
     public void deleteOrderById(@PathVariable Long id){
         Optional<Order> order = orderRepository.findById(id);
         if (order.isPresent()) {
             Order found = order.get();
             orderRepository.removeOrder(id);
-
             orderRepository.deleteById(id);
         }
     }
-
-
-
 }
