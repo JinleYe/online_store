@@ -1,4 +1,4 @@
-package com.example.backend.repositories;
+package com.example.backend.derivedQueryTests;
 
 import com.example.backend.models.Order;
 import com.example.backend.models.Status;

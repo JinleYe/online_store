@@ -1,4 +1,4 @@
-package com.example.backend.repositories;
+package com.example.backend.derivedQueryTests;
 
 import com.example.backend.models.Category;
 import com.example.backend.models.Product;
@@ -13,6 +13,4 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     List<Product> findProductByDescriptionContainingIgnoreCase (String description);
     List<Product> findProductByPriceLessThan (Double price);
     List<Product> findProductByCategory (Category category);
-
-
 }

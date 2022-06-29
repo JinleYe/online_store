@@ -1,4 +1,4 @@
-package com.example.backend.repositories;
+package com.example.backend.derivedQueryTests;
 
 import com.example.backend.models.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -10,5 +10,4 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
     // DERIVED QUERIES
     List<Customer> findCustomerByNameContainingIgnoreCase (String name);
     List<Customer> findCustomerByAddressContainingIgnoreCase (String address);
-
 }

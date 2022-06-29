@@ -1,14 +1,13 @@
 package com.example.backend.components;
 
 import com.example.backend.models.*;
-import com.example.backend.repositories.*;
+import com.example.backend.derivedQueryTests.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 
@@ -87,22 +86,22 @@ public class DataLoader implements ApplicationRunner {
 
         // ADD CUSTOMERS
         Customer customer1 = new Customer(SarahJane, "Sarah Jane", "123 Summer Avenue, London");
-        Customer customer2 = new Customer(Bailey, "Bailey Bennett", "88 Griffen Avenue, Birmingham");
+        Customer customer2 = new Customer(Bailey, "Bailey Buntin", "88 Griffen Avenue, Birmingham");
         Customer customer3 = new Customer(Craig, "Craig Allen", "9 Green Lane, Glasgow");
         customerRepository.saveAll(Arrays.asList(customer1, customer2, customer3));
 
         // ADD ADMINS
-        Admin admin1 = new Admin(Craig, 1);
-        Admin admin2 = new Admin(Ashley, 1);
+        Admin admin1 = new Admin(Mark, 1);
+        Admin admin2 = new Admin(Ashley, 2);
         adminRepository.saveAll(Arrays.asList(admin1, admin2));
 
         // ADD REVIEWS
         Review review1 = new Review("Gift For My Son", 5, fakeDescription, true, LocalDate.of(2022, 6, 8), product1, customer1);
         Review review2 = new Review("Sleek Gaming Mouse", 3, fakeDescription, false, LocalDate.of(2022, 5,10), product12, customer1);
-        Review review3 = new Review("Comfy Gaming Chair", 4, fakeDescription, true, LocalDate.of(2022, 2,2), product25, customer2);
+        Review review3 = new Review("Comfy Gaming Chair", 4.5, fakeDescription, true, LocalDate.of(2022, 2,2), product25, customer2);
         Review review4 = new Review("New Nintendo Switch Pro", 5, fakeDescription, true, LocalDate.of(2022, 1,1), product9, customer3);
         Review review5 = new Review("Birthday present for my son", 4, fakeDescription, true, LocalDate.of(2022, 1,4), product17, customer2);
-        Review review6 = new Review("New Headset", 2, fakeDescription, false, LocalDate.of(2022, 4,4), product21, customer3);
+        Review review6 = new Review("New Headset", 2.5, fakeDescription, false, LocalDate.of(2022, 4,4), product21, customer3);
         reviewRepository.saveAll(Arrays.asList(review1, review2, review3, review4, review5, review6));
 
         // ADD ORDERS

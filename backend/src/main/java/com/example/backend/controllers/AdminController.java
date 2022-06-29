@@ -2,7 +2,7 @@ package com.example.backend.controllers;
 
 
 import com.example.backend.models.Admin;
-import com.example.backend.repositories.AdminRepository;
+import com.example.backend.derivedQueryTests.AdminRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

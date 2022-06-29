@@ -1,4 +1,4 @@
-package com.example.backend.repositories;
+package com.example.backend.derivedQueryTests;
 
 import com.example.backend.models.Admin;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -9,4 +9,5 @@ public interface AdminRepository extends JpaRepository<Admin, Long> {
 
     // DERIVED QUERIES
     List<Admin> findAdminByPermissionLevel (int permissionLevel);
+    List<Admin> findAdminByPermissionLevelGreaterThan (int permissionLevel);
 }

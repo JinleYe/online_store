@@ -1,4 +1,4 @@
-package com.example.backend.repositories;
+package com.example.backend.derivedQueryTests;
 
 import com.example.backend.models.Review;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -16,5 +16,4 @@ public interface ReviewRepository extends JpaRepository<Review, Long> {
     List<Review> findReviewByRating(double rating);
     List<Review> findReviewByRatingGreaterThan(double rating);
     List<Review> findReviewByIsVerifiedPurchase(boolean isVerifiedPurchase);
-
 }
