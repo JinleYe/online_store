@@ -1,4 +1,7 @@
 import React, {useState} from 'react';
+import { AiOutlineSearch } from "react-icons/ai";
+import "../styles/SearchBar.css";
+
 
 const SearchBar = ({getQuery}) => {
 
@@ -12,6 +15,8 @@ const SearchBar = ({getQuery}) => {
   return (
     <section className='search'>
         <form>
+          <div className='search-box'>
+            <AiOutlineSearch />
             <input 
             type="text" 
             className="form-control" 
@@ -19,6 +24,7 @@ const SearchBar = ({getQuery}) => {
             value={text}
             onChange={(event) => onChange(event.target.value)}
             autoFocus/>
+            </div>
         </form>
     </section>
   )

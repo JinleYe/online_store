@@ -1,0 +1,13 @@
+.search-box{
+    border-style: solid;
+    border-color: lightgray;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.form-control {
+    border-style: none;
+    padding: 0.3rem;
+    
+    
+}
