@@ -1,0 +1,350 @@
+/* Login and SignUp CSS */
+
+.sign-up-container{
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    padding-bottom: 200px;
+    font-family: 'Josefin Sans';
+    color:#9096B2;
+
+}
+
+.sign-up-form{
+    background-color:white;
+    margin-top:100px;
+
+    width: 400px;
+    min-height: 474px;
+
+    /* width:360px; */
+    border: solid transparent;
+    border-radius:5px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    box-shadow: 0 0px 10px 5px rgb(218, 217, 217);
+}
+
+.sign-up-title{
+    padding-top:20px;
+    text-align: center;
+    color: black;
+    font-family: 'Josefin Sans';
+}
+
+.other-sign-up{
+    padding-top:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.other-sign-up > ul {
+    
+    margin-top:0;
+    margin-bottom:20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+    position: relative;
+    left:3%;
+}
+
+.other-sign-up > ul > li {
+    display: flex;
+    margin-right:20px;
+    margin-left:0;    
+    
+}
+
+
+
+/* LINKEDIN BUTTON */
+.other-sign-up-icons-linkedin{
+    width: 40px;
+    height: 30px;
+
+    border-radius: 5px;
+    background-color:black;
+
+    font-size:30px;
+    /* margin: 5px 2px; */
+    padding: 5px;
+    color:#FB2E86;
+}
+
+
+.button-a-tag:hover{    
+    background-color:transparent;
+    
+}
+
+.other-sign-up-button-linkedin{
+
+    border-style: none;
+    border: 0;
+    border-color:transparent; 
+    border-radius: 5px;
+    background-color:black;
+
+/* shadow */
+/* -webkit-box-shadow: 0 8px 6px -6px rgb(126, 126, 126);
+-moz-box-shadow: 0 8px 6px -6px rgb(126, 126, 126);
+box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
+}
+
+.other-sign-up-button-linkedin:hover{
+    border-style: none;
+    border: 0;
+    border-color:transparent; 
+    background-color: #007bb5;
+    color:white;
+    border-radius: 5px;
+
+}
+
+.other-sign-up-icons-linkedin:hover{
+    background-color:#007bb5;
+    color: white;
+    text-decoration:none;
+    border-radius: 5px;
+}
+
+/* GITHUB BUTTON  */
+
+.other-sign-up-icons-github{
+    width: 40px;
+    height: 30px;
+
+    font-size:30px;
+    /* margin: 5px 2px; */
+    padding: 5px;
+    color:#FB2E86;
+    border-radius: 5px;
+    background-color:black;
+}
+
+.other-sign-up-button-github{
+    border-style: none;
+    border: 0;
+    border-color:transparent; 
+
+    background-color:black;
+    border-radius: 5px;
+
+}
+    
+.other-sign-up-button-github:hover{
+    border-style: none;
+    border: 0;
+    border-color:transparent; 
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+
+}
+
+.other-sign-up-icons-github:hover{
+
+    background-color:black;
+    color: white;
+    text-decoration:none;
+    border-radius: 5px;
+
+
+}
+
+/* TWITTER BUTTON  */
+
+.other-sign-up-icons-twitter{
+    position: relative;
+    font-size:30px;
+    /* margin: 5px 2px; */
+    padding: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    color:#FB2E86;
+    background-color:black;
+
+    width: 40px;
+    height: 30px;
+}
+
+.other-sign-up-button-twitter{
+    border-style: none;
+    border: 0;
+    border-color:transparent; 
+    border-radius: 5px;
+    background-color:black;
+    /* shadow */
+    /* -webkit-box-shadow: 0 8px 6px -6px rgb(126, 126, 126);
+    -moz-box-shadow: 0 8px 6px -6px rgb(126, 126, 126);
+    box-shadow: 0 8px 6px -6px rgb(126, 126, 126) */
+}
+    
+.other-sign-up-button-twitter:hover{
+    border-style: none;
+    border: 0;
+    border-color:transparent; 
+    background-color: #55ACEE;
+    color:white;
+    border-radius: 5px;
+    
+}
+
+.other-sign-up-icons-twitter:hover{
+    background-color:#55ACEE;
+    color: white;
+    text-decoration:none;
+    border-radius: 5px;
+}
+
+/* GOOGLE BUTTON  */
+
+.other-sign-up-icons-google{
+    font-size:30px;
+    /* margin: 5px 2px; */
+    padding: 5px;
+    /* padding-bottom: 6px; */
+    border-radius: 5px;
+    color:#FB2E86;
+    background-color:black;
+
+    width: 40px;
+    height: 30px;
+}
+
+.other-sign-up-button-google{
+    border-style: none;
+    border: 0;
+    border-color:transparent; 
+    border-radius: 5px;
+    background-color:black;
+}
+    
+.other-sign-up-button-google:hover{
+    border-style: none;
+    border: 0;
+    border-color:transparent; 
+    background-color: #dd4b39;
+    color:white;
+    border-radius: 5px;
+}
+
+.other-sign-up-icons-google:hover{
+    background-color:#dd4b39;
+    color: white;
+    text-decoration:none;
+    border-radius: 5px;
+}
+
+.or-line{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #9096B2; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ }
+
+ .or-line > span {
+    color:#9096B2;
+    font-weight: 600;
+    background:white;
+    padding: 0 10px;
+    /* font-family: 'Red Hat Mono', monospace; */
+    font-family: 'Josefin Sans';
+ }
+
+
+ .sign-up-input-box{
+    border-style: solid;
+    padding: 10px;
+    height:25px;
+    width: 378px;
+    border-radius: 3px;
+    border-color: #C2C5E1;
+    border-width: 1px;
+    margin-bottom: 20px;
+
+    font-family: 'Josefin Sans';
+
+ }
+
+ .password-shown-button{
+    border-style: none;
+    background-color:transparent;
+    position: relative;
+    left:90%;
+    bottom: 11%;
+ }
+
+ .password-eye{
+    font-size: 25px;
+    font-weight: bold;
+    color:#9096B2;
+ }
+
+
+ .new-user-password-input{
+    margin-top:0;
+    padding-top:0;
+ }
+ 
+/* terms tick box */
+.sign-up-terms-box{
+    border-radius: 20px;
+}
+
+
+/* sign up button */
+
+.sign-up-btn{
+    margin-top:10px;
+    height: 40px;
+    width: 400px;
+    margin-bottom: 20px;
+
+    text-align: center;
+    position: relative;
+    left: 0%;
+
+    border-radius: 3px;
+    border-style: solid;
+    border-color:#FB2E86;
+    background-color:#FB2E86;
+    
+    color: white;
+    font-size: 18px;
+    font-family: 'Josefin Sans';
+}
+
+.sign-up-btn:hover{
+    background-color: black;
+    border-color: white;
+    color: #FB2E86;
+    cursor: pointer;
+
+    box-shadow: 0 0 10px 0 #FB2E86 inset, 0 0 20px 2px #FB2E86;
+    border: 3px solid #FB2E86;
+}
+
+/* attempting to add 'memory' to pressing link --failed: page refreshing won't resort colour */
+
+/* .link-a-tag:link{
+    color:purple;
+}
+
+.link-a-tag:visited{
+    color: green;
+} */
+
+.other-links{
+    text-align: center;
+}
+
+.go-to-signup{
+    margin-bottom: 20px;
+}

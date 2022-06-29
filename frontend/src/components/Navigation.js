@@ -3,9 +3,16 @@ import SearchBar from './SearchBar';
 import { useState } from "react";
 
 
-const Navigation = ({isLogin}) => {
+const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
 
     const [query, setQuery] = useState([]);
+
+    // handle log out button
+    const handleLogOut = () => {
+        setIsLogin(!isLogin);
+        setCurrUser({});
+    }
+
 
     return (
         <nav>
@@ -30,6 +37,7 @@ const Navigation = ({isLogin}) => {
                     <div className='dropdown-content'>
                         <li><Link to='/login'>{isLogin ? "My Orders" : "Log In"}</Link></li>
                         <li><Link to='/signup'>{isLogin ? "My Details" : "Sign Up"}</Link></li>
+                        {isLogin && <li><a href="#" onClick={handleLogOut}>Log Out</a></li>}
                     </div>
                 </div>
             </ul>
