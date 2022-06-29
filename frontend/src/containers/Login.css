@@ -15,7 +15,8 @@
     margin-top:100px;
 
     width: 400px;
-    min-height: 474px;
+    /* min-height: 474px; */
+    min-height: 300px;
 
     /* width:360px; */
     border: solid transparent;
@@ -267,7 +268,7 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
     border-radius: 3px;
     border-color: #C2C5E1;
     border-width: 1px;
-    margin-bottom: 20px;
+    margin-top: 10px;
 
     font-family: 'Josefin Sans';
 
@@ -278,7 +279,7 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
     background-color:transparent;
     position: relative;
     left:90%;
-    bottom: 11%;
+    bottom: 7%;
  }
 
  .password-eye{

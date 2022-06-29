@@ -54,7 +54,7 @@ const Login = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
     return (
         <div className="sign-up-container">
             <form className="sign-up-form">
-            <h1 className="sign-up-title">Login</h1>
+            <h1 className="sign-up-title">Log In</h1>
                 
                 <div className="other-sign-up">
                 
