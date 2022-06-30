@@ -1,60 +1,67 @@
 import React from "react";
-import {Checkbox, Collapse} from 'antd';
 
-const {Panel} = Collapse;
-
-const categories = [
-{
-    "_id": 1,
-    "name": "Laptop"
-},
-{
-    "_id": 2,
-    "name": "Gaming Mouse"
-},
-{
-    "_id": 3,
-    "name": "Games Console"
-},
-{
-    "_id": 4,
-    "name": "Keyboard"
-},
-{
-    "_id": 5,
-    "name": "Gaming Controller"
-},
-{
-    "_id": 6,
-    "name": "Gaming Headset"
-},
-{
-    "_id": 7,
-    "name": "Gaming Chair"
-}
-]
-
-function CheckBox() {
+export default function CheckBox({products, category, filteredByLaptop, filteredByGamingMouse, test, filteredByCategory}) {
 
     return (
-        <div>
-            <Collapse defaultActiveKey={['0']} >
-                <Panel header key="1">
-                    {categories.map((value, index) => (
-                        <React.Fragment key={index}>
-                            <CheckBox
-                                onChange
-                                type="checkbox"
-                                checked
-                                />
-                                <span>{value.name}</span>
-                        </React.Fragment>
-                    ))}
-
-                </Panel>
-            </Collapse>
+        <div className="checkbox">
+        <h4>Categories</h4>
+        <div className="category-selection">
+          <input
+          type="checkbox"
+          id="1"
+          name="category"
+          value="Laptop"
+          onChange={() => filteredByCategory("laptop")}
+          /> Laptop
+          <br/>
+          <input
+          type="checkbox"
+          id="2"
+          name="category"
+          value="Keyboard"
+          onChange={() => filteredByCategory("gamingkeyboard")}
+          /> Keyboard
+          <br/>
+          <input
+          type="checkbox"
+          id="3"
+          name="category"
+          value="Gaming Chair"
+          onChange={() => filteredByCategory("gamingchair")}
+          /> Gaming Chair
+          <br/>
+          <input
+          type="checkbox"
+          id="4"
+          name="category"
+          value="Gaming Mouse"
+          onChange={() => filteredByCategory("gamingmouse")}
+          /> Gaming Mouse
+          <br/>
+          <input
+          type="checkbox"
+          id="5"
+          name="category"
+          value="Games Console"
+          onChange={() => filteredByCategory("gamesconsole")}
+          /> Games Console
+          <br/>
+          <input
+          type="checkbox"
+          id="6"
+          name="category"
+          value="Gaming Headset"
+          onChange={() => filteredByCategory("gamingheadset")}
+          /> Gaming Headset
+           <br/>
+          <input
+          type="checkbox"
+          id="7"
+          name="category"
+          value="Gaming Controller"
+          onChange={() => filteredByCategory("gamingcontroller")}
+          /> Gaming Controller
         </div>
+      </div>
     );
 }
-
-export default CheckBox;

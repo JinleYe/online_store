@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ProductList from "./ProductList";
 import SearchBar from "../components/SearchBar";
+import CheckBox from "../filters/Checkbox";
 
 const ProductContainer = () => {
 
@@ -25,6 +26,7 @@ const ProductContainer = () => {
         <div>
             <h1 className="p-title">All Products</h1>
            <SearchBar className="Search" getQuery={(q) => setQuery(q)} />
+           <CheckBox />
         <ProductList
             products={products} />
         </div>
