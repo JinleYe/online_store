@@ -34,6 +34,29 @@
     position: relative;
     left:90%;
     bottom: 5%;
- }
+}
+
+/* .password-confirm-div{
+    margin-bottom: 0;
+} */
+
+.sign-up-input{
+    
+    border-style: solid;
+    padding: 10px;
+    margin-bottom:25px;
+    height:25px;
+    width: 378px;
+    border-radius: 3px;
+    border-color: #C2C5E1;
+    border-width: 1px;
+    margin-top: 10px;
+
+    font-family: 'Josefin Sans';
+}
+
+.fields-info{
+    margin-bottom: 10px;
+}
 
 

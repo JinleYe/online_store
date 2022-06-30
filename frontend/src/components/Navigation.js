@@ -1,6 +1,8 @@
 import {Link} from 'react-router-dom';
 import SearchBar from './SearchBar';
 import { useState } from "react";
+import './Navigation.css';
+
 
 
 const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
@@ -15,22 +17,20 @@ const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
 
 
     return (
-        <nav>
-            <ul>
-                <div>
-                    <Link to='/'>LOGO</Link>
+        <nav className="nav-bar">
+            <ul className="nav-ul">
+                <div className="logo-div">
+                    <Link to='/'>Logo</Link>
                 </div>
 
-                <li><Link to='/home'>Home</Link></li>
-                <li><Link to='/products'>Products</Link></li>
-                <li><Link to='/contact'>Contact</Link></li>
+                <li className="nav-li"><Link to='/home'>Home</Link></li>
+                <li className="nav-li"><Link to='/products'>Products</Link></li>
+                <li className="nav-li"><Link to='/contact'>Contact</Link></li>
 
                 {/* <li>
                     <Link to='/search'>Search <input type="text"/></Link>
                 </li> */}
                 <SearchBar getQuery={(q) => setQuery(q)} />
-
-
 
                 <div className='dropdown'>
                     <button>Account-icon</button>

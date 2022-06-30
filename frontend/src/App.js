@@ -17,7 +17,6 @@ function App() {
   
   const [currUser, setCurrUser] = usePersistedState('currUser', {});
 
-  const [newCurrUser, setNewCurrUser] = usePersistedState('newCurrUser', {});
 
 
   return (
@@ -46,7 +45,7 @@ function App() {
                                                          setIsLogin={setIsLogin}
                                                          currUser={currUser}
                                                          setCurrUser={setCurrUser}
-                                                         newCurrUser={newCurrUser} setNewCurrUser={setNewCurrUser} />}></Route>
+                                                          />}></Route>
 
         </Routes>
         {/* <Home /> */}

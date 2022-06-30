@@ -28,8 +28,8 @@ const Login = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
 
     const handleLogin = (event) => {
         
-        const curr = allUsers.filter(user => user.user.email == inputEmail.current.value &&
-                                                    user.user.password == inputPassword.current.value);
+        const curr = allUsers.filter(user => user.email == inputEmail.current.value &&
+                                                    user.password == inputPassword.current.value);
 
         if (curr.length == 0) {
             alert("Invalid email adress or password! Please try again!")

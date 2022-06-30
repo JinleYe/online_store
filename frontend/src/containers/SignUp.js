@@ -6,7 +6,7 @@ import {AiOutlineEyeInvisible, AiOutlineEye} from 'react-icons/ai';
 import './SignUp.css';
 import usePersistedState from '../components/usePersistedState';
 
-const SignUp = ({isLogin, setIsLogin, currUser, setCurrUser, newCurrUser, setNewCurrUser}) => {
+const SignUp = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
 
     
     const inputNewEmail = useRef();
@@ -56,22 +56,7 @@ const SignUp = ({isLogin, setIsLogin, currUser, setCurrUser, newCurrUser, setNew
     // handle sign up
     // postmapping, create a new customer
 
-    async function createANewUser(){
-        const newUser = {
-            username: inputNewUserName.current.value,
-            password: inputNewPassword.current.value,
-            email: inputNewEmail.current.value
-        };
-        const response = await fetch("http://localhost:8080/users",
-        {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(newUser)
-        });
-        const savedData = await response.json();
-        return savedData;
-
-    }
+    
 
     
 
@@ -83,14 +68,11 @@ const SignUp = ({isLogin, setIsLogin, currUser, setCurrUser, newCurrUser, setNew
             return;
         }
 
-        createANewUser().then(data=>setNewCurrUser(data));
         
-
-        
-        const newU = {
-            user: {
-                id: newCurrUser.id
-            },
+        const newC = {
+            username: inputNewUserName.current.value,
+            password: inputNewPassword.current.value,
+            email: inputNewEmail.current.value,
             name: inputFullName.current.value,
             address:inputAddress.current.value
         }
@@ -99,7 +81,7 @@ const SignUp = ({isLogin, setIsLogin, currUser, setCurrUser, newCurrUser, setNew
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(newU)
+                body: JSON.stringify(newC)
             })
         .then(response => response.json())
         .then(data => setCurrUser(data))
@@ -124,7 +106,7 @@ const SignUp = ({isLogin, setIsLogin, currUser, setCurrUser, newCurrUser, setNew
         else {
             
             // input email already exists
-            let result = allUsers.filter(user => user.user.email == inputNewEmail.current.value);
+            let result = allUsers.filter(user => user.email == inputNewEmail.current.value);
             
             if(result.length > 0){
 
@@ -277,20 +259,20 @@ const SignUp = ({isLogin, setIsLogin, currUser, setCurrUser, newCurrUser, setNew
                 </div>
 
                
-                <input  type={passwordShown? "text" : "password"} placeholder="Confirm Password*" ref={inputConfirmPassword} 
+                <input  type={conPasswordShown? "text" : "password"} placeholder="Confirm Password*" ref={inputConfirmPassword} 
                         onChange={handlePasswordConfirm} className="sign-up-input-box"/><br/>
                 <button onClick={handleConPasswordShown} className="sign-password-btn">{conPasswordShown? <AiOutlineEye className="password-eye"/> : <AiOutlineEyeInvisible className="password-eye"/> }
                 </button>
                 <div className="password-confirm-div">
                 </div> 
 
-                <input type="text" ref={inputNewUserName} onChange={handleOtherInfo} placeholder="User Name*" className="sign-up-input-box" />
+                <input type="text" ref={inputNewUserName} onChange={handleOtherInfo} placeholder="User Name*" className="sign-up-input" />
                 
-                <input type="text" ref={inputFullName} onChange={handleOtherInfo} placeholder="Full Name*" className="sign-up-input-box"/>
+                <input type="text" ref={inputFullName} onChange={handleOtherInfo} placeholder="Full Name*" className="sign-up-input"/>
 
-                <input type="address" ref={inputAddress} onChange={handleOtherInfo} placeholder="Delivery Address*" className="sign-up-input-box"/>
+                <input type="address" ref={inputAddress} onChange={handleOtherInfo} placeholder="Delivery Address*" className="sign-up-input"/>
                 
-                <p>Fields marked with (*) are mandatory</p>
+                <p className="fields-info">Fields marked with (*) are mandatory</p>
 
                 <a href="/" className="link-a-tag">Sign up as Admin?</a>
                 <br/>
