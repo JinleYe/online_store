@@ -1,3 +1,39 @@
 .new-user-email-input{
     padding-top: 10px;
 }
+
+.password-div{
+    position: relative;
+    bottom:3%;
+    background-color: transparent;
+    padding-bottom: 0;
+    margin-bottom:0;
+
+}
+.password-div > span{
+    display: inline-block;
+    height:4px;
+    width: 100px;
+    background:gray;
+}
+
+.password-confirm-div{
+    padding-top: 0;
+    margin-top: 0;
+    position: relative;
+    bottom:3%;
+
+}
+
+
+/* for signup password shown eyes */
+/* different with the log in eyes considering the position */
+.sign-password-btn{
+    border-style: none;
+    background-color:transparent;
+    position: relative;
+    left:90%;
+    bottom: 5%;
+ }
+
+

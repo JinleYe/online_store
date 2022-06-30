@@ -14,9 +14,19 @@ public class Customer {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @OneToOne
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
-    private User user;
+//    @OneToOne(cascade = {CascadeType.ALL})
+//    @JoinColumn(name = "user_id", referencedColumnName = "id")
+//    private User user;
+
+//    refactor
+    @Column(name = "user_name")
+    private String username;
+
+    @Column(name = "password")
+    private String password;
+
+    @Column(name = "email")
+    private String email;
 
     @Column
     private String name;
@@ -37,8 +47,12 @@ public class Customer {
     protected Customer(){}
 
     // CONSTRUCTOR
-    public Customer(User user, String name, String address) {
-        this.user = user;
+    public Customer(String username, String password, String email, String name, String address) {
+//        this.user = user;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+
         this.name = name;
         this.address = address;
         this.orders = new ArrayList<>();
@@ -51,12 +65,28 @@ public class Customer {
         return id;
     }
 
-    public User getUser() {
-        return user;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getName() {
@@ -95,7 +125,10 @@ public class Customer {
     @Override
     public String toString() {
         return "Customer{" +
-                "user=" + user +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 ", orders=" + orders +

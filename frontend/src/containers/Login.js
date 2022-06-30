@@ -107,7 +107,7 @@ const Login = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
                 <button onClick={handleLogin} className='sign-up-btn'>Log In</button>
                 </div>
                 <p className="go-to-signup">Don't have an Account?&nbsp;
-                    <a href="/account" className="link-a-tag">Create account</a></p>
+                    <a href="/signup" className="link-a-tag">Create account</a></p>
 
             </form>
 

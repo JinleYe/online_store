@@ -17,6 +17,8 @@ function App() {
   
   const [currUser, setCurrUser] = usePersistedState('currUser', {});
 
+  const [newCurrUser, setNewCurrUser] = usePersistedState('newCurrUser', {});
+
 
   return (
     <Router>
@@ -39,7 +41,12 @@ function App() {
                                                          setCurrUser={setCurrUser} />}>
 
           </Route>
-          <Route path='/signup' element={isLogin ? <MyDetails /> : <SignUp />}></Route>
+          <Route path='/signup' element={isLogin ? <MyDetails /> : 
+                                                   <SignUp isLogin={isLogin}
+                                                         setIsLogin={setIsLogin}
+                                                         currUser={currUser}
+                                                         setCurrUser={setCurrUser}
+                                                         newCurrUser={newCurrUser} setNewCurrUser={setNewCurrUser} />}></Route>
 
         </Routes>
         {/* <Home /> */}

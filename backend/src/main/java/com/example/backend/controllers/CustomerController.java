@@ -58,7 +58,9 @@ public class CustomerController {
             updateCustomer.setAddress(customer.getAddress());
             updateCustomer.setOrders(customer.getOrders());
             updateCustomer.setReviews(customer.getReviews());
-            updateCustomer.setUser(customer.getUser());
+            updateCustomer.setEmail(customer.getEmail());
+            updateCustomer.setPassword(customer.getPassword());
+            updateCustomer.setUsername(customer.getUsername());
             customerRepository.save(updateCustomer);
             return new ResponseEntity<>(result, HttpStatus.OK);
         }
