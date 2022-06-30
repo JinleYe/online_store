@@ -9,6 +9,7 @@ import Login from './containers/Login';
 import SignUp from './containers/SignUp';
 import MyOrders from './containers/MyOrders';
 import MyDetails from './containers/MyDetails';
+import Cart from './containers/Cart';
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
                                                          currUser={currUser}
                                                          setCurrUser={setCurrUser}
                                                           />}></Route>
+          <Route path='/cart' element={<Cart />}></Route>
 
         </Routes>
         {/* <Home /> */}
