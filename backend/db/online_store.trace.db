@@ -6482,3 +6482,48 @@ Caused by: org.h2.mvstore.MVStoreException: The file is locked: /Users/sabina/bn
 	at org.h2.mvstore.FileStore.open(FileStore.java:128)
 	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
 	... 58 more
+2022-06-30 21:17:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "IMAGE CHARACTER VARYING(255)": "'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-cli... (277)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
+2022-06-30 21:18:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "IMAGE CHARACTER VARYING(255)": "'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-cli... (277)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
+2022-06-30 21:30:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "U&'The HP OMEN 17-ck0501na 17"" Gaming Laptop has serious gaming power packed int... (271)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
+2022-06-30 21:30:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "U&'The HP OMEN 17-ck0501na 17 Gaming Laptop has serious gaming power packed into... (270)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
+2022-06-30 21:30:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "U&'The HP OMEN 17-ck0501na 17 Gaming Laptop has serious gaming power packed into... (270)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
+2022-06-30 21:33:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "U&'The HP OMEN 17-ck0501na 17 Gaming Laptop has serious gaming power packed into... (270)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
+2022-06-30 21:37:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "U&'- Ultra-light at just 74 g combined with PTFE skates, this gaming mouse glide... (304)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
+2022-06-30 21:45:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "'Featuring Cherry MX Red switches, the Corsair K70 RGB MK.2 Gaming Keyboard keep... (364)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
+2022-06-30 21:45:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "'The G213 Prodigy Gaming Keyboard features Mech-Dome keys which deliver an impre... (271)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
+2022-06-30 21:46:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "'The G213 Prodigy Gaming Keyboard features Mech-Dome keys which deliver an impre... (271)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
+2022-06-30 21:46:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "'The G213 Prodigy Gaming Keyboard features Mech-Dome keys which deliver an impre... (271)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
+2022-07-01 00:04:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "'The Nintendo Switch Pro Controller gives you a more comfortable gaming experien... (368)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
+2022-07-01 00:04:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "'The Nintendo Switch Pro Controller gives you a more comfortable gaming experien... (296)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
+2022-07-01 00:12:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "U&'The Tarok PRO Gaming Chair features adjustable back, head and armrests meanin... (266)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
+2022-07-01 00:12:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "U&'The Tarok PRO Gaming Chair features adjustable back, head and armrests meanin... (266)"; SQL statement:
+insert into products (id, category, description, image, price, stock_quantity, title) values (default, ?, ?, ?, ?, ?, ?) [22001-214]
