@@ -31,9 +31,7 @@ function App() {
           <Route path='/contact' element={<Contact />}></Route>
           <Route path='/login' element={isLogin ? <MyOrders /> : <Login />}></Route>
           <Route path='/signup' element={isLogin ? <MyDetails /> : <SignUp />}></Route>
-
         </Routes>
-        {/* <Home /> */}
       </div>
     </ Router>
   );
