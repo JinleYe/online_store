@@ -16,7 +16,7 @@ const SearchBar = ({getQuery}) => {
     <section className='search'>
         <form>
           <div className='search-box'>
-            <AiOutlineSearch />
+            <AiOutlineSearch className='search-icon'/>
             <input 
             type="text" 
             className="form-control" 
@@ -24,6 +24,8 @@ const SearchBar = ({getQuery}) => {
             value={text}
             onChange={(event) => onChange(event.target.value)}
             autoFocus/>
+                        {/* <AiOutlineSearch className='search-icon'/> */}
+
             </div>
         </form>
     </section>
