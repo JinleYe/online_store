@@ -8,7 +8,7 @@ const Products = ({product}) => {
         <ul className="p-list">
             <li><p><strong>Price: </strong>£{product.price}</p></li>
             <li><strong>Description: </strong>{product.description}</li>
-            <li>{product.image}</li>
+            <li><img src={product.image} alt="{product.title}"/></li>
             {/* <li><strong>Stock Availability: </strong>{product.stockQuantity}</li> */}
             {/* <li><strong>Category: </strong>{product.category}</li> */}
         </ul>

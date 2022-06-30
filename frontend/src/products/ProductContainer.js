@@ -19,6 +19,8 @@ const ProductContainer = () => {
           .then(data => setProducts(data))
       }, [query]);
 
+      
+
     return (
         <div>
             <h1 className="p-title">All Products</h1>
