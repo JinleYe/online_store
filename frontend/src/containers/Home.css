@@ -1,0 +1,21 @@
+.featured-products{
+    background-color: rgb(242, 199, 215);
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    padding: 1rem;
+    margin: 1rem;
+    flex: 1 0 30%;
+    /* margin: 0.3rem; Adds small margin around boxes ... can be kept or not */
+    max-width: 2000px;
+    height: 500px;
+    
+  }
+
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        align-items: center;
+        display: grid;
+        flex-direction: row;
+        justify-content: space-between;
+      } 
