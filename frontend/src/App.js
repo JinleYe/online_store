@@ -13,6 +13,7 @@ import Cart from './containers/Cart';
 import {useEffect, useState} from 'react';
 
 import ProductContainer from './products/ProductContainer';
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
           <Route path='/signup' element={isLogin ? <MyDetails /> : <SignUp />}></Route>
 
         </Routes>
+        <Footer />
       </div>
     </ Router>
   );

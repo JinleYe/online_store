@@ -11,13 +11,13 @@
   }
   
   .footer {
-    width: 80%;
-    height: 40vh;
+    /* width: 80%; */
+    /* height: 40vh; */
     background-color: #212329;
     color: #fff;
     display: flex; /* this part affects display of footer categories - double check*/
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: 0 auto;
     flex-direction: row;
   }
@@ -46,11 +46,12 @@
   .footer-email-form h2 {
     margin-bottom: 1rem;
     color: #fff;
+    padding-top: 2%;
   }
   
   #footer-email {
-    width: 250px;
-    height: 40px;
+    width: 200px;
+    height: 30px;
     border-radius: 4px;
     outline: none;
     border: none;
@@ -65,7 +66,7 @@
   
   #footer-email-btn {
     width: 100px;
-    height: 40px;
+    height: 32px;
     border-radius: 4px;
     background-color: #F9423D;
     outline: none;

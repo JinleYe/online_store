@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className="footer-container">
             <div className="footer-email-form">
-                        <h2>Join our newsletter!</h2>
+                        <h2>Sign up to our newsletter!</h2>
                         <input type="email" placeholder="Enter your email address"
                         id="footer-email">
                         </input>
@@ -38,7 +38,7 @@ const Footer = () => {
                     <a href="#">Why Buy Direct?</a>
                 </div>
                 <div className="footer-heading footer 3">
-                    <h2>Who Pixel Paradise Are</h2>
+                    <h2>Who Pixelated Paradise Are</h2>
                     <a href="#">About Us</a>
                     <a href="#">News</a>
                     <a href="#">Read Our Blog</a>
