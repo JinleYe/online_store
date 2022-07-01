@@ -3,7 +3,6 @@ import Home from './containers/Home';
 import usePersistedState from './components/usePersistedState';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navigation from './components/Navigation';
-import Products from './products/Product';
 import Contact from './containers/Contact';
 import Login from './containers/Login';
 import SignUp from './containers/SignUp';
@@ -26,9 +25,6 @@ function App() {
   const [shoppingCart, setShoppingCart] = usePersistedState('shoppingCart', {});
 
   
-
-
-
 
 
   return (

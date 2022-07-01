@@ -126,10 +126,26 @@ const ProductContainer = () => {
       }
     }
 
+    const clearProductChecks = () => {
+        const updatedProducts = [];
+        setFilteredProducts(updatedProducts);
+        setCheckedLaptop(false)
+        setCheckedGamingChair(false)
+        setCheckedGamingMouse(false)
+        setCheckedKeyboard(false)
+        setCheckedGamingConsole(false)
+        setCheckedGamingHeadset(false)
+        setCheckedGamingController(false)
+
+        console.log("test")
+    }
+
       const searchProduct = () => {
         if(filteredProducts.length > 0) {
             const updatedProducts = [];
             setFilteredProducts(updatedProducts);
+            clearProductChecks();
+            
         }
       }
 
@@ -142,7 +158,8 @@ const ProductContainer = () => {
         <SearchBar className="Search" getQuery={(q) => setQuery(q)} searchProduct={searchProduct} />
         <div className="product-page-wrap">            
         <div className="product-page-checkbox">            
-        <CheckBox className="product-checkbox" filteredByCategory={filteredByCategory}/>
+        <CheckBox className="product-checkbox" filteredByCategory={filteredByCategory} checkedLaptop={checkedLaptop} checkedGamingChair={checkedGamingChair} checkedGamingConsole={checkedGamingConsole} 
+        checkedGamingController={checkedGamingController} checkedGamingHeadset={checkedGamingHeadset} checkedKeyboard={checkedKeyboard} checkedGamingMouse={checkedGamingMouse} clearProductChecks={clearProductChecks}/>
         </div>
         <div className="products-page-list">
         <ProductList

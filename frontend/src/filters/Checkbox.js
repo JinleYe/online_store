@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/CheckBox.css";
 
-export default function CheckBox({filteredByCategory}) {
+export default function CheckBox({filteredByCategory, clearProductChecks, checkedLaptop, checkedKeyboard,checkedGamingChair, checkedGamingMouse, checkedGamingConsole, checkedGamingHeadset, checkedGamingController}) {
+   
 
     return (
       <div className="checkbox">
@@ -12,6 +13,7 @@ export default function CheckBox({filteredByCategory}) {
           id="1"
           name="category"
           value="Laptop"
+          checked={checkedLaptop}
           onChange={() => filteredByCategory("laptop")}
           /> Laptop
           <br/>
@@ -22,6 +24,7 @@ export default function CheckBox({filteredByCategory}) {
           id="2"
           name="category"
           value="Keyboard"
+          checked={checkedKeyboard}
           onChange={() => filteredByCategory("gamingkeyboard")}
           /> Keyboard
           <br/>
@@ -31,6 +34,7 @@ export default function CheckBox({filteredByCategory}) {
           id="3"
           name="category"
           value="Gaming Chair"
+          checked={checkedGamingChair}
           onChange={() => filteredByCategory("gamingchair")}
           /> Gaming Chair
           <br/>
@@ -40,6 +44,7 @@ export default function CheckBox({filteredByCategory}) {
           id="4"
           name="category"
           value="Gaming Mouse"
+          checked={checkedGamingMouse}
           onChange={() => filteredByCategory("gamingmouse")}
           /> Gaming Mouse
           <br/>
@@ -49,6 +54,7 @@ export default function CheckBox({filteredByCategory}) {
           id="5"
           name="category"
           value="Games Console"
+          checked={checkedGamingConsole}
           onChange={() => filteredByCategory("gamingconsole")}
           /> Games Console
           <br/>
@@ -58,6 +64,7 @@ export default function CheckBox({filteredByCategory}) {
           id="6"
           name="category"
           value="Gaming Headset"
+          checked={checkedGamingHeadset}
           onChange={() => filteredByCategory("gamingheadset")}
           /> Gaming Headset
            <br/>
@@ -67,10 +74,15 @@ export default function CheckBox({filteredByCategory}) {
           id="7"
           name="category"
           value="Gaming Controller"
+          checked={checkedGamingController}
           onChange={() => filteredByCategory("gamingcontroller")}
           /> Gaming Controller
+          </div>
 
-        </div>
+          <div className="btn">
+          <button className="reset-button" onClick={clearProductChecks}> Reset All Filters </button>
+          </div>
+        
       </div>
     );
 }
