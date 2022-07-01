@@ -10,7 +10,7 @@ import SignUp from './containers/SignUp';
 import MyOrders from './containers/MyOrders';
 import MyDetails from './containers/MyDetails';
 
-import Cart from './containers/Cart';
+import Cart from './cart/Cart';
 import {useEffect, useState} from 'react';
 
 import ProductContainer from './products/ProductContainer';
@@ -23,7 +23,7 @@ function App() {
   
   const [currUser, setCurrUser] = usePersistedState('currUser', {});
 
-  const [shoppingCart, setShoppingCart] = usePersistedState('shoppingCart', {});
+  const [shoppingCart, setShoppingCart] = usePersistedState('shoppingCart', []);
 
   
 

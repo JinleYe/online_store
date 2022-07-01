@@ -13,7 +13,7 @@
 .password-div > span{
     display: inline-block;
     height:4px;
-    width: 100px;
+    width: 74px;
     background:gray;
 }
 
@@ -43,10 +43,10 @@
 .sign-up-input{
     
     border-style: solid;
-    padding: 10px;
+    padding: 20px;
     margin-bottom:25px;
     height:25px;
-    width: 378px;
+    width: 297px;
     border-radius: 3px;
     border-color: #C2C5E1;
     border-width: 1px;
