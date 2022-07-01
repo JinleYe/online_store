@@ -1,7 +1,12 @@
 import './Home.css';
+import SlideShow1 from '../components/SlideShow1';
+import Offer from '../components/Offer';
 
 const Home = () => {
     return (
+        <>
+        <SlideShow1/>
+      
         <div className='featured-products'>
             <h2 className='featured-products-title'>Featured Products</h2> 
             <div className="image-grid">   
@@ -15,7 +20,10 @@ const Home = () => {
                 <img className="hoover-image"src="https://media.currys.biz/i/currysprod/wk9-block-shark-fndd?$webpLarge$" alt="hoover" />
             </div>
         </div>
-    </div>    
+    </div>  
+
+    <Offer />
+    </>  
     );
 }
 
