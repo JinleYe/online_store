@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CheckBox({products, category, filteredByLaptop, filteredByGamingMouse, test, filteredByCategory}) {
+export default function CheckBox({filteredByCategory}) {
 
     return (
         <div className="checkbox">
@@ -43,7 +43,7 @@ export default function CheckBox({products, category, filteredByLaptop, filtered
           id="5"
           name="category"
           value="Games Console"
-          onChange={() => filteredByCategory("gamesconsole")}
+          onChange={() => filteredByCategory("gamingconsole")}
           /> Games Console
           <br/>
           <input

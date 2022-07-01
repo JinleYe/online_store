@@ -14,7 +14,7 @@ const ProductContainer = () => {
     const [checkedKeyboard, setCheckedKeyboard] = useState(false);
     const [checkedGamingChair, setCheckedGamingChair] = useState(false);
     const [checkedGamingMouse, setCheckedGamingMouse] = useState(false);
-    const [checkedGamesConsole, setCheckedGamesConsole] = useState(false);
+    const [checkedGamingConsole, setCheckedGamingConsole] = useState(false);
     const [checkedGamingHeadset, setCheckedGamingHeadset] = useState(false);
     const [checkedGamingController, setCheckedGamingController] = useState(false);
 
@@ -61,8 +61,8 @@ const ProductContainer = () => {
         } else if (category === "gamingmouse") {
             check = checkedGamingMouse
             console.log("gaming mouse")
-        } else if (category === "gamesconsole") {
-            check = checkedGamesConsole
+        } else if (category === "gamingconsole") {
+            check = checkedGamingConsole
             console.log("gaming mouse")
         } else if (category === "gamingheadset") {
             check = checkedGamingHeadset
@@ -114,8 +114,8 @@ const ProductContainer = () => {
         } else if (category === "gamingmouse") {
             setCheckedGamingMouse(check)
             console.log("gaming mouse")
-      } else if (category === "gamesconsole") {
-        setCheckedGamesConsole (check)
+      } else if (category === "gamingconsole") {
+        setCheckedGamingConsole (check)
         console.log("games console")
       } else if (category === "gamingheadset") {
         setCheckedGamingHeadset(check)
