@@ -1,0 +1,12 @@
+.sub-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-title{
+    text-align: center;
+    color:  #151875;
+    font-size: 35px;
+    
+}
