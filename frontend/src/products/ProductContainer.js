@@ -138,11 +138,17 @@ const ProductContainer = () => {
 
     return (
         <div>
-            <h1 className="p-title">All Products</h1>
-           <SearchBar className="Search" getQuery={(q) => setQuery(q)} searchProduct={searchProduct} />
-        <CheckBox filteredByCategory={filteredByCategory}/>
+        <h1 className="p-title">All Products</h1>
+        <SearchBar className="Search" getQuery={(q) => setQuery(q)} searchProduct={searchProduct} />
+        <div className="product-page-wrap">            
+        <div className="product-page-checkbox">            
+        <CheckBox className="product-checkbox" filteredByCategory={filteredByCategory}/>
+        </div>
+        <div className="products-page-list">
         <ProductList
             products={productsToShow} />
+        </div>
+        </div>
         </div>
     );
     

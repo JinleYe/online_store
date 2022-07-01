@@ -10,7 +10,9 @@ const ProductsList = ({ products }) => {
                 <Products
                     key={product.id}
                     product={product} />
+                    
             ))}
+            
         </section>
     );
 }

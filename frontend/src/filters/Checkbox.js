@@ -1,10 +1,11 @@
 import React from "react";
+import "../styles/CheckBox.css";
 
 export default function CheckBox({filteredByCategory}) {
 
     return (
-        <div className="checkbox">
-        <h4>Categories</h4>
+      <div className="checkbox">
+        <h4 className="checkbox-title">Categories</h4>
         <div className="category-selection">
           <input
           type="checkbox"
@@ -14,6 +15,8 @@ export default function CheckBox({filteredByCategory}) {
           onChange={() => filteredByCategory("laptop")}
           /> Laptop
           <br/>
+          
+
           <input
           type="checkbox"
           id="2"
@@ -22,6 +25,7 @@ export default function CheckBox({filteredByCategory}) {
           onChange={() => filteredByCategory("gamingkeyboard")}
           /> Keyboard
           <br/>
+
           <input
           type="checkbox"
           id="3"
@@ -30,6 +34,7 @@ export default function CheckBox({filteredByCategory}) {
           onChange={() => filteredByCategory("gamingchair")}
           /> Gaming Chair
           <br/>
+
           <input
           type="checkbox"
           id="4"
@@ -38,6 +43,7 @@ export default function CheckBox({filteredByCategory}) {
           onChange={() => filteredByCategory("gamingmouse")}
           /> Gaming Mouse
           <br/>
+
           <input
           type="checkbox"
           id="5"
@@ -46,6 +52,7 @@ export default function CheckBox({filteredByCategory}) {
           onChange={() => filteredByCategory("gamingconsole")}
           /> Games Console
           <br/>
+
           <input
           type="checkbox"
           id="6"
@@ -54,6 +61,7 @@ export default function CheckBox({filteredByCategory}) {
           onChange={() => filteredByCategory("gamingheadset")}
           /> Gaming Headset
            <br/>
+
           <input
           type="checkbox"
           id="7"
@@ -61,6 +69,7 @@ export default function CheckBox({filteredByCategory}) {
           value="Gaming Controller"
           onChange={() => filteredByCategory("gamingcontroller")}
           /> Gaming Controller
+
         </div>
       </div>
     );
