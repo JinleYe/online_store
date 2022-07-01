@@ -1,0 +1,24 @@
+.featured-products-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-tile {
+  background-color: pink;
+  border-radius: 10px;
+  margin: 10px;
+  height: 20rem;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 9.62302px 22.7453px 64.7367px rgba(196, 196, 196, 0.34);
+  flex-direction: column;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/* .featured-product-title{
+    position: relative;
+    bottom: 1.25rem
+} */
