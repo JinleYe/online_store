@@ -48,6 +48,7 @@ function App() {
                                                          setCurrUser={setCurrUser}
                                                           />}></Route>
           <Route path='/cart' element={<Cart />}></Route>
+          {/* <Route path='/checkout' element={<CheckOut />}></Route> */}
 
         </Routes>
         {/* <Home /> */}
