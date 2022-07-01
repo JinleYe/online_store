@@ -85,14 +85,15 @@ public class DataLoader implements ApplicationRunner {
         userRepository.saveAll(Arrays.asList(SarahJane, Bailey, Craig, Mark, Ashley));
 
         // ADD CUSTOMERS
-        Customer customer1 = new Customer(SarahJane, "Sarah Jane", "123 Summer Avenue, London");
-        Customer customer2 = new Customer(Bailey, "Bailey Buntin", "88 Griffen Avenue, Birmingham");
-        Customer customer3 = new Customer(Craig, "Craig Allen", "9 Green Lane, Glasgow");
+        Customer customer1 = new Customer("Sarah123", "Cakebakefake!340", "SarahJane123@gmail.com", "Sarah Jane", "123 Summer Avenue, London");
+        Customer customer2 = new Customer("Bailey_B", "ajdogenwof.34/", "Bailey.Buntin@gmail.com", "Bailey Buntin", "88 Griffen Avenue, Birmingham");
+        Customer customer3 = new Customer("CAllen2", "hghghghj786@@0", "Craig_Allen@yahoo.com", "Craig Allen", "9 Green Lane, Glasgow");
+
         customerRepository.saveAll(Arrays.asList(customer1, customer2, customer3));
 
         // ADD ADMINS
-        Admin admin1 = new Admin(Mark, 1);
-        Admin admin2 = new Admin(Ashley, 2);
+        Admin admin1 = new Admin("Mark_Dupree", "MD@66.54321", "Mark_Dupree@icloud.com", 1);
+        Admin admin2 = new Admin("Ashley_A", "Admin_123_jv", "Ashley_A@hotmail.co.uk", 2);
         adminRepository.saveAll(Arrays.asList(admin1, admin2));
 
         // ADD REVIEWS

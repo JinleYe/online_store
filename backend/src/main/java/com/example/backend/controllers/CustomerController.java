@@ -1,8 +1,10 @@
 package com.example.backend.controllers;
 
+import com.example.backend.models.Cart;
 import com.example.backend.models.Customer;
 import com.example.backend.repositories.CustomerRepository;
 import com.example.backend.repositories.OrderRepository;
+import com.example.backend.repositories.ProductRepository;
 import com.example.backend.repositories.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,6 +26,9 @@ public class CustomerController {
 
     @Autowired
     ReviewRepository reviewRepository;
+
+    @Autowired
+    ProductRepository productRepository;
 
     // INDEX
     @GetMapping // localhost:8080/customers
@@ -58,7 +63,9 @@ public class CustomerController {
             updateCustomer.setAddress(customer.getAddress());
             updateCustomer.setOrders(customer.getOrders());
             updateCustomer.setReviews(customer.getReviews());
-            updateCustomer.setUser(customer.getUser());
+            updateCustomer.setEmail(customer.getEmail());
+            updateCustomer.setPassword(customer.getPassword());
+            updateCustomer.setUsername(customer.getUsername());
             customerRepository.save(updateCustomer);
             return new ResponseEntity<>(result, HttpStatus.OK);
         }
@@ -75,4 +82,42 @@ public class CustomerController {
         customerRepository.deleteById(id);
         return new ResponseEntity<>(id, HttpStatus.OK);
     }
+
+
+
+    // add product to the cart
+    @PostMapping("/{customerId}/{productId}/{num}")// http://localhost:8080/customers/{customerId}/{productId}/{num}
+    public void addProductToCart (@PathVariable Long customerId, @PathVariable Long productId, @PathVariable int num){
+        var result =  customerRepository.findById(customerId);
+        if(result.isPresent()) {
+            Customer customer = result.get();
+            customer.addProduct(productRepository.findById(productId).get(), num);
+            customerRepository.save(customer);
+        }
+    }
+
+    // remove product from the cart
+    @PostMapping("/remove/{customerId}/{productId}")
+    public void removeProductFromCart (@PathVariable Long customerId, @PathVariable Long productId){
+        var result = customerRepository.findById(customerId);
+        if(result.isPresent()){
+            Customer customer = result.get();
+            customer.removeProduct(productRepository.findById(productId).get());
+            customerRepository.save(customer);
+        }
+    }
+
+    @PostMapping("/clearcart/{customerId}")
+    public void clearCart(@PathVariable Long customerId) {
+        var result = customerRepository.findById(customerId);
+        if(result.isPresent()){
+            Customer customer = result.get();
+            customer.clearCart();
+            customerRepository.save(customer);
+        }
+    }
+
+
+
+
 }

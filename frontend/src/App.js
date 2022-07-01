@@ -9,29 +9,68 @@ import Login from './containers/Login';
 import SignUp from './containers/SignUp';
 import MyOrders from './containers/MyOrders';
 import MyDetails from './containers/MyDetails';
+
+import Cart from './containers/Cart';
+import {useEffect, useState} from 'react';
+
 import ProductContainer from './products/ProductContainer';
+
 
 function App() {
 
   // set is Login condition
   const [isLogin, setIsLogin] = usePersistedState('isLogin',false);
   
-  const [currCustomerUser, setCurrCustomerUser] = usePersistedState('currCustomerUser', {});
+  const [currUser, setCurrUser] = usePersistedState('currUser', {});
+
+  const [shoppingCart, setShoppingCart] = usePersistedState('shoppingCart', {});
+
+  
+
+
+
 
 
   return (
     <Router>
       <div className="App">
 
-        <Navigation isLogin={isLogin} />
+        <Navigation isLogin={isLogin}
+                    setIsLogin={setIsLogin}
+                    currUser={currUser}
+                    setCurrUser={setCurrUser} />
 
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/home' element={<Home />}></Route>
           <Route path='/products' element={<ProductContainer />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
+
+          <Route path='/login' element={isLogin ? <MyOrders /> : 
+                                                  <Login isLogin={isLogin}
+                                                         setIsLogin={setIsLogin}
+                                                         currUser={currUser}
+                                                         setCurrUser={setCurrUser} />}>
+
+          </Route>
+          <Route path='/signup' element={isLogin ? <MyDetails /> : 
+                                                   <SignUp isLogin={isLogin}
+                                                         setIsLogin={setIsLogin}
+                                                         currUser={currUser}
+                                                         setCurrUser={setCurrUser}
+                                                          />}></Route>
+          <Route path='/cart' element={<Cart isLogin={isLogin}
+                                             setIsLogin={setIsLogin}
+                                             currUser={currUser}
+                                             setCurrUser={setCurrUser}
+                                             shoppingCart={shoppingCart}
+                                             setShoppingCart={setShoppingCart}/>}></Route>
+          {/* <Route path='/checkout' element={<CheckOut />}></Route> */}
+
+
           <Route path='/login' element={isLogin ? <MyOrders /> : <Login />}></Route>
           <Route path='/signup' element={isLogin ? <MyDetails /> : <SignUp />}></Route>
+
         </Routes>
       </div>
     </ Router>
