@@ -46,11 +46,6 @@ function Offer(){
     <br/>
     <p  className='columnfont'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.  </p> </div>
   
-  
-{/*   
-   <div class="footer">
-    Footer
-  </div> */}
 </container>
     </>
 
