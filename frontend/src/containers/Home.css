@@ -6,14 +6,25 @@
   margin: 0.5rem;
   flex: 1 0 30%;
   /* margin: 0.3rem; Adds small margin around boxes ... can be kept or not */
-  max-width: 1000px;
+  max-width: 1500px;
   height: 400px;
   align-items: center;
 }
 
 .featured-product-title {
   text-align: center;
-  color: blue
+  color: #000000;
+  font-size: 20px;
+  font-family: 'Josefin Sans';font-size: 22px;
+  font-weight: bold;
+}
+.featured-product-title1 {
+  text-align: center;
+  color: #000000;
+  font-size: 50px;
+  padding-bottom: 20px;
+  font-family: 'Josefin Sans';font-size: 22px;
+  font-weight: bold;
 }
 
 
@@ -23,6 +34,7 @@
   align-items: center;
   /* flex-wrap: wrap; */
   grid-template-columns: 33% 33% 33%;
+
 
   /* flex-direction: column; */
 }

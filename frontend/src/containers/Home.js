@@ -22,17 +22,19 @@ const Home = () => {
   // setImage1(headset)
   return (
     <div className="outer-featured-container">
-      <h1 className="featured-product-title"> featured products!!!</h1>
+      <h1 className="featured-product-title1"> Featured Products</h1>
       <div className="tile-container">
         {/* {setImageURL(headset)} */}
-        <Tile imageURL={headset} title="headset" />
-        <Tile imageURL={desktop} title="desktop" />
-        <Tile imageURL={laptop} title="laptop" />
+        <Tile imageURL={headset} title="Headsets" />
+        <Tile imageURL={desktop} title="Desktops" />
+        <Tile imageURL={laptop} title="Laptops" />
       </div>
       <br />
       <br />
       <br />
-      <SubTitle subTitle="latest products" />
+      <SubTitle subTitle="Latest Products" />
+      <br />
+      <br />
       <div className="tile-container">
         <Tile imageURL={mouse} title="G205 Gaming Mouse " />
         <Tile imageURL={legionlaptop} title="Lenovo Legion 5 Pro" />
@@ -44,7 +46,9 @@ const Home = () => {
       <br />
       <br />
       <br />
-      <SubTitle subTitle="trending products" />
+      <SubTitle subTitle="Trending Products" />
+      <br />
+      <br />
       <div className="tile-container">
         <Tile imageURL={vrheadset} title="VR Headset" />
         <Tile imageURL={joystick} title="Atari 2600 Joystick" />
