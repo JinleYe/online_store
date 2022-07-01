@@ -11,7 +11,7 @@ function Desktop9top() {
     <div>
         <div class="contact-grid">
 
-        <div class="contact-column2">
+        <div class="contact-column1">
             <h1 className='contactcolumnheaderfont1'>Information About us</h1>
             <p className='contactcolumnfont1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.
             </p>
@@ -44,7 +44,6 @@ function Desktop9top() {
                     </ul>
                 </div>
                 
-                
                 <div class="column">
                     {/* <h2>Column 2</h2> */}  
                     <ul id="list2">
@@ -59,7 +58,7 @@ function Desktop9top() {
                 </div>
                 <br/>
                 <br/>
-                
+
                 <div class="row">
                 <div class="column">
                     {/* <h2>Column 3</h2> */}
