@@ -1,0 +1,68 @@
+
+  
+  /* WHATS ON OFFER */
+
+  body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    
+   
+  }
+  @supports (display: grid)
+   {
+     .contact-grid {
+       /* background: #ffffff; */
+       color: white;
+       display: grid;
+       grid-template-columns:50% 50%;
+       margin: 1em;
+
+
+      }
+    .contactleft-column, contactright-column {
+       margin: 5px;
+       padding: 30px;
+       text-align: center;
+       border-radius: 0.2em;
+     }
+ 
+     .contactleft-column {
+       background: white;
+       box-shadow: 0 0 5px #e9e9e9;
+       
+     }
+
+ 
+     .contactright-column {
+       background: white;
+       box-shadow: 0 0 5px #e9e9e9;
+     }
+     
+     .contactcolumnfont{
+      color: black;
+      font-size: small;
+      position: relative;
+      top:1em;
+      
+     }
+
+     .contactcolumnheaderfont1{
+      color:darkblue;
+      font-size: medium;
+      position: relative;
+      top:0.5em;
+      
+     }
+     .contactcolumnheaderfont2{
+        color:darkblue;
+        font-size: medium;
+        position: relative;
+        top:0.5em;
+        
+       }
+
+
+  }
+  
+
+  
+  

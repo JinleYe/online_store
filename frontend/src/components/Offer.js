@@ -1,6 +1,4 @@
 import React from 'react'
-// import { Icon } from '@iconify/react';
-// import  starRange from '../images/starRange.png';
 import '../containers/Home.css';
 import delivery from './offerImages/delivery.png'
 import cashback from './offerImages/cashback.png'
@@ -15,7 +13,7 @@ import support from './offerImages/support.png'
 function Offer(){
   return (
     <>
-<container class="l-grid">
+<div class="l-grid">
   <div class="header">
    <h2 id= "offertext"> What's on Offer!</h2>
   </div>
@@ -46,7 +44,7 @@ function Offer(){
     <br/>
     <p  className='columnfont'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.  </p> </div>
   
-</container>
+</div>
     </>
 
 
