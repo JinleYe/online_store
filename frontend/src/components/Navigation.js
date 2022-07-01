@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 import { useState } from "react";
 import './Navigation.css';
 import {FaUserAlt, FaShoppingCart} from 'react-icons/fa';
-
+import logo from './logo_images/logo_only.gif';
 
 const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
 
@@ -21,7 +21,7 @@ const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
             <ul className="nav-ul">
                 <li>
                 <div className="logo-div">
-                    <Link to='/'>Logo</Link>
+                    <Link to='/'><img src={logo} height="70px" className="logo-gif"/></Link>
                 </div>
                 </li>
                 
@@ -47,7 +47,7 @@ const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
                         {isLogin && <a href="#" onClick={handleLogOut}><Link to='/login'>Log Out</Link></a>}
                     </div>
                 </div>
-                <button className="drop-btn"><Link to='/contact'><FaShoppingCart/></Link></button>
+                <button className="drop-btn"><Link to='/cart'><FaShoppingCart/></Link></button>
                 </li>
                 
             </ul>

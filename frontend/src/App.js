@@ -10,6 +10,7 @@ import SignUp from './containers/SignUp';
 import MyOrders from './containers/MyOrders';
 import MyDetails from './containers/MyDetails';
 import Cart from './containers/Cart';
+import {useEffect, useState} from 'react';
 
 function App() {
 
@@ -17,6 +18,12 @@ function App() {
   const [isLogin, setIsLogin] = usePersistedState('isLogin',false);
   
   const [currUser, setCurrUser] = usePersistedState('currUser', {});
+
+  const [shoppingCart, setShoppingCart] = usePersistedState('shoppingCart', {});
+
+  
+
+
 
 
 
@@ -47,7 +54,12 @@ function App() {
                                                          currUser={currUser}
                                                          setCurrUser={setCurrUser}
                                                           />}></Route>
-          <Route path='/cart' element={<Cart />}></Route>
+          <Route path='/cart' element={<Cart isLogin={isLogin}
+                                             setIsLogin={setIsLogin}
+                                             currUser={currUser}
+                                             setCurrUser={setCurrUser}
+                                             shoppingCart={shoppingCart}
+                                             setShoppingCart={setShoppingCart}/>}></Route>
           {/* <Route path='/checkout' element={<CheckOut />}></Route> */}
 
         </Routes>
