@@ -1,0 +1,167 @@
+
+/* SLIDESHOW */
+.slideshow-header {
+    padding-right: 80em;
+  }
+  
+  .slideshow {
+    position: relative;
+    margin: 4rem auto;
+    overflow: hidden;
+    width: 100%;
+    /* height: 350px; */
+    height: 600px;
+    z-index: 1;
+  }
+  
+  .slideshowSlider {
+    transition: ease 1000ms;
+    height: 100%;
+    display: flex;
+    width: 300vw;
+    /* transition-duration: 2s;  */
+    z-index: 1;
+  }
+  
+.slide {
+    z-index: 1;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 40px;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.controller-img{
+  background:transparent;
+  position: relative;
+  height: 0;
+  width: 0;
+
+  margin:0;
+  padding:0;
+  
+  left:50%;
+  z-index: 3;
+}
+
+.words-img{
+  height:20px;
+  width:200px;
+}
+
+  /* Buttons */
+  
+  .slideshowDots {
+    text-align: center;
+    position: relative;
+    bottom: 2.4em;
+  }
+  
+  .slideshowDot {
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    cursor: pointer;
+    margin: 10px 6px 0px;
+    background-color: #fb2e86;
+    position: relative;
+    overflow: visible;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  }
+  
+  .slideShow_img {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  #slideButton1 {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: small;
+    padding: 2px 20px;
+    border-radius: 8px;
+    max-height: 2em;
+    border: #98104b;
+    font-size: 25px;
+    color: white;
+    background: #fb2e86;
+    box-shadow: 0px 3px #e02677;
+    transition: all 0.25s ease;
+    box-shadow: 0 0 0 1px 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+      0 4px 0 0 rgba(0, 0, 0, 0.4), 0 4px 4px 1px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 6.2em;
+    bottom: 1.8em;
+    align-self: flex-end;
+    margin-top: -7px;
+    margin-right: -7px;
+    transition: all 0.25s ease;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    text-decoration: none !important;
+    transition: all 0.25s ease;
+  }
+  
+  #slideButton1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -10px #cf1263;
+  }
+  
+  #buyNow {
+    font-size: medium;
+    /* position: relative;
+        bottom: 0.3em; */
+    position: relative;
+    bottom: 0.15em;
+    right: 0.65em;
+    font-weight: 700;
+  }
+  
+  #arrow {
+    position: relative;
+    top: 0.25em;
+    font-size: x-large;
+  }
+  
+  .posterText {
+    position: fixed;
+    left: 10em;
+    top: 1.5em;
+  }
+  
+  #headerPS4 {
+    position: relative;
+    top: 0.5em;
+  }
+  
+  #subheaderPS4 {
+    color: rgba(82, 80, 80, 0.38);
+  }
+  
+  #header2PS4 {
+    position: relative;
+    top: 0.5em;
+  }
+  
+  #subheaderTexts {
+    position: relative;
+    top: 2em;
+  }
+  
+  #paragraphPS4 {
+    font-weight: 300;
+    color: rgb(123, 123, 123);
+    font-size: small;
+    position: relative;
+    top: 0.6em;
+  }
+  
+  #price {
+    font-weight: 470;
+    position: relative;
+    top: 3em;
+  }

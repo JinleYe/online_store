@@ -1,8 +1,10 @@
 import React from 'react'
+import './Desktop9bottom.css';
+
 
 function Desktop9bottom() {
   return (
-    <div>
+    <div className="desktop9-bot">
         <div class="l-grid">
         <div class="header">
         <h2 id= "offertext"> Get In touch!</h2>

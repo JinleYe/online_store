@@ -8,7 +8,7 @@ import { Icon } from '@iconify/react';
 function Desktop9top() {
   return (
 
-    <div>
+    <div className="desktop9top">
         <div class="contact-grid">
 
         <div class="contact-column1">

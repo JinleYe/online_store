@@ -3,7 +3,7 @@ import Desktop9top from './Desktop9top'
 import Desktop9bottom from './Desktop9bottom'
 function Desktop9() {
   return (
-    <div>
+    <div className='desktop9-container'>
 
         <Desktop9top />
         <Desktop9bottom />

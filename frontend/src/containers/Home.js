@@ -18,6 +18,7 @@ import rightArrow from "../images/right-arrow.png";
 import Tile from "../components/Tile";
 import { useState } from "react";
 import SubTitle from "../components/SubTitle";
+import HomeProduct from "../components/HomeProduct";
 
 const Home = () => {
   const [imageURL, setImageURL] = useState(headset);
@@ -42,84 +43,14 @@ const Home = () => {
   const featuredProducts = [headset, desktop, laptop];
 
   return (
-    <>
+    <div className="home-container">
       <SlideShow1 />
-      <div className="featured-products">
-        <h2 className="featured-products-title">Featured Products</h2>
-        <div className="image-grid">
-          <div className="featured-image">
-            <img
-              className="tv-image"
-              src="https://media.currys.biz/i/currysprod/wk9-block-sony-television?$webpLarge"
-              alt="tv"
-            />
-          </div>
-          <div className="featured-image">
-            <img
-              className="laptop-image"
-              src="https://media.currys.biz/i/currysprod/wk9-block-hp-laptop?$webpLarge$"
-              alt="laptop"
-            />
-          </div>
-          <div className="featured-image">
-            <img
-              className="hoover-image"
-              src="https://media.currys.biz/i/currysprod/wk9-block-shark-fndd?$webpLarge$"
-              alt="hoover"
-            />
-          </div>
-        </div>
-      </div>
-      <Offer />
-      // setImage1(headset)
-      <div className="outer-featured-container">
-        <h1 className="featured-product-title1"> Featured Products</h1>
-        <div className="tile-container">
-          <img
-            src={leftArrow}
-            alt="left arrow"
-            onClick={handleDecrement}
-            className="carousel__arrow carousel__arrow--left"
-          />
 
-          {/* {setImageURL(headset)} */}
-          <Tile imageURL={featuredProducts[counter]} title="Headsets" />
-          <Tile imageURL={featuredProducts[counter + 1]} title="Desktops" />
-          <Tile imageURL={featuredProducts[counter + 2]} title="Laptops" />
-          <img
-            src={rightArrow}
-            alt="right arrow"
-            onClick={handleIncrement}
-            className="carousel__arrow carousel__arrow--right"
-          />
-        </div>
-        <br />
-        <br />
-        <br />
-        <SubTitle subTitle="Latest Products" />
-        <br />
-        <br />
-        <div className="tile-container">
-          <Tile imageURL={mouse} title="G205 Gaming Mouse " />
-          <Tile imageURL={legionlaptop} title="Lenovo Legion 5 Pro" />
-          <Tile imageURL={ps5} title="Playstation 5" />
-          <Tile imageURL={ps5headset} title="Wireless Headphones" />
-          <Tile imageURL={oculus} title="Oculus Quest 2" />
-          <Tile imageURL={xboxcontroller} title="Xbox Series X Controller" />
-        </div>
-        <br />
-        <br />
-        <br />
-        <SubTitle subTitle="Trending Products" />
-        <br />
-        <br />
-        <div className="tile-container">
-          <Tile imageURL={vrheadset} title="VR Headset" />
-          <Tile imageURL={joystick} title="Atari 2600 Joystick" />
-          <Tile imageURL={ps5controller} title="PS5 Dualshock Controller" />
-        </div>
-      </div>
-    </>
+      <HomeProduct/>
+        
+      <Offer />
+      
+    </div>
   );
 };
 export default Home;
