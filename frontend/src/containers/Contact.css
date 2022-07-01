@@ -1,6 +1,4 @@
-
-  
-  /* WHATS ON OFFER */
+/* WHATS ON OFFER */
 
   body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -18,26 +16,26 @@
 
 
       }
-    .contactleft-column, contactright-column {
+    .contactleft-column2, contactright-column2 {
        margin: 5px;
        padding: 30px;
-       text-align: center;
+       text-align: start;
        border-radius: 0.2em;
      }
  
-     .contactleft-column {
+     .contactleft-column2 {
        background: white;
        box-shadow: 0 0 5px #e9e9e9;
        
      }
 
  
-     .contactright-column {
+     .contactright-column2 {
        background: white;
        box-shadow: 0 0 5px #e9e9e9;
      }
      
-     .contactcolumnfont{
+     .contactcolumnfont2{
       color: black;
       font-size: small;
       position: relative;
@@ -50,6 +48,8 @@
       font-size: medium;
       position: relative;
       top:0.5em;
+      font-weight: 900;
+      font-size:x-large;
       
      }
      .contactcolumnheaderfont2{
@@ -60,9 +60,40 @@
         
        }
 
+       #list1{
+        list-style: none;
+        align-self: start;
+        
+       }
 
+       #list2{
+        list-style: none;
+        align-self: start;
+        
+       }
+
+       /* INNER GRID */
+       * {
+        box-sizing: border-box;
+      }
+
+      /* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    /* padding: 10px; */
+    /* height: 300px; Should be removed. Only for demonstration */
   }
   
 
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
   
-  
+}
