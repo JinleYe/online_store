@@ -1,14 +1,14 @@
 import { useState, useEffect, useRef } from "react";
-import slide1 from './slideImages/slide1.png'
-import slide2 from './slideImages/mario.png'
-import slide3 from './slideImages/gaming2.png'
+import slide1 from './slideImages/remote2.png'
+import slide2 from './slideImages/Lenovo.webp'
+import slide3 from './slideImages/gaming1.png'
 import { Icon } from '@iconify/react';
 
 
 const colors = ["#0088FE", "#00C49F", "#FFBB28"];
 
 const images = [slide1, slide2, slide3];
-const delay = 2500;
+const delay = 4500;
 
   
   function SlideShow1() {
@@ -35,9 +35,12 @@ const delay = 2500;
         resetTimeout();
       };
     }, [index]);
-  
+
+    
     return (
-      <div className="slideshow">
+      <div className="slideshow" >
+        
+
          <div
          
         className="slideshowSlider"
@@ -47,27 +50,25 @@ const delay = 2500;
           <div className="slide" key={index}>
               <img className ="slideShow_img" src = {image}/>
 
-        <div className = "posterText">
+        {/* <div className = "posterText">
            <h1 id="headerPS4"> PS4 V2 </h1>
            <h1 id="header2PS4"> DualShock 4 </h1>
            <div id="subheaderTexts">
-           <h4 id= "subheaderPS4"> Wireless Controller For PlayStation 4</h4>
-           <p id="paragraphPS4"> (CompatibilityCentric)</p>
-
-           </div>
+              <h4 id= "subheaderPS4"> Wireless Controller For PlayStation 4</h4>
+              <p id="paragraphPS4"> (CompatibilityCentric)</p>
+            </div>
            <h2 id="price"> £2999 </h2>
-        </div>
-        
+        </div> */}
 
-        <button id="slideButton" >
-        <p id= "buyNow">BUY NOW <Icon id="arrow" icon="bi:arrow-right" /></p>
+        <button id="slideButton1" >
+        <p id= "buyNow">SHOP GAMING ACCESSORIES <Icon id="arrow" icon="bi:arrow-right" /></p>
        </button>
+       
 
-       <button id="slideButton3" >
-        <p id= "buyNow">BROWSE LATEST LAPTOPS!  </p>
-       </button>
           </div> 
         ))}
+
+
           </div>
   
         <div className="slideshowDots">
@@ -75,16 +76,15 @@ const delay = 2500;
             <div
               key={idx}
               className={`slideshowDot${index === idx ? " active" : ""}`}
-              onClick={() => {
-                setIndex(idx);
+              onClick={() => {setIndex(idx);
               }}
             ></div>
           ))}
-
-          
         </div>
+
       </div>
     );
   }
 
-  export default SlideShow1
+  export default SlideShow1;
+  
