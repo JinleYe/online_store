@@ -5,7 +5,7 @@
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-/*
+
   @supports (display: grid) {
     .l-grid {
 
@@ -15,14 +15,14 @@
       margin: 3.5em;
     }
   
+
     .header {
-      color: darkblue;
+      color: #151875;
+      position: relative;
+      left: 0em;
+
     }
-    .header,
-    .left-column,
-    .center-column,
-    .penultimate-column,
-    .right-column {
+    .header, .left-column, .center-column, .penultimate-column, .right-column {
       margin: 5px;
       padding: 30px;
       text-align: center;
@@ -81,5 +81,11 @@
     #column4img {
       max-height: 2.5em;
     }
+    #offertext {
+      
+      color: #151875;
+      font-size: 35px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   }
-  */
+  }
+ 

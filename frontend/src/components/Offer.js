@@ -5,6 +5,8 @@ import cashback from './offerImages/cashback.png'
 import premium from './offerImages/premium.png'
 import support from './offerImages/support.png'
 import './Offer.css';
+import SubTitle from "./SubTitle";
+
 
 
 
