@@ -58,22 +58,8 @@ const delay = 4500;
                 
               }
               </span>
-
-
-              
+ 
               <img className ="slideShow_img" src = {image}/>
-
-          
-
-        {/* <div className = "posterText">
-           <h1 id="headerPS4"> PS4 V2 </h1>
-           <h1 id="header2PS4"> DualShock 4 </h1>
-           <div id="subheaderTexts">
-              <h4 id= "subheaderPS4"> Wireless Controller For PlayStation 4</h4>
-              <p id="paragraphPS4"> (CompatibilityCentric)</p>
-            </div>
-           <h2 id="price"> £2999 </h2>
-        </div> */}
 
         <button id="slideButton1" >
         <p id= "buyNow">SHOP GAMING ACCESSORIES <Icon id="arrow" icon="bi:arrow-right" /></p>
