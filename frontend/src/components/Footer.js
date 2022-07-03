@@ -62,20 +62,21 @@ const Footer = () => {
                     <a href="#">Privacy Policy</a>
                     <a href="#">Partner Offers</a>
                 </div>
+                
 
             </div>
 
             <div className="footer-payment">
                 <h2>We accept..</h2>
                 <img className="payment_methods"
-                    src="images/payment_methods.png"
+                    src="../images/apple_store_logo.png"
                     alt="payment methods"/>
             </div>
 
             <div className="footer-apps">
                 <h2>Get the app</h2>
                 <img className="footer-apple-store" 
-                src="images/app_store_logo.png" 
+                src="images/apple_store_logo.png" 
                 alt="apple app store"/>
                 <img className="footer-google-store"
                 src="images/google_play_logo.png"

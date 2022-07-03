@@ -108,6 +108,14 @@ padding-left: 1.5rem;
     margin-bottom: 1.5rem;
     /* background-color: saddlebrown; */
   }
+
+  .footer-payment {
+background-color: chartreuse;
+  }
+
+  .footer-apps {
+    background-color: aqua;
+  }
   
   .footer-apps h2 {
     color: #fff;

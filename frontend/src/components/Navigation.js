@@ -42,8 +42,8 @@ const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
                 <div className='dropdown'>
                     <button className="drop-btn"><FaUserAlt/></button>
                     <div className='dropdown-content'  styleleft="left:0">
-                        <a><Link to='/login'>{isLogin ? "My Orders" : "Log In"}</Link></a>
-                        <a><Link to='/signup'>{isLogin ? "My Details" : "Sign Up"}</Link></a>
+                        <Link to='/login'>{isLogin ? "My Orders" : "Log In"}</Link>
+                        <Link to='/signup'>{isLogin ? "My Details" : "Sign Up"}</Link>
                         {isLogin && <a href="#" onClick={handleLogOut}><Link to='/login'>Log Out</Link></a>}
                     </div>
                 </div>

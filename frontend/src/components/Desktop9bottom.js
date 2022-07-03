@@ -5,8 +5,8 @@ import './Desktop9bottom.css';
 function Desktop9bottom() {
   return (
     <div className="desktop9-bot">
-        <div class="l-grid">
-        <div class="header">
+        <div className="l-grid">
+        <div className="header">
         <h2 id= "offertext"> Get In touch!</h2>
         </div>
 
