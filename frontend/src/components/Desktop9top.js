@@ -1,6 +1,7 @@
 import React from 'react'
 import '../containers/Contact';
 import { Icon } from '@iconify/react';
+import './Desktop9top.css';
 
 
 
@@ -27,7 +28,7 @@ function Desktop9top() {
 
 
         <div class="contact-column2">
-            <h1 className='contactcolumnheaderfont1'>Contact Way</h1>
+            <h1 className='contactcolumnheaderfont2'>Contact Way</h1>
 
             <p className='contactcolumnfont2'>
                 <div class="row">
@@ -38,8 +39,8 @@ function Desktop9top() {
 
                         <div id='largeball'><Icon icon="bi:circle-fill" color="#5625df" height={40} width={75}/> </div>
                         {/* <div id='largeball'>  <img id= "column2img"src={largeball}/></div> */}
-                        <li>  Tel: 020 7462 7459 </li>
-                        <li> E-Mail: Pixpara@store.com </li>
+                        <li id= "tel">  Tel: 020 7462 7459 </li>
+                        <li id="email"> E-Mail: Pixpara@store.com </li>
                         </div>
                     </ul>
                 </div>
@@ -49,8 +50,8 @@ function Desktop9top() {
                     <ul id="list2">
                     <div id='largeball'><Icon icon="bi:circle-fill" color="#FB2E86" height={40} width={75}/> </div>
                         <div id="leftbox1">
-                        <li> Support Forum </li>
-                        <li> For over 24hr </li>  
+                        <li id="support"> Support Forum </li>
+                        <li id="24hr"> For over 24hr </li>  
                         </div>
                     </ul>
                 </div>
