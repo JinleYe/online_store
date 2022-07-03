@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import slide1 from './slideImages/slideimage1.png';
+import slide1 from './slideImages/slideback1.png';
 import slide2 from './slideImages/Lenovo.webp';
 import slide3 from './slideImages/gaming1.png';
 import remote from './slideImages/Group_40.png';
