@@ -47,6 +47,8 @@
       top:1.5em;
       font-weight: 900;
       font-size:x-large;
+      margin-top:-0.5em;
+      
       
      }
      .contactcolumnheaderfont2{
@@ -57,6 +59,8 @@
         top:1.5em;
         font-weight: 900;
         font-size:x-large;
+        margin-top:-0.5em;
+
    
         
        }
@@ -103,7 +107,7 @@
 
 #tripledot{
 position: relative;
-top: 12.5em;
+top: 13em;
 left:6em;
 
 }
@@ -157,10 +161,10 @@ color: #8A8FB9;
   line-height: 26px;
   color: #8A8FB9;
   position: absolute;
-width: 550px;
-height: 49px;
-right: 85px;
-top: 220px;
+  width: 550px;
+  height: 49px;
+  right: 85px;
+  top: 220px;
   
  }
 

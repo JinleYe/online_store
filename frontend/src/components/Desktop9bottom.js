@@ -29,43 +29,50 @@ function Desktop9bottom() {
     {/* FORM */}
 
     <div className="parent">
-    <div className="signup">
+    <div className="getintouchform">
       <form>
  
         <TextField
           label="Your Name"
           required
           style={{
-            minWidth: "200px",
+            minWidth: "260px",
             minHeight: "30px",
+            left:"3.6em"
           }}/>
           
           
-        <TextField type="email" 
+        <TextField  type="email" 
           label="Your E-mail"
           required
           style={{
-            minWidth: "200px",
+            minWidth: "260px",
             minHeight: "30px",
+            left:"5em"
+          
+        
           }}
         />
         <br /> <br /><br />
-        <TextField
+        <TextField id="subjectbox"
           label="Subject"
           required
           style={{
-            minWidth: "400px",
+            minWidth: "544px",
             minHeight: "30px",
+            left:"4.4em"
           }}
         />{" "}
         <br /> <br /><br />
-        <TextField
+        <TextField id="yourmessage"
           label="Type Your Message"
           required
           type=""
           style={{
-            minWidth: "400px",
+            minWidth: "550px",
             minHeight: "30px",
+            left:"4.4em"
+
           }}
         />{" "}
         <br />
@@ -85,10 +92,8 @@ function Desktop9bottom() {
 
         
 
-        <Link to='/homepage' style={{ textDecoration: 'none' }}>
-      <Button id="sendmail">
-      {/* //  onClick={handleCreateAccountClick} */}
-        Send Mail
+      <Link to='/homepage' style={{ textDecoration: 'none' }}>
+      <Button id="sendmail">Send Mail
       </Button>
       </Link>
       </form>

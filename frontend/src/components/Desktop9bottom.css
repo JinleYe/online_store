@@ -74,6 +74,7 @@
       position: relative;
       top:0.5em;
       
+      
      }
 
      #getintouchsubheader{
@@ -92,13 +93,18 @@
 
       /* FORM */
 
-      .signup {
+      .getintouchform {
         height: 650px;
         width: 650px;
         text-align: center;
         padding-top: 30px;
         margin-bottom: 30px;
         
+    }
+
+    #getintouch{
+
+     font-weight:bold;
     }
     
     
@@ -116,6 +122,9 @@
         justify-content: space-around;
         padding: initial;
         margin-right: 150px;
+        position: relative;
+        right:2.5em;
+        top:1em;
      
     }
     
@@ -124,12 +133,29 @@
       background-color: #fb2e86;
       font-size: 20px;
       color:white;
-      min-Width: 250px;
-      min-Height: 30px,
+      min-Width: 200px;
+      min-Height: 30px;
+      position: relative;
+      right:5em;
+      bottom:1.5em;
       
-     
     }
 
+    #contactimage{
+      position: relative;
+      right:5em;
+      bottom:13em;
+    }
+
+    #subjectbox{
+      min-width: 410px;
+    }
+  
+    #yourmessage{
+      min-height: 8em;
+    }
+  
+ 
   }
 
 
