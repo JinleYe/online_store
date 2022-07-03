@@ -35,20 +35,22 @@
     }
     .left-column {
       background: white;
-      box-shadow:  rgb(0 0 0 / 24%) 0px 3px 8px;
+      box-shadow:  rgba(0, 0, 0, 0.115) 0px 3px 8px;
     }
     .center-column {
       background: white;
-      box-shadow:  rgb(0 0 0 / 24%) 0px 3px 8px;
+      box-shadow:  rgba(0, 0, 0, 0.164) 0px 3px 8px;
     }
   
     .penultimate-column {
       background: white;
-      box-shadow:  rgb(0 0 0 / 24%) 0px 3px 8px;    }
+      box-shadow:  rgba(0, 0, 0, 0.164) 0px 3px 8px;
+      }
   
     .right-column {
       background: white;
-      box-shadow:  rgb(0 0 0 / 24%) 0px 3px 8px;    }
+      box-shadow:  rgba(0, 0, 0, 0.164) 0px 3px 8px; 
+     }
   
 
     .columnfont{
