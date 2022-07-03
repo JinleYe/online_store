@@ -9,13 +9,12 @@
     margin: 4rem auto;
     overflow: hidden;
     width: 100%;
-    /* height: 350px; */
-    height: 600px;
+    height: 290px;
     z-index: 1;
   }
   
   .slideshowSlider {
-    transition: ease 1000ms;
+    transition: ease 9000s;
     height: 100%;
     display: flex;
     width: 300vw;
@@ -165,3 +164,26 @@
     position: relative;
     top: 3em;
   }
+
+  .controller-img{
+    position: absolute;
+    width: 650.75px;
+    left: 860.46px;
+    top: -28px;
+    filter: drop-shadow(0px 13.6037px 13.6037px rgba(0, 0, 0, 0.25)) drop-shadow(0px 13.6037px 13.6037px rgba(0, 0, 0, 0.25));
+    transform: rotate(-11deg)
+ 
+  }
+
+  
+
+  #slidewords-img{
+    position: relative;
+    right:24em;
+    bottom:15.2em;
+    transform:rotate(11deg);
+    filter: none;
+
+  }
+
+ 

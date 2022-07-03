@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import slide1 from './slideImages/remote2.png';
+import slide1 from './slideImages/slide1back.png';
 import slide2 from './slideImages/Lenovo.webp';
 import slide3 from './slideImages/gaming1.png';
 import remote from './slideImages/Group_40.png';
@@ -49,8 +49,8 @@ const delay = 4500;
         {images.map((image, index) => (
           <div className="slide" key={index}>
               <span className="controller-img">
-              {image == slide1 && <><img  src={remote} height="300px" width="300px"/> 
-                <h3 className="words-img">Hello from kim</h3></>
+              {image == slide1 && <><img  src={remote} height="390px" width="490px"/> 
+                <h1 id="slidewords-img">Hello from kim</h1></>
               }
               
               </span>
