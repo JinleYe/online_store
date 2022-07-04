@@ -9,8 +9,8 @@ const Footer = () => {
             
             <div className="footer"> 
 
-                <div className="footer-email-form">
-                    <h2>Sign up to our newsletter!</h2>
+                {/* <div className="footer-email-form">
+                     <h2>Sign up to our newsletter!</h2>
                     
                     <div className="footer-input-btn">
                         <input
@@ -24,7 +24,7 @@ const Footer = () => {
                             id="footer-email-btn"/></div>
                     </div>
 
-                </div>      
+                </div>       */}
              
 
                 <div className="footer-heading footer 1">
@@ -61,39 +61,67 @@ const Footer = () => {
                     <a href="#">Terms of Service</a>
                     <a href="#">Privacy Policy</a>
                     <a href="#">Partner Offers</a>
+
+                    <div className="footer-email-form">
+                        <h2>Sign up to our newsletter!</h2>
+                        
+                        <div className="footer-input-btn">
+                            <input
+                                type="email"
+                                placeholder="Enter your email address"
+                                id="footer-email"/>
+
+                                <div className="btn">
+                                    <input
+                                        type="submit"
+                                        value="Sign Up"
+                                        id="footer-email-btn"/>
+                                </div>
+                        </div>
+
+                    </div>   
+                    
+                </div>     
+            </div>
+            
+
+                <div className="footer-icons">
+
+                    <div className="footer-payment">
+                        <h2>We accept..</h2>
+                        <img className="payment-methods"
+                            src="images/payment-methods2.png"
+                            alt="Payment Icons"/>
+                    </div>
+
+                    <div className="footer-apps">
+                        <h2>Get the app</h2>
+                        
+                        <div className="footer-store-logo">
+
+                            <img className="footer-apple-store" 
+                            src="images/apple_store_logo.png"
+                            alt="apple app store"/>
+
+                            <img className="footer-google-store"
+                            src="images/google_play_store_logo.png"
+                            alt="google play store"/>
+                        </div>
+
+                    </div>
+
+                <div className="footer-socials">
+                    <h2>Follow Us!</h2>
+                    <ul>
+                    <a href="https://www.currys.co.uk/"> 
+                        <li>    
+                            <FaFacebook className="social-icon" size="3em" color="white" />
+                            <FaInstagram className="social-icon" size="3em" color="white"/>
+                            <FaTwitter className="social-icon" size="3em" color="white"/>
+                        </li>
+                    </a>
+                    </ul>
                 </div>
-                
-
-            </div>
-
-            <div className="footer-payment">
-                <h2>We accept..</h2>
-                <img className="payment_methods"
-                    src="../images/apple_store_logo.png"
-                    alt="payment methods"/>
-            </div>
-
-            <div className="footer-apps">
-                <h2>Get the app</h2>
-                <img className="footer-apple-store" 
-                src="images/apple_store_logo.png" 
-                alt="apple app store"/>
-                <img className="footer-google-store"
-                src="images/google_play_logo.png"
-                alt="google play store"/>
-            </div>
-
-            <div className="footer-socials">
-                <h2>Follow Us!</h2>
-                <ul>
-                <a href="https://www.currys.co.uk/"> 
-                    <li>    
-                        <FaFacebook size="3em" color="white" />
-                        <FaInstagram size="3em" color="white"/>
-                        <FaTwitter size="3em" color="white"/>
-                    </li>
-                </a>
-                </ul>
             </div>
 
             <div className="footer-bottom">
