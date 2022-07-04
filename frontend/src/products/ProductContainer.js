@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ProductList from "./ProductList";
 import SearchBar from "../components/SearchBar";
 import CheckBox from "../filters/Checkbox";
+import PageCount from "../filters/PageResults";
 
 
 const ProductContainer = () => {
@@ -155,11 +156,29 @@ const ProductContainer = () => {
     return (
         <div>
         <h1 className="p-title">All Products</h1>
+       
+         <div className="search-element"> 
         <SearchBar className="Search" getQuery={(q) => setQuery(q)} searchProduct={searchProduct} />
+        </div>  
+
+        <PageCount count={filteredProducts.length > 0 
+            ? filteredProducts.length  + " results"
+            : products.length + " results"}/>
+
         <div className="product-page-wrap">            
         <div className="product-page-checkbox">            
-        <CheckBox className="product-checkbox" filteredByCategory={filteredByCategory} checkedLaptop={checkedLaptop} checkedGamingChair={checkedGamingChair} checkedGamingConsole={checkedGamingConsole} 
-        checkedGamingController={checkedGamingController} checkedGamingHeadset={checkedGamingHeadset} checkedKeyboard={checkedKeyboard} checkedGamingMouse={checkedGamingMouse} clearProductChecks={clearProductChecks}/>
+        <CheckBox 
+        className="product-checkbox" 
+        filteredByCategory={filteredByCategory} 
+        checkedLaptop={checkedLaptop} 
+        checkedGamingChair={checkedGamingChair} 
+        checkedGamingConsole={checkedGamingConsole} 
+        checkedGamingController={checkedGamingController} 
+        checkedGamingHeadset={checkedGamingHeadset} 
+        checkedKeyboard={checkedKeyboard} 
+        checkedGamingMouse={checkedGamingMouse} 
+        clearProductChecks={clearProductChecks}
+        />
         </div>
         <div className="products-page-list">
         <ProductList

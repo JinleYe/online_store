@@ -126,7 +126,7 @@ const Footer = () => {
 
             <div className="footer-bottom">
                 <p className="text-xs-center">
-                &copy;{new Date().getFullYear()} All Rights Reserved
+                &copy;{new Date().getFullYear()} Pixelated Paradise Limited. All Rights Reserved
                 </p>
             </div> 
 

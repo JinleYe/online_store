@@ -11,7 +11,7 @@
     flex-direction: column;
     margin-right: 6rem;
     margin-left: 5.5rem;
-    padding-top: 2.5rem;
+    padding-top: 4rem;
   }
   
   .footer-heading h2 {
@@ -91,8 +91,7 @@
     justify-content: space-between;
     padding-top: 3rem;
     margin-left: 6%;
-    /* margin-right: 6%; */
-    margin-right: 8rem;
+    margin-right: 9%;
   }
 
   .footer-payment {

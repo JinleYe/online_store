@@ -1,6 +1,9 @@
 .p-title {
     /* padding: 20px 10px 0px; */
     padding-top: 90px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .p-item {
