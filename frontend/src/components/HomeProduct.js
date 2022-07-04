@@ -39,6 +39,10 @@ const HomeProduct = () => {
 
   const featuredProducts = [headset, desktop, laptop];
 
+  const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+
+
+
   return (
 
       <div className="outer-featured-container">
@@ -87,6 +91,7 @@ const HomeProduct = () => {
           <Tile imageURL={joystick} title="Atari 2600 Joystick" />
           <Tile imageURL={ps5controller} title="PS5 Dualshock Controller" />
         </div>
+
       </div>
 
      
