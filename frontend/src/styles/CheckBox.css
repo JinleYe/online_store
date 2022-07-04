@@ -6,14 +6,13 @@
    background-color: #FB2E86;
    /* background-color: #FECEDE; */
    color: white;
-   padding: 0.2rem;
    border-radius: 3px;
    /* border-color: #FB2E86; */
    border: none;
-   padding: 0.3rem;
+   padding: 6.5px;
 }
 
 .btn {
-    padding: 0.5rem;
+    padding: 1.5rem;
     margin-left: 1rem;
 }

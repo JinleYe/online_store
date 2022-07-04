@@ -71,7 +71,7 @@ const Footer = () => {
                                 placeholder="Email address"
                                 id="footer-email"/>
 
-                                <div className="btn">
+                                <div className="signup-btn">
                                     <input
                                         type="submit"
                                         value="Sign Up"

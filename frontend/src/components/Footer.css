@@ -81,8 +81,8 @@
     transition: all 0.4s ease-out ;
   }
   
-  .btn {
-  margin: -0.5rem;
+  .signup-btn {
+  /* margin: -0.5rem; */
   padding-left: 1.5rem;  
   }
   
