@@ -10,9 +10,9 @@ function Desktop9top() {
   return (
 
     <div className="desktop9top">
-        <div class="contact-grid">
+        <div className="contact-grid">
 
-        <div class="contact-column1">
+        <div className="contact-column1">
             <h1 className='contactcolumnheaderfont1'>Information About us</h1>
             <p className='contactcolumnfont1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.
             </p>
@@ -27,12 +27,12 @@ function Desktop9top() {
         </div>
 
 
-        <div class="contact-column2">
+        <div className="contact-column2">
             <h1 className='contactcolumnheaderfont1'>Contact Way</h1>
 
             <div className='contactcolumnfont2'>
-                <div class="row">
-                <div class="column">
+                <div className="row">
+                <div className="column">
                     {/* <h2>Column 1</h2> */}
                     <ul id="list1">
                         <div id="leftbox1">
@@ -45,7 +45,7 @@ function Desktop9top() {
                     </ul>
                 </div>
                 
-                <div class="column">
+                <div className="column">
                     {/* <h2>Column 2</h2> */}  
                     <ul id="list2">
                     <div id='largeball'><Icon icon="bi:circle-fill" color="#FB2E86" height={40} width={75}/> </div>
@@ -60,8 +60,8 @@ function Desktop9top() {
                 <br/>
                 <br/>
 
-                <div class="row">
-                <div class="column">
+                <div className="row">
+                <div className="column">
                     {/* <h2>Column 3</h2> */}
                     <ul id="list3">
                         <div id="leftbox1">
@@ -72,7 +72,7 @@ function Desktop9top() {
                     </ul>
                 </div>
 
-                <div class="column">
+                <div className="column">
                     {/* <h2>Column 4</h2> */}
                      <ul id="list4">
                      <div id='largeball'><Icon icon="bi:circle-fill" color="#1BE982" height={40} width={75}/> </div>
