@@ -16,6 +16,17 @@ const CartContent = ({shoppingCart, setShoppingCart, isLogin, setIsLogin, currUs
         )
     })
 
+    const handleClearCart = (event) => {
+        event.preventDefault();
+        fetch(`http://localhost:8080/customers/clearcart/${currUser.id}`,
+            {
+                
+            }
+        )
+
+        // setShoppingCart({})
+    }
+
 
     return (
         
@@ -25,12 +36,13 @@ const CartContent = ({shoppingCart, setShoppingCart, isLogin, setIsLogin, currUs
             <span className="line-here"></span>
             <div className="cart-body">
                 <div className="cart-left">
-                <table>
-                    <thead>
-                        <tr><th>Product</th><th>Price</th><th>Quantity</th><th>Total</th></tr>
-                    </thead>
-                    <tbody>{cartList}</tbody>
-                </table>
+                    <table>
+                        <thead>
+                            <tr><th>Product</th><th>Price</th><th>Quantity</th><th>Total</th></tr>
+                        </thead>
+                        <tbody>{cartList}</tbody>
+                    </table>
+                    <button onClick={handleClearCart}>Clear Cart</button>
                 </div>
 
                 <div className="cart-right">
