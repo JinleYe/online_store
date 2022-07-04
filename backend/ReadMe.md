@@ -135,7 +135,7 @@ The following table shows a list of possible commands used alongside: localhost:
 
 #ADD TABLE OF ENDPOINTS!!
 
-##Admin endpoints: 
+## Admin endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../admins`  | `GET` | Get All Admin Entries |
@@ -143,6 +143,17 @@ The following table shows a list of possible commands used alongside: localhost:
 | `.../admins` | `POST` | Post/Create Admin |
 | `.../admins{id}` | `PUT` | Update Admin by id |
 | `.../admins{id}` | `DELETE` | Delete Admin by id |
+
+
+## Customer endpoints: 
+| HTTP Request Path                                                        | Request Type | Description                                      |
+|:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
+| `.../customers`  | `GET` | Get All Customer Entries |
+| `.../customers/{id} ` | `GET` | Get Customer by Id |
+| `.../customers` | `POST` | Post/Create Customer |
+| `.../customers{id}` | `PUT` | Update Customer by id |
+| `.../customers{id}` | `DELETE` | Delete Customer by id |
+
 
 
 <br>
