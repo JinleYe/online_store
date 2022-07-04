@@ -1,17 +1,44 @@
 import SingleCart from "./SingleCart";
 import './CartContent.css';
 import {Link} from 'react-router-dom';
+import {useEffect, useState} from 'react';
 
-const CartContent = ({shoppingCart, setShoppingCart, isLogin, setIsLogin, currUser, setCurrUser,}) =>{
+const CartContent = ({shoppingCart, setShoppingCart, isLogin, setIsLogin, currUser, setCurrUser}) =>{
 
     const orderValue = shoppingCart.products.map(product => product.price).reduce((a, b) => a+b, 0);
+    const [clickTime, setClickTime] = useState(0);
+
+    useEffect(() => {
+        fetch(`http://localhost:8080/customers/${currUser.id}`)
+        .then((res) => res.json())
+        .then(data => setShoppingCart(data.cart))
+        console.log("from cart content")
+    }, [clickTime])
+
+    const handleDeleteProduct = (product) => {
+        
+
+        fetch(`http://localhost:8080/customers/remove/${currUser.id}/${product.id}`,
+            {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'}
+            }
+        )
+        
+        setClickTime(clickTime+1);
+
+    }
+
+
 
     const cartList = shoppingCart.products.map((product, index) => {
         return(
             <tr>
                 <SingleCart product={product} quantity={shoppingCart.quantity[index]}
                             isLogin={isLogin} setIsLogin={setIsLogin}
-                            currUser={currUser} setCurrUser={setCurrUser}/>
+                            currUser={currUser} setCurrUser={setCurrUser}
+                            shoppingCart={shoppingCart} setShoppingCart={setShoppingCart}/>
+                <span onClick={() => handleDeleteProduct(product)}>x</span>
             </tr>
         )
     })
@@ -20,11 +47,12 @@ const CartContent = ({shoppingCart, setShoppingCart, isLogin, setIsLogin, currUs
         event.preventDefault();
         fetch(`http://localhost:8080/customers/clearcart/${currUser.id}`,
             {
-                
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
             }
         )
 
-        // setShoppingCart({})
+        setShoppingCart({});
     }
 
 

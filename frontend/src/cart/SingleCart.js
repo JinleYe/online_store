@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import QtyBox from "./QtyBox";
 
-const SingleCart = ({product, quantity, isLogin, setIsLogin, currUser, setCurrUser}) =>{
+const SingleCart = ({product, quantity, isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, setShoppingCart}) =>{
 
     const inputQuant = useRef(quantity);
 
@@ -9,6 +9,7 @@ const SingleCart = ({product, quantity, isLogin, setIsLogin, currUser, setCurrUs
         isLogin && fetch(`http://localhost:8080/customers/${currUser.id}`)
                    .then(response => response.json())
                    .then(data => setCurrUser(data))
+        setShoppingCart(currUser.cart)
         console.log("fetch single cart");
       },[inputQuant.current.value])
 
@@ -26,16 +27,15 @@ const SingleCart = ({product, quantity, isLogin, setIsLogin, currUser, setCurrUs
         }
     }
 
+   
+
     return (
         <>
             <td><div><img src={product.image} height="100px"/><span>{product.title}</span></div></td>
             <td>￡{product.price}</td>
             <td>
                 <div>
-                    {/* <input type="button" value="-" className="minus"/>
-                    <input type="number"  defaultValue={quantity} step="1" min="1" className="input-quant" size="4" onClick={handleChange} ref={inputQuant}/>
-                    <input type="button" value="+" className="plus"/> */}
-                    {/* <QtyBox /> */}
+                    
                     <select name="qty" onChange={handleChangeSelect} ref={inputQuant}>
                         
                         <option value="1">1</option>

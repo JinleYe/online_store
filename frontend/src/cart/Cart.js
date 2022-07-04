@@ -11,10 +11,19 @@ const Cart = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, setShop
 
     const navigate = useNavigate();
 
+    useEffect(() => {
+        isLogin && fetch(`http://localhost:8080/customers/${currUser.id}`)
+                   .then(response => response.json())
+                   .then(data => setCurrUser(data))
+        console.log("useEffect from cart");
+    },[setShoppingCart]) 
+
     useEffect(() =>{
         setShoppingCart(pre => isLogin ? pre = currUser.cart : shoppingCart);
         console.log("fetch cart")
-    },[currUser])
+    },[setShoppingCart])
+
+    
 
 
     
