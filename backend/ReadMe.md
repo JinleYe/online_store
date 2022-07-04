@@ -38,7 +38,6 @@ We are the team behind Pixelated Paradise - 5 members of Cohort 5 from the Brigh
 ## Project Overview:
 As part of the Bright Network Technology Academy, we were assigned a group project where the team had completely free reign– The aim was  to design and build a full-stack application to provide a service or solve a problem within a two week period. As a group we decided to create an application to provide a service.
 
-
 <br>
 
 Pixelated Paradise is a form of electronic commerce which allows consumers to directly buy gaming goods over the Internet using a web browser or a mobile app. The application allows shoppers to use "search" and "filter" features to find specific models, brands or items. Once a particular product has been found, the shopping cart software allows consumers to accumulate multiple items and adjust quantities, just like filling a physical shopping cart or basket in a conventional store... Not keen on checking out? At Pixelated Paradise you can even sign up and sign in to save items for later!
