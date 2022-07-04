@@ -103,19 +103,22 @@ Extension:
 
 
 ## Minimum Viable Product (MVP):
-For our MVP,v we wanted to create an API with full crud functionality with......classes:
+For our MVP, we wanted to create an API with full CRUD functionality with 7x classes:
 - 
 - 
 - 
+-
+-
+-
+-
 
 ## Extensions:
-For our extension, we wanted to........
+For our extension, we wanted to expand on the MVP and challenge ourselves with the following extensions:
+- 
+- 
+- 
+- 
 
-We also wanted to expand on this further and challenge ourselves with the following extensions:
-- 
-- 
-- 
-- 
 
 ## Plain Old Java Objects (POJOs):
 
