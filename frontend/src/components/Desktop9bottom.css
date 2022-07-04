@@ -4,6 +4,10 @@
 
 .desktop9-bot {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-image: url(./contactimages/contactimage.png);
+    background-repeat: no-repeat;
+    background-position-x:right;
+    background-position-y: 50%;
     
    
   }
@@ -158,6 +162,11 @@
   
  
   }
+
+.contact-input{
+  background-color:white;
+  opacity:90%;
+}
 
 
 
