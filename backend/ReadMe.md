@@ -3,7 +3,6 @@
 
 1. logo Image 
 
-
 As a gaming accessory specialist, we want to make your search easy... Here you can browse our collection and find all sorts of gaming accessories, from controllers to gaming headsets to gaming chairs! Fancy a new display to break the gaming experience? Wait no longer-  find your perfect match today with our various filters! Whether you’re a beginner or a pro gamer, there is something for everyone!
 
 Take your gaming experience to the next level... choose Pixelated Paradise...
@@ -101,3 +100,32 @@ MVP:
 Extension:
 
 ![Extension ERD]( )
+
+
+## Minimum Viable Product (MVP):
+For our MVP, we wanted to create an API with full CRUD functionality with.... classes:
+- 
+- 
+- 
+
+## Extensions:
+For our extension, we wanted to........
+
+We also wanted to expand on this further and challenge ourselves with the following extensions:
+- 
+- 
+- 
+- 
+
+## Plain Old Java Objects (POJOs):
+
+This section highlights the POJOS used within the project:
+
+<br>
+POJO TABLE:
+
+![POJO Table]( )
+
+<br>
+
+
