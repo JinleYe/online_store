@@ -105,20 +105,17 @@ Extension:
 
 ## Minimum Viable Product (MVP):
 For our MVP, we wanted to create an API with full CRUD functionality with 7x classes:
-- 
-- 
-- 
--
--
--
--
+- X
+- Y
+- Z
+
 
 ## Extensions:
 For our extension, we wanted to expand on the MVP and challenge ourselves with the following extensions:
-- 
-- 
-- 
-- 
+- X
+- Y 
+- Z
+
 
 <br>
 ## Plain Old Java Objects (POJOs):
@@ -171,9 +168,9 @@ This process allowed us to evaluate and verify that our Pixelated Paradise API d
 
 ## Further Implementations:
 Here are a few ideas on how we would like to expand on this API:
-- 
-- 
-- 
+- X
+- Y
+- Z
 Thank you for reading this guide!
 
 ## Acknowledgments:
