@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import slide1 from './slideImages/remote2.png';
+import slide1 from './slideImages/slideback1.png';
 import slide2 from './slideImages/Lenovo.webp';
 import slide3 from './slideImages/gaming1.png';
 import remote from './slideImages/Group_40.png';
@@ -38,6 +38,7 @@ const delay = 4500;
       };
     }, [index]);
 
+
     
     return (
       <div className="slideshow" >
@@ -49,24 +50,16 @@ const delay = 4500;
         {images.map((image, index) => (
           <div className="slide" key={index}>
               <span className="controller-img">
-              {image == slide1 && <><img  src={remote} height="300px" width="300px"/> 
-                <h3 className="words-img">Hello from kim</h3></>
+              {image == slide1 && <><img  src={remote} height="390px" width="490px"/> 
+                {/* <h1 className="slidewords-img">PS4 V2 </h1>
+                <h1 className="slidewords-img">DualShock 4</h1>
+                <h3 className="slidewords2-img">Wireless controller for PlayStation 4</h3> */}
+                </>
+                
               }
-              
               </span>
+ 
               <img className ="slideShow_img" src = {image}/>
-
-          
-
-        {/* <div className = "posterText">
-           <h1 id="headerPS4"> PS4 V2 </h1>
-           <h1 id="header2PS4"> DualShock 4 </h1>
-           <div id="subheaderTexts">
-              <h4 id= "subheaderPS4"> Wireless Controller For PlayStation 4</h4>
-              <p id="paragraphPS4"> (CompatibilityCentric)</p>
-            </div>
-           <h2 id="price"> £2999 </h2>
-        </div> */}
 
         <button id="slideButton1" >
         <p id= "buyNow">SHOP GAMING ACCESSORIES <Icon id="arrow" icon="bi:arrow-right" /></p>
