@@ -26,14 +26,13 @@ We are the team behind Pixelated Paradise - 5 members of Cohort 5 from the Brigh
     - Github: [https://github.com/JinleYe],
     - LinkedIn: 
     
-- Adan    
+- Adan Abdillahi 
     - Github: [https://github.com/AdanAbdillahi],
     - LinkedIn: 
 
-
-- Iman
-Github: [https://github.com/ImanChaudhry]
-LinkedIn: [https://www.linkedin.com/in/imanchaudhry/]     
+- Iman Chaudhry
+    - Github: [https://github.com/ImanChaudhry],
+    - LinkedIn: [https://www.linkedin.com/in/imanchaudhry/]      
 
 <br>
 
