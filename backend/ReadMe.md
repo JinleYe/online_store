@@ -168,6 +168,10 @@ Product endpoints:
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../products`  | `GET` | Get All Product Entries |
 | `.../products/{id} ` | `GET` | Get Product by Id |
+| `.../products?title={title} ` | `GET` | Get Product by title containing certain words|
+| `.../products?description={description} ` | `GET` | Get Product by description containing certain words|
+| `.../products?price={price}` | `GET` | Get Product with a price less than |
+| `.../products?category={category}` | `GET` | Get Product from a certain category |
 | `.../products` | `POST` | Post/Create Product |
 | `.../products{id}` | `PUT` | Update Product by id |
 | `.../products{id}` | `DELETE` | Delete Product by id |
@@ -192,7 +196,7 @@ User endpoints:
 | `.../users{id}` | `DELETE` | Delete User by id |
 
 
-ADD THE DERIVED QUERIES ALSO!!!!
+ADD THE DERIVED QUERIES ALSO- FOR ALL EXCEPT PRODUCT!!!!
 
 <br>
 
