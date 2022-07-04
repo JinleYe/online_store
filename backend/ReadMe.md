@@ -171,6 +171,7 @@ Here are a few ideas on how we would like to expand on this API:
 - X
 - Y
 - Z
+<br/>
 Thank you for reading this guide!
 
 ## Acknowledgments:
