@@ -67,3 +67,11 @@ Pixelated Paradise is a form of electronic commerce which allows consumers to di
 - [Acknowledgements](#acknowledgments)
 
 
+## Setup and Instructions for using the Project:
+
+1. Make sure that you have Java 17/18 installed to run Pixelated Paradise API
+2. Clone this repository by typing the following command into your terminal: <br>
+git clone git@github.com:JinleYe/online_store.git
+3. You can access the endpoints via an API platform such as Postman or through the browser at https://localhost:8080/{endpoint}
+4. You can also view the SQL tables by connecting to the h2 datatbase at https://localhost:8080/h2 and entering the following URL in the 'JDBC URL' section - jdbc:h2:file:./db/online_store
+
