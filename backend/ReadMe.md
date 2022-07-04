@@ -14,6 +14,7 @@ Take your gaming experience to the next level... choose Pixelated Paradise...
 ## Who we are:
 We are the team behind Pixelated Paradise - 5 members of Cohort 5 from the Bright Network Technology Academy!
 
+
 - Ana Paula Lima 
     - Github: [https://github.com/AnaPaulaL27], 
     - LinkedIn: [https://www.linkedin.com/in/ana-paula-l-5159a01b3/]
