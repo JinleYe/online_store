@@ -28,7 +28,7 @@ const SingleCart = ({product, quantity, isLogin, setIsLogin, currUser, setCurrUs
 
     return (
         <>
-            <td>{product.title}</td>
+            <td><div><img src={product.image} height="100px"/><span>{product.title}</span></div></td>
             <td>￡{product.price}</td>
             <td>
                 <div>

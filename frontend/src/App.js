@@ -11,7 +11,7 @@ import MyDetails from './containers/MyDetails';
 
 import Cart from './cart/Cart';
 import {useEffect, useState} from 'react';
-import CheckOut from './cart/CheckOut';
+import CheckOut from './checkout/CheckOut';
 
 import ProductContainer from './products/ProductContainer';
 import Footer from "./components/Footer";
@@ -71,7 +71,10 @@ function App() {
                                              setCurrUser={setCurrUser}
                                              shoppingCart={shoppingCart}
                                              setShoppingCart={setShoppingCart}/>}></Route>
-          <Route path='/checkout' element={<CheckOut />}></Route>
+          <Route path='/checkout' element={<CheckOut shoppingCart={shoppingCart}
+                                                     setShoppingCart={setShoppingCart}
+                                                     currUser={currUser}
+                                                     setCurrUser={setCurrUser}/>}></Route>
 
 
           <Route path='/login' element={isLogin ? <MyOrders /> : <Login />}></Route>
