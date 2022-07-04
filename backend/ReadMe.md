@@ -1,7 +1,7 @@
 
 # READ ME (Pixelated Paradise Capstone Project):
 
-1. logo Image 
+#ADD LOGO IMAGE!! 
 
 As a gaming accessory specialist, we want to make your search easy... Here you can browse our collection and find all sorts of gaming accessories, from controllers to gaming headsets to gaming chairs! Fancy a new display to break the gaming experience? Wait no longer-  find your perfect match today with our various filters! Whether you’re a beginner or a pro gamer, there is something for everyone!
 
@@ -130,5 +130,13 @@ POJO TABLE:
 ![POJO Table]( )
 
 <br>
+
+## Running the API - List of Possible Commands (CRUD Functionality):
+
+The following table shows a list of possible commands used alongside: localhost:8080/ ...
+
+#ADD TABLE OF ENDPOINTS!!
+
+
 
 
