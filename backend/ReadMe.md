@@ -54,4 +54,16 @@ Pixelated Paradise is a form of electronic commerce which allows consumers to di
     
 <br>
 
+## Table of Contents:
+- [Setup and Instructions](#setup-and-instructions-for-using-the-project)
+- [UML](#unified-modelling-language-diagrams-uml)
+- [ERD](#entity-relationship-diagrams-erd)
+- [Minimum Viable Product (MVP)](#minimum-viable-product-mvp)
+- [Extensions](#extensions)
+- [Plain Old Java Objects (POJOs)](#plain-old-java-objects-pojos)
+- [Running the API - List of Possible Commands (CRUD Functionality):](#running-the-api---list-of-possible-commands-crud-functionality)
+- [Testing:](#testing)
+- [Further Implementations & Extensions](#further-implementations--extensions)
+- [Acknowledgements](#acknowledgments)
+
 
