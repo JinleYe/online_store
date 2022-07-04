@@ -262,9 +262,9 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
 
  .sign-up-input-box{
     border-style: solid;
-    padding: 10px;
+    padding: 20px;
     height:25px;
-    width: 378px;
+    width: 297px;
     border-radius: 3px;
     border-color: #C2C5E1;
     border-width: 1px;
@@ -305,7 +305,7 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
 .sign-up-btn{
     margin-top:10px;
     height: 40px;
-    width: 400px;
+    width: 297px;
     margin-bottom: 20px;
 
     text-align: center;

@@ -10,8 +10,9 @@ import SignUp from './containers/SignUp';
 import MyOrders from './containers/MyOrders';
 import MyDetails from './containers/MyDetails';
 
-import Cart from './containers/Cart';
+import Cart from './cart/Cart';
 import {useEffect, useState} from 'react';
+import CheckOut from './cart/CheckOut';
 
 import ProductContainer from './products/ProductContainer';
 
@@ -23,11 +24,16 @@ function App() {
   
   const [currUser, setCurrUser] = usePersistedState('currUser', {});
 
-  const [shoppingCart, setShoppingCart] = usePersistedState('shoppingCart', {});
+  const [shoppingCart, setShoppingCart] = usePersistedState('shoppingCart', []);
 
   
 
-
+  useEffect(() => {
+    isLogin && fetch(`http://localhost:8080/customers/${currUser.id}`)
+               .then(response => response.json())
+               .then(data => setCurrUser(data))
+    console.log("fetch");
+  },[1])  
 
 
 
@@ -38,7 +44,9 @@ function App() {
         <Navigation isLogin={isLogin}
                     setIsLogin={setIsLogin}
                     currUser={currUser}
-                    setCurrUser={setCurrUser} />
+                    setCurrUser={setCurrUser}
+                    shoppingCart={shoppingCart} 
+                    setShoppingCart={setShoppingCart} />
 
         <Routes>
           <Route path='/' element={<Home />}></Route>
@@ -65,7 +73,7 @@ function App() {
                                              setCurrUser={setCurrUser}
                                              shoppingCart={shoppingCart}
                                              setShoppingCart={setShoppingCart}/>}></Route>
-          {/* <Route path='/checkout' element={<CheckOut />}></Route> */}
+          <Route path='/checkout' element={<CheckOut />}></Route>
 
 
           <Route path='/login' element={isLogin ? <MyOrders /> : <Login />}></Route>

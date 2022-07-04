@@ -4,6 +4,7 @@ import {BsGoogle, BsTwitter, BsGithub} from 'react-icons/bs';
 import {FaLinkedinIn} from 'react-icons/fa';
 import {AiOutlineEyeInvisible, AiOutlineEye} from 'react-icons/ai';
 import './SignUp.css';
+import './Login.css';
 import usePersistedState from '../components/usePersistedState';
 
 const SignUp = ({isLogin, setIsLogin, currUser, setCurrUser}) => {

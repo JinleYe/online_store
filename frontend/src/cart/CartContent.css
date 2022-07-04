@@ -1,0 +1,8 @@
+
+
+.cart-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: column-wrap;
+    justify-content: space-evenly;
+}
