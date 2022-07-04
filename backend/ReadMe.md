@@ -135,7 +135,7 @@ The following table shows a list of possible commands used alongside: localhost:
 
 #ADD TABLE OF ENDPOINTS!!
 
-
+##Admin endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../admins`  | `GET` | Get All Admin Entries |
