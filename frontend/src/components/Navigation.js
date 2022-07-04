@@ -5,7 +5,7 @@ import './Navigation.css';
 import {FaUserAlt, FaShoppingCart} from 'react-icons/fa';
 import logo from './logo_images/logo_only.gif';
 
-const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
+const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, setShoppingCart}) => {
 
     const [query, setQuery] = useState([]);
 
@@ -13,6 +13,8 @@ const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
     const handleLogOut = () => {
         setIsLogin(!isLogin);
         setCurrUser({});
+        setShoppingCart({});
+        
     }
 
 

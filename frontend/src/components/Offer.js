@@ -7,11 +7,6 @@ import support from './offerImages/support.png'
 import './Offer.css';
 
 
-
-
-
-
-
 function Offer(){
   return (
     <div className="offer-container">

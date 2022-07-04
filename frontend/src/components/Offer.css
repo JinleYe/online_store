@@ -5,28 +5,28 @@
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-/*
+
   @supports (display: grid) {
     .l-grid {
 
       color: white;
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
-      margin: 3.5em;
+      padding: 3em;
     }
   
+
     .header {
-      color: darkblue;
+      color: #151875;
+      position: relative;
+      left: 0em;
     }
-    .header,
-    .left-column,
-    .center-column,
-    .penultimate-column,
-    .right-column {
+    .header, .left-column, .center-column, .penultimate-column, .right-column {
       margin: 5px;
       padding: 30px;
       text-align: center;
       border-radius: 0.2em;
+      
     }
     .header {
 
@@ -35,29 +35,31 @@
     }
     .left-column {
       background: white;
-      box-shadow: 0 0 5px #e9e9e9;
+      box-shadow:  rgba(0, 0, 0, 0.115) 0px 3px 8px;
     }
     .center-column {
       background: white;
-      box-shadow: 0 0 5px #e9e9e9;
+      box-shadow:  rgba(0, 0, 0, 0.164) 0px 3px 8px;
     }
   
     .penultimate-column {
       background: white;
-      box-shadow: 0 0 5px #e9e9e9;
-    }
+      box-shadow:  rgba(0, 0, 0, 0.164) 0px 3px 8px;
+      }
   
     .right-column {
       background: white;
-      box-shadow: 0 0 5px #e9e9e9;
-    }
+      box-shadow:  rgba(0, 0, 0, 0.164) 0px 3px 8px; 
+     }
   
-    .columnfont {
+
+    .columnfont{
       color: black;
-      font-size: small;
+      font-size:medium;
       position: relative;
-      top: 1em;
-    }
+      top:1em;
+      
+     }
   
     .columnheaderfont {
       color: darkblue;
@@ -81,5 +83,11 @@
     #column4img {
       max-height: 2.5em;
     }
+    #offertext {
+      
+      color: #151875;
+      font-size: 35px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   }
-  */
+  }
+ 
