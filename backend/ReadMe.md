@@ -10,7 +10,6 @@ Take your gaming experience to the next level... choose Pixelated Paradise...
 
 <br>
 
-
 ## Who we are:
 We are the team behind Pixelated Paradise - 5 members of Cohort 5 from the Bright Network Technology Academy!
 
@@ -44,7 +43,6 @@ Pixelated Paradise is a form of electronic commerce which allows consumers to di
 
 <br>
 
-<br>
 
  ### This API features:
  
@@ -78,7 +76,6 @@ git clone git@github.com:JinleYe/online_store.git
 ## Project Structure:
 ### Unified Modelling Language Diagrams (UML):
 
-
 <br>
 MVP:
 
@@ -102,6 +99,7 @@ Extension:
 
 ![Extension ERD]( )
 
+<br>
 
 ## Minimum Viable Product (MVP):
 For our MVP, we wanted to create an API with full CRUD functionality with 7x classes:
@@ -139,6 +137,7 @@ The following table shows a list of possible commands used alongside: localhost:
 #ADD TABLE OF ENDPOINTS!!
 
 
+<br>
 
 ## Testing:
 The project involved different forms of testing including unit testing and testing via Postman. 
