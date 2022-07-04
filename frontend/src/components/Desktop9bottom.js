@@ -2,7 +2,7 @@ import TextField from "@mui/material/TextField";
 import * as React from "react";
 import "./Desktop9bottom.css";
 import { Link } from "react-router-dom";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import contactimage from './contactimages/contactimage.png'
 
 
@@ -32,13 +32,14 @@ function Desktop9bottom() {
     <div className="getintouchform">
       <form>
  
-        <TextField
+        <TextField 
           label="Your Name"
           required
           style={{
             minWidth: "260px",
             minHeight: "30px",
             left:"3.6em"
+
           }}/>
           
           
@@ -81,21 +82,12 @@ function Desktop9bottom() {
      
         {/* <a href="https://google.com" target="_blank" >Learn more.</a> */}
     
-        <br />
-        <p
-          className="paragraph"
-          style={{
-            margin: "0px 98px",
-          }} >
-   
-        </p> <br /> <br />
+        <br /><br /> <br />
 
         
 
-      <Link to='/homepage' style={{ textDecoration: 'none' }}>
-      <Button id="sendmail">Send Mail
-      </Button>
-      </Link>
+      <button id="sendmail">Send Mail
+      </button>
       </form>
     </div>
 
