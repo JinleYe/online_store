@@ -140,8 +140,9 @@ The following table shows a list of possible commands used alongside: localhost:
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../admins`  | `GET` | Get All Admin Entries |
 | `.../admins/{id} ` | `GET` | Get Admin by Id |
-| `.../admins?permissionlevel={2} `| `GET`| Get Admin by permission level |
-
+| `.../admins` | `POST` | Get Post/Create Admin |
+| `.../admins{id}` | `PUT` | Update Admin by id |
+| `.../admins{id}` | `DELETE` | Delete Admin by id |
 
 
 <br>
