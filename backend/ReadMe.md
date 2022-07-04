@@ -153,7 +153,46 @@ Customer endpoints:
 | `.../customers{id}` | `PUT` | Update Customer by id |
 | `.../customers{id}` | `DELETE` | Delete Customer by id |
 
+Order endpoints: 
+| HTTP Request Path                                                        | Request Type | Description                                      |
+|:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
+| `.../orders`  | `GET` | Get All Order Entries |
+| `.../orders/{id} ` | `GET` | Get Order by Id |
+| `.../orders` | `POST` | Post/Create Order |
+| `.../orders{id}` | `PUT` | Update Order by id |
+| `.../orders{id}` | `DELETE` | Delete Order by id |
 
+
+Product endpoints: 
+| HTTP Request Path                                                        | Request Type | Description                                      |
+|:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
+| `.../products`  | `GET` | Get All Product Entries |
+| `.../products/{id} ` | `GET` | Get Product by Id |
+| `.../products` | `POST` | Post/Create Product |
+| `.../products{id}` | `PUT` | Update Product by id |
+| `.../products{id}` | `DELETE` | Delete Product by id |
+
+
+Review endpoints: 
+| HTTP Request Path                                                        | Request Type | Description                                      |
+|:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
+| `.../reviews`  | `GET` | Get All Review Entries |
+| `.../reviews/{id} ` | `GET` | Get Review by Id |
+| `.../reviews` | `POST` | Post/Create Review |
+| `.../reviews{id}` | `PUT` | Update Review by id |
+| `.../reviews{id}` | `DELETE` | Delete Review by id |
+
+
+User endpoints: 
+| HTTP Request Path                                                        | Request Type | Description                                      |
+|:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
+| `.../users`  | `GET` | Get All User Entries |
+| `.../users` | `POST` | Post/Create User |
+| `.../users{id}` | `PUT` | Update User by id |
+| `.../users{id}` | `DELETE` | Delete User by id |
+
+
+ADD THE DERIVED QUERIES ALSO!!!!
 
 <br>
 
