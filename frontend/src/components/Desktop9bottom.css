@@ -18,6 +18,8 @@
 
       }
 
+      
+
       .bottomheader{
         color:darkblue;
         position: relative;
@@ -74,7 +76,7 @@
       position: absolute;
       width: 550px;
       height: 49px;
-      right: 135px;
+      right: 134px;
       top: 80px;
       font-style: normal;
       font-weight: 400;
@@ -124,7 +126,7 @@
       min-Width: 200px;
       min-Height: 40px;
       position: relative;
-      right:5em;
+      right:6.5em;
       bottom:1.5em;
       border:none;
       border-radius: 0.3em;
@@ -136,11 +138,11 @@
 
     #sendmail:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px -10px #cf1263;
+      box-shadow: 0 10px 20px -10px #ffc7a1;
     }
     #contactimage{
       position: relative;
-      right:5em;
+      right:4.7em;
       bottom:13em;
     }
 
@@ -153,7 +155,7 @@
       
     }
 
-
+ 
 
   
  

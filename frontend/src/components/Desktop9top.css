@@ -2,6 +2,7 @@
 .desktop9top{
   padding-top:100px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
+  
 }
   @supports (display: grid)
    {
@@ -43,7 +44,7 @@
       color:darkblue;
       font-size: medium;
       position: relative;
-      left:2em;
+      left:2.2em;
       top:1.5em;
       font-weight: 900;
       font-size:x-large;
@@ -108,7 +109,7 @@
 #tripledot{
 position: relative;
 top: 13em;
-left:6em;
+left:6.2em;
 
 }
   
@@ -166,41 +167,5 @@ color: #8A8FB9;
   right: 85px;
   top: 220px;
   
- }
-
- /* #tel{
-  position: absolute;
-width: 127px;
-height: 26px;
-left: 812px;
-top: 249px;
- }
-
-#email{
-position: absolute;
-width: 189px;
-height: 26px;
-left: 812px;
-top: 276px;
-
-}
-
-#support{
-position: absolute;
-width: 107px;
-height: 26px;
-left: 1081px;
-top: 249px;
-
-}
-
-#24hr{
- position: absolute;
-width: 96px;
-height: 26px;
-left: 1081px;
-top: 276px;
-} */
-
-
-}
+    }
+   }

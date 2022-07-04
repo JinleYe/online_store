@@ -28,7 +28,7 @@ function Desktop9top() {
 
 
         <div className="contact-column2">
-            <h1 className='contactcolumnheaderfont1'>Contact Way</h1>
+            <h1 className='contactcolumnheaderfont2'>Contact Way</h1>
 
             <div className='contactcolumnfont2'>
                 <div className="row">

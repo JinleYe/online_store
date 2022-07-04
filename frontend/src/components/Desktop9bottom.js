@@ -1,7 +1,8 @@
 import TextField from "@mui/material/TextField";
-import * as React from "react";
+// import * as React from "react";
+import React, { useState } from "react";
+
 import "./Desktop9bottom.css";
-import { Link } from "react-router-dom";
 // import Button from "@mui/material/Button";
 import contactimage from './contactimages/contactimage.png'
 
@@ -10,6 +11,22 @@ import './Desktop9bottom.css';
 
 
 function Desktop9bottom() {
+
+  // Change button color on click
+  const [isActive, setIsActive] = useState(false);
+
+  //change button text onclick
+
+ const [buttonText, setButtonText] = useState('Send Mail');
+
+  //handle function:
+  const handleSendmailClick = (event) => {
+  
+    alert("Sending...");
+    setIsActive(current => !current);
+    setButtonText('Mail sent!');
+
+  }
 
 
   return (
@@ -33,13 +50,13 @@ function Desktop9bottom() {
     <div className="getintouchform">
       <form>
  
-        <TextField 
+        <TextField id="yourname"
           label="Your Name"
           required
           style={{
             minWidth: "260px",
             minHeight: "30px",
-            left:"3.6em"
+            left:"3.7em"
 
           }}/>
           
@@ -60,35 +77,43 @@ function Desktop9bottom() {
           label="Subject"
           required
           style={{
-            minWidth: "544px",
+            minWidth: "546px",
             minHeight: "30px",
             left:"4.4em"
           }}
         />{" "}
         <br /> <br /><br />
+        <div>
         <TextField id="yourmessage"
           label="Type Your Message"
           required
-          type=""
-          style={{
-            minWidth: "550px",
-            minHeight: "30px",
-            left:"4.4em"
+          type="textarea"
+          multiline = {true}
 
+          style={{
+            minWidth: "546px",
+            minHeight: "30px",
+            left:"4.4em",
+            
           }}
+
         />{" "}
-        <br />
-        <br />
        
+       </div>
      
         {/* <a href="https://google.com" target="_blank" >Learn more.</a> */}
     
-        <br /><br /> <br />
+        <br /><br /> <br /><br/>
 
         
 
-      <button id="sendmail">Send Mail
-      </button>
+      <button id="sendmail" style={{
+                    borderRadius: 5,
+                    fontSize: "16px",
+                    backgroundColor: isActive ? 'greenyellow' : '',color: isActive ? 'blue' : '',
+          
+                    }
+                    }onClick={handleSendmailClick} >{buttonText}</button>
       </form>
     </div>
 
