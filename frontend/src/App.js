@@ -77,9 +77,6 @@ function App() {
                                                      setCurrUser={setCurrUser}/>}></Route>
 
 
-          <Route path='/login' element={isLogin ? <MyOrders /> : <Login />}></Route>
-          <Route path='/signup' element={isLogin ? <MyDetails /> : <SignUp />}></Route>
-
         </Routes>
         <Footer />
       </div>
