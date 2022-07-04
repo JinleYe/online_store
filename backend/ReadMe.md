@@ -38,7 +38,7 @@ We are the team behind Pixelated Paradise - 5 members of Cohort 5 from the Brigh
 
 
 ## Project Overview:
-As part of the Bright Network Technology Academy, we were assigned a group project with the team having completely free reign– The aim was  to design and build a full-stack application to provide a service or solve a problem within a two week period. As a group we decided to create an application to provide a service.
+As part of the Bright Network Technology Academy, we were assigned a group project where the team was completely free to reign. The aim was  to design and build a full-stack application to provide a service or solve a problem within a two week period. As a group we decided to create an application to provide a service.
 
 <br>
 
