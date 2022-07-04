@@ -1,5 +1,5 @@
 
-# READ ME (Pixelated Paradise Capstone Project):
+# READ ME (Pixelated Paradise Capstone Project- Backend part):
 
 #ADD LOGO IMAGE!! 
 
@@ -134,6 +134,14 @@ POJO TABLE:
 The following table shows a list of possible commands used alongside: localhost:8080/ ...
 
 #ADD TABLE OF ENDPOINTS!!
+
+
+| HTTP Request Path                                                        | Request Type | Description                                      |
+|:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
+| `.../admins`  | `GET` | Get All Admin Entries |
+| `.../admins/{id} ` | `GET` | Get Admin by Id |
+| `.../admins?permissionlevel={2} `| `GET`| Get Admin by permission level |
+
 
 
 <br>
