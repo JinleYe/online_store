@@ -167,5 +167,15 @@ Postman:
 This process allowed us to evaluate and verify that our Pixelated Paradise API did what it was supposed to do; it prevented bugs and improved performance.
 
 
+## Further Implementations:
+Here are a few ideas on how we would like to expand on this API:
+- 
+- 
+- 
+Thank you for reading this guide!
+
+## Acknowledgments:
+We would like to thank the Bright Network Technology Academy team and especially our trainers Anna and Richard!
+
 
 
