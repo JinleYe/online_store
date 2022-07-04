@@ -1,7 +1,10 @@
 import SingleCart from "./SingleCart";
 import './CartContent.css';
+import {Link} from 'react-router-dom';
 
 const CartContent = ({shoppingCart, setShoppingCart, isLogin, setIsLogin, currUser, setCurrUser,}) =>{
+
+    const orderValue = shoppingCart.products.map(product => product.price).reduce((a, b) => a+b, 0);
 
     const cartList = shoppingCart.products.map((product, index) => {
         return(
@@ -19,7 +22,7 @@ const CartContent = ({shoppingCart, setShoppingCart, isLogin, setIsLogin, currUs
         <div className="cart-content">
             
             <h3 className="cart-title">My Cart({shoppingCart.products.length})</h3>
-            <span>line here</span>
+            <span className="line-here"></span>
             <div className="cart-body">
                 <div className="cart-left">
                 <table>
@@ -33,7 +36,7 @@ const CartContent = ({shoppingCart, setShoppingCart, isLogin, setIsLogin, currUs
                 <div className="cart-right">
                     <ul className="cart-values">
                         <li className="value-li">Order value:</li>
-                        <li className="value-li">￡100</li>
+                        <li className="value-li">￡{orderValue}</li>
                     </ul>
 
                     <ul className="cart-values">
@@ -43,10 +46,10 @@ const CartContent = ({shoppingCart, setShoppingCart, isLogin, setIsLogin, currUs
 
                     <ul className="cart-values">
                         <li className="value-li">Total:</li>
-                        <li className="value-li">￡200</li>
+                        <li className="value-li">￡{orderValue+5}</li>
                     </ul>
 
-                    <button className="checkout-btn">Proceed To Checkout</button>
+                    <button className="checkout-btn"><Link to="/checkout">Proceed To Checkout</Link></button>
                     
 
                 </div>
