@@ -133,9 +133,8 @@ POJO TABLE:
 
 The following table shows a list of possible commands used alongside: localhost:8080/ ...
 
-#ADD TABLE OF ENDPOINTS!!
 
-## Admin endpoints: 
+Admin endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../admins`  | `GET` | Get All Admin Entries |
@@ -145,7 +144,7 @@ The following table shows a list of possible commands used alongside: localhost:
 | `.../admins{id}` | `DELETE` | Delete Admin by id |
 
 
-## Customer endpoints: 
+Customer endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../customers`  | `GET` | Get All Customer Entries |
