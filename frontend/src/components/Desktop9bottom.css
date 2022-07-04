@@ -24,7 +24,7 @@
         color:darkblue;
         position: relative;
         right: 20em;
-        top:6em;
+        top:-4em;
         right:35em;
       }
      .bottomheader, .-column, .right-column {
@@ -93,7 +93,7 @@
         width: 650px;
         text-align:center;
         padding-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
       
     }
 
@@ -114,7 +114,7 @@
         margin-right: 150px;
         position: relative;
         right:2.5em;
-        top:1em;
+        top:-12em;
      
     }
     
