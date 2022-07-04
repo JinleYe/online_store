@@ -42,7 +42,7 @@ As part of the Bright Network Technology Academy, we were assigned a group proje
 
 <br>
 
-Pixelated Paradise is a form of electronic commerce which allows consumers to directly buy gaming goods over the Internet using a web browser or a mobile app. The application allows shoppers to use "search" and "filter" features to find specific models, brands or items. Once a particular product has been found, the shopping cart software allows consumers to accumulate multiple items and adjust quantities, just like filling a physical shopping cart or basket in a conventional store... Not keen on checking out? At Pixelated Paradise you can even sign up and sign in to save items for later!
+Pixelated Paradise is a form of electronic commerce which allows consumers to directly buy gaming goods over the Internet using a web browser or a mobile app. The application allows shoppers to use "search" and "filter" features to find specific models, brands or items. Once a particular product has been found, the shopping cart feature allows consumers to accumulate multiple items and adjust quantities, just like filling a physical shopping cart or basket in a conventional store... Not keen on checking out? At Pixelated Paradise you can even sign up and sign in to save items for later purchase!
 
 <br>
 
