@@ -3,7 +3,6 @@ import Home from './containers/Home';
 import usePersistedState from './components/usePersistedState';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navigation from './components/Navigation';
-import Products from './products/Product';
 import Contact from './containers/Contact';
 import Login from './containers/Login';
 import SignUp from './containers/SignUp';
@@ -15,6 +14,7 @@ import {useEffect, useState} from 'react';
 import CheckOut from './cart/CheckOut';
 
 import ProductContainer from './products/ProductContainer';
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -26,15 +26,12 @@ function App() {
 
   const [shoppingCart, setShoppingCart] = usePersistedState('shoppingCart', []);
 
-  
-
   useEffect(() => {
     isLogin && fetch(`http://localhost:8080/customers/${currUser.id}`)
                .then(response => response.json())
                .then(data => setCurrUser(data))
     console.log("fetch");
   },[1])  
-
 
 
   return (
@@ -80,6 +77,7 @@ function App() {
           <Route path='/signup' element={isLogin ? <MyDetails /> : <SignUp />}></Route>
 
         </Routes>
+        <Footer />
       </div>
     </ Router>
   );

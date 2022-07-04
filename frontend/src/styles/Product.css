@@ -1,5 +1,6 @@
 .p-title {
-    padding: 20px 10px 0px;
+    /* padding: 20px 10px 0px; */
+    padding-top: 90px;
 }
 
 .p-item {
@@ -10,9 +11,6 @@
     /* box-shadow: 0 2px 4px rgba(0,0,0,0.15); */
     box-shadow: 0 7px 6px rgba(133, 132, 132, 0.15);
     /* background-color: blue; */
-
-    
-
 }
 
 .p-item-info {
@@ -26,14 +24,12 @@
     /* border-radius: 10px; */
     padding-top: 10px;
     flex-basis: 40%
-
 }
 
 .p-info-text {
     /* display: block; */
     /* justify-content: end; */
     padding-left: 20px;
-
 }
 
 .p-img-div {

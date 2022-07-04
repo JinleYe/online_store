@@ -15,10 +15,11 @@ function Desktop9bottom() {
   return (
     <>
     <div className="desktop9-bot">
-        <div class="l-grid">
-        <div class="bottomheader">
+
+        <div className="l-grid">
+        <div className="bottomheader">
         <h2 id= "getintouch"> Get In touch!</h2>
-        <div class="contact-column1">
+        <div className="contact-column1">
            
            <p id='getintouchsubheader'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.
            </p>  
