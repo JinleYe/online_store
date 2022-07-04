@@ -37,7 +37,7 @@ const SingleCart = ({product, quantity, isLogin, setIsLogin, currUser, setCurrUs
                     <input type="button" value="+" className="plus"/> */}
                     {/* <QtyBox /> */}
                     <select name="qty" onChange={handleChangeSelect} ref={inputQuant}>
-                        <option value="5">{quantity}</option>
+                        
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
