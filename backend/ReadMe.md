@@ -103,7 +103,7 @@ Extension:
 
 
 ## Minimum Viable Product (MVP):
-For our MVP, we wanted to create an API with full CRUD functionality with.... classes:
+For our MVP,v we wanted to create an API with full crud functionality with......classes:
 - 
 - 
 - 
