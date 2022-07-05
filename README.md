@@ -62,3 +62,52 @@ Pixelated Paradise is a form of electronic commerce which allows consumers to di
 - [Extensions](#extensions)
 - [Further Implementations & Extensions](#further-implementations--extensions)
 - [Acknowledgements](#acknowledgments)
+
+## Setup and Instructions for using the Project:
+
+1. Make sure that you have Java 17/18 installed to run Pixelated Paradise API
+2. Clone this repository by typing the following command into your terminal: <br>
+git clone git@github.com:JinleYe/online_store.git
+3. You can access the endpoints via an API platform such as Postman or through the browser at https://localhost:8080/{endpoint}
+4. You can also view the SQL tables by connecting to the h2 datatbase at localhost:8080/h2 and entering the following URL in the 'JDBC URL' section - jdbc:h2:file:./db/online_store. Note: spring.datasource.username=sa
+
+## Project Structure:
+### Unified Modelling Language Diagrams (UML):
+
+<br>
+MVP:
+
+![MVP UML]( )
+
+<br>
+
+Extension:
+
+![Extension UML]( )
+
+
+### Entity Relationship Diagrams (ERD):
+<br>
+MVP:
+
+![MVP ERD]( )
+
+<br>
+Extension:
+
+![Extension ERD]( )
+
+
+## Minimum Viable Product (MVP):
+For our MVP, we wanted to create an API with full CRUD functionality with 7x classes:
+- 
+- 
+- 
+
+
+## Extensions:
+For our extension, we wanted to expand on the MVP and challenge ourselves with the following extensions:
+- X
+- Y 
+- Z
+
