@@ -88,7 +88,7 @@ POJO TABLE:
 The following table shows a list of possible commands used alongside: localhost:8080/ ...
 
 
-User endpoints: 
+### User endpoints: 
 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
@@ -97,8 +97,9 @@ User endpoints:
 | `.../users{id}` | `PUT` | Update User by id |
 | `.../users{id}` | `DELETE` | Delete User by id |
 
+<br/>
 
-Admin endpoints: 
+### Admin endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../admins`  | `GET` | Get All Admin Entries |
@@ -107,8 +108,9 @@ Admin endpoints:
 | `.../admins{id}` | `PUT` | Update Admin by id |
 | `.../admins{id}` | `DELETE` | Delete Admin by id |
 
+<br/>
 
-Product endpoints: 
+### Product endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../products`  | `GET` | Get All Product Entries |
@@ -121,8 +123,9 @@ Product endpoints:
 | `.../products{id}` | `PUT` | Update Product by id |
 | `.../products{id}` | `DELETE` | Delete Product by id |
 
+<br/>
 
-Customer endpoints: 
+### Customer endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../customers`  | `GET` | Get All Customer Entries |
@@ -133,7 +136,9 @@ Customer endpoints:
 | `.../customers{id}` | `PUT` | Update Customer by id |
 | `.../customers{id}` | `DELETE` | Delete Customer by id |
 
-Order endpoints: 
+<br/>
+
+### Order endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../orders`  | `GET` | Get All Order Entries |
@@ -144,8 +149,9 @@ Order endpoints:
 | `.../orders{id}` | `PUT` | Update Order by id |
 | `.../orders{id}` | `DELETE` | Delete Order by id |
 
+<br/>
 
-Review endpoints: 
+### Review endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../reviews`  | `GET` | Get All Review Entries |
