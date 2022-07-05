@@ -22,7 +22,7 @@ const HomeProduct = () => {
   const [counter, setCounter] = useState(0);
 
   const handleIncrement = () => {
-    if (counter === featuredProducts.length - 1) {
+    if (counter === featuredProducts.length - 1 ) {
       setCounter(0);
     } else {
       setCounter(counter + 1);
@@ -37,7 +37,7 @@ const HomeProduct = () => {
     }
   };
 
-  const featuredProducts = [headset, desktop, laptop];
+  const featuredProducts = [headset, desktop, laptop,headset, desktop ];
 
   const colors = ["#0088FE", "#00C49F", "#FFBB28"];
 
@@ -52,18 +52,18 @@ const HomeProduct = () => {
             src={leftArrow}
             alt="left arrow"
             onClick={handleDecrement}
-            className="carousel__arrow carousel__arrow--left"
+            className="carousel__arrow_carousel__arrow--left"
           />
 
           {/* {setImageURL(headset)} */}
           <Tile imageURL={featuredProducts[counter]} title="Headsets" />
           <Tile imageURL={featuredProducts[counter + 1]} title="Desktops" />
-          <Tile imageURL={featuredProducts[counter + 2]} title="Laptops" />
+          <Tile imageURL={featuredProducts[counter + 2 ]} title="Laptops" />
           <img
             src={rightArrow}
             alt="right arrow"
             onClick={handleIncrement}
-            className="carousel__arrow carousel__arrow--right"
+            className="carousel__arrow_carousel__arrow--right"
           />
         </div>
         <br />
@@ -72,7 +72,7 @@ const HomeProduct = () => {
         <SubTitle subTitle="Latest Products" />
         <br />
         <br />
-        <div className="tile-container">
+        <div className="tile-container_latest">
           <Tile imageURL={mouse} title="G205 Gaming Mouse " />
           <Tile imageURL={legionlaptop} title="Lenovo Legion 5 Pro" />
           <Tile imageURL={ps5} title="Playstation 5" />
@@ -86,7 +86,7 @@ const HomeProduct = () => {
         <SubTitle subTitle="Trending Products" />
         <br />
         <br />
-        <div className="tile-container">
+        <div className="tile-container_trending_products">
           <Tile imageURL={vrheadset} title="VR Headset" />
           <Tile imageURL={joystick} title="Atari 2600 Joystick" />
           <Tile imageURL={ps5controller} title="PS5 Dualshock Controller" />
