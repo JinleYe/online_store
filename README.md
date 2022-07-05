@@ -111,8 +111,12 @@ For our extension, we wanted to expand on the MVP and challenge ourselves with t
 - Y 
 - Z
 
-<br/>
-Thank you for reading this guide!
+Thank you for reading this guide! 
+For further information on the frontend and backend aspect of this project, follow the following links respectively:
+
+-
+-
+
 
 ## Acknowledgments:
 
