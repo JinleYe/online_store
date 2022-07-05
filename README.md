@@ -53,6 +53,7 @@ Pixelated Paradise is a form of electronic commerce which allows consumers to di
 - [Project Structure](#project-structure)
   - [Frontend](#frontend)
   - [Backend](#backend)
+- [Further Implementations](#further-implementations)
 - [Acknowledgements](#acknowledgments)
 
 <br>
@@ -131,6 +132,14 @@ Please follow the links below for the ReadMe of the frontend and backend subproj
 - Backend Readme: https://github.com/JinleYe/online_store/blob/main/backend/ReadMe.md
 
 <br>
+
+## Further Implementations:
+
+-
+-
+-
+-
+-
 
 ## Acknowledgments:
 
