@@ -152,7 +152,6 @@ Customer endpoints:
 | `.../customers` | `POST` | Post/Create Customer |
 | `.../customers/{customerId}/{productId}/{num}` | `POST` | Post product to customer cart |
 | `.../customers/remove/{customerId}/{productId}` | `POST` | Remove product from customer cart |
-
 | `.../customers{id}` | `PUT` | Update Customer by id |
 | `.../customers{id}` | `DELETE` | Delete Customer by id |
 
