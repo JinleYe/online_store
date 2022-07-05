@@ -8,7 +8,6 @@ As a gaming accessory specialist, we want to make your search easy... Here you c
 
 Take your gaming experience to the next level... choose Pixelated Paradise...
 
-
 <br>
 
 ## Who we are:
@@ -85,6 +84,7 @@ Please note, the front-end application should run on ‘localhost:3000’ unless
 ## Project Structure:
 
 ### Frontend:
+For this segment of the project, we built a React application to act as a front-end for our Pixelated Paradise project built in the server-side sub-projects. Below you will find an image of our frontend homepage.
 
 #### Homepage:
 
@@ -95,6 +95,8 @@ Please note, the front-end application should run on ‘localhost:3000’ unless
 
 
 ### Backend:
+
+This segment of the project involved building the Pixelated Paradise API for the user to interact with. Below you will find images of our 'Unified Modelling Language Diagrams' and 'Entity Relationship Diagrams'.
 
 #### Unified Modelling Language Diagrams (UML):
 
