@@ -58,12 +58,10 @@ Extension:
 
 
 ## Minimum Viable Product (MVP):
-
 For our MVP, we wanted to create an API with full CRUD functionality with 7x classes:
 - 
 - 
 - 
-
 
 ## Extensions:
 For our extension, we wanted to expand on the MVP and challenge ourselves with the following extensions:
@@ -71,6 +69,7 @@ For our extension, we wanted to expand on the MVP and challenge ourselves with t
 - Y 
 - Z
 
+<br/>
 
 
 ## Plain Old Java Objects (POJOs):
