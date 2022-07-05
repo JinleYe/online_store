@@ -143,7 +143,7 @@ User endpoints:
 | `.../users{id}` | `PUT` | Update User by id |
 | `.../users{id}` | `DELETE` | Delete User by id |
 
-<br/>
+
 Admin endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
@@ -153,7 +153,7 @@ Admin endpoints:
 | `.../admins{id}` | `PUT` | Update Admin by id |
 | `.../admins{id}` | `DELETE` | Delete Admin by id |
 
-<br/>
+
 Product endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
@@ -167,7 +167,7 @@ Product endpoints:
 | `.../products{id}` | `PUT` | Update Product by id |
 | `.../products{id}` | `DELETE` | Delete Product by id |
 
-<br/>
+
 Customer endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
@@ -190,7 +190,7 @@ Order endpoints:
 | `.../orders{id}` | `PUT` | Update Order by id |
 | `.../orders{id}` | `DELETE` | Delete Order by id |
 
-<br/>
+
 Review endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
