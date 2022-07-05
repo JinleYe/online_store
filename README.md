@@ -80,6 +80,8 @@ VSC in-built terminal:
 
 Please note, the front-end application should run on ‘localhost:3000’ unless you have another application running on this host - if so, you will have the option to run this on another host i.e. localhost:3001. This will not affect the running of the project.
 
+<br>
+
 ## Project Structure:
 
 ### Frontend:
