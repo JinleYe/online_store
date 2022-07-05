@@ -39,7 +39,7 @@ const Login = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
         // isAdmin ? setCurrAdmin(curr[0]) : setCurrUser(curr[0]);
         setCurrUser(curr[0]);
         setIsLogin(!isLogin);
-        navigate('/products');
+        navigate('/home');
 
     }
 
