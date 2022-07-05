@@ -51,7 +51,8 @@ function App() {
           <Route path='/products' element={<ProductContainer />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
 
-          <Route path='/login' element={isLogin ? <MyOrders /> : 
+          <Route path='/login' element={isLogin ? <MyOrders currUser={currUser} 
+                                                            setCurrUser={setCurrUser} /> : 
                                                   <Login isLogin={isLogin}
                                                          setIsLogin={setIsLogin}
                                                          currUser={currUser}
