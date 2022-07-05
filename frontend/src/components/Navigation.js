@@ -24,8 +24,8 @@ const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, s
     useEffect(() => {
         isLogin && fetch(`http://localhost:8080/customers/${currUser.id}`)
                    .then(response => response.json())
-                   .then(data => setCurrUser(data))
-        setShoppingCart(currUser.cart)
+                   .then(data => {setCurrUser(data)})
+        isLogin && setShoppingCart(currUser.cart)
         console.log("useEffect at Navigation");
       },[clickTimes])  
 
