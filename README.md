@@ -84,7 +84,7 @@ Please note, the front-end application should run on ‘localhost:3000’ unless
 ## Project Structure:
 
 ### Frontend:
-For this segment of the project, we built a React application to act as a front-end for our Pixelated Paradise project built in the server-side sub-projects. Below you will find an image of our frontend homepage.
+For this segment of the project, the team created a React application to act as a front-end for our Pixelated Paradise project (built in the server-side sub-project). Below you will find an image of our frontend homepage.
 
 #### Homepage:
 
