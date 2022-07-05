@@ -192,7 +192,7 @@ This process allowed us to evaluate and verify that our Pixelated Paradise API d
 <br/>
 Thank you for reading this guide!
 
-<br/ >
+
 
 ## Acknowledgments:
 We would like to thank the Bright Network Technology Academy team and especially our trainers Anna and Richard!
