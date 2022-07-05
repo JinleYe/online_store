@@ -53,10 +53,9 @@ Pixelated Paradise is a form of electronic commerce which allows consumers to di
 
 ## Table of Contents:
 - [Setup and Instructions](#setup-and-instructions-for-using-the-project)
-- [UML](#unified-modelling-language-diagrams-uml)
-- [ERD](#entity-relationship-diagrams-erd)
-- [Minimum Viable Product (MVP)](#minimum-viable-product-mvp)
-- [Extensions](#extensions)
+- [Project Structure](#project-structure)
+- [Frontend](#frontend)
+- [Backend](#backend)
 - [Further Reading](#further-reading)
 - [Acknowledgements](#acknowledgments)
 
@@ -78,12 +77,6 @@ Frontend:
 
 Backend:
 
- ### This project features:
- 
-    - One-to-One, One-to-Many, Many-to-Many and Many-to-One relationships
-    - Derived queries for multiple endpoints
-    - Full CRUD functionality
-    
 ### Unified Modelling Language Diagrams (UML):
 
 <br>
@@ -110,18 +103,6 @@ Extension:
 ![Extension ERD]( )
 
 
-## Minimum Viable Product (MVP):
-For our MVP, we wanted to create an API with full CRUD functionality with 7x classes:
-- 
-- 
-- 
-
-
-## Extensions:
-For our extension, we wanted to expand on the MVP and challenge ourselves with the following extensions:
-- X
-- Y 
-- Z
 
 Please follow the following links for the ReadMe of the frontend and backend sub-projects:
 
