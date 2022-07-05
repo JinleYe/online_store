@@ -133,6 +133,14 @@ POJO TABLE:
 
 The following table shows a list of possible commands used alongside: localhost:8080/ ...
 
+User endpoints: 
+| HTTP Request Path                                                        | Request Type | Description                                      |
+|:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
+| `.../users`  | `GET` | Get All User Entries |
+| `.../users` | `POST` | Post/Create User |
+| `.../users{id}` | `PUT` | Update User by id |
+| `.../users{id}` | `DELETE` | Delete User by id |
+
 
 Admin endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
@@ -142,6 +150,20 @@ Admin endpoints:
 | `.../admins` | `POST` | Post/Create Admin |
 | `.../admins{id}` | `PUT` | Update Admin by id |
 | `.../admins{id}` | `DELETE` | Delete Admin by id |
+
+
+Product endpoints: 
+| HTTP Request Path                                                        | Request Type | Description                                      |
+|:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
+| `.../products`  | `GET` | Get All Product Entries |
+| `.../products/{id} ` | `GET` | Get Product by Id |
+| `.../products?title={title} ` | `GET` | Get Product by title|
+| `.../products?description={description} ` | `GET` | Get Product by description|
+| `.../products?price={price}` | `GET` | Get Product with a price less than |
+| `.../products?category={category}` | `GET` | Get Product from a certain category |
+| `.../products` | `POST` | Post/Create Product |
+| `.../products{id}` | `PUT` | Update Product by id |
+| `.../products{id}` | `DELETE` | Delete Product by id |
 
 
 Customer endpoints: 
@@ -167,21 +189,6 @@ Order endpoints:
 | `.../orders{id}` | `DELETE` | Delete Order by id |
 
 
-
-Product endpoints: 
-| HTTP Request Path                                                        | Request Type | Description                                      |
-|:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
-| `.../products`  | `GET` | Get All Product Entries |
-| `.../products/{id} ` | `GET` | Get Product by Id |
-| `.../products?title={title} ` | `GET` | Get Product by title|
-| `.../products?description={description} ` | `GET` | Get Product by description|
-| `.../products?price={price}` | `GET` | Get Product with a price less than |
-| `.../products?category={category}` | `GET` | Get Product from a certain category |
-| `.../products` | `POST` | Post/Create Product |
-| `.../products{id}` | `PUT` | Update Product by id |
-| `.../products{id}` | `DELETE` | Delete Product by id |
-
-
 Review endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
@@ -196,14 +203,6 @@ Review endpoints:
 | `.../reviews{id}` | `PUT` | Update Review by id |
 | `.../reviews{id}` | `DELETE` | Delete Review by id |
 
-
-User endpoints: 
-| HTTP Request Path                                                        | Request Type | Description                                      |
-|:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
-| `.../users`  | `GET` | Get All User Entries |
-| `.../users` | `POST` | Post/Create User |
-| `.../users{id}` | `PUT` | Update User by id |
-| `.../users{id}` | `DELETE` | Delete User by id |
 
 
 ADD THE DERIVED QUERIES ALSO- FOR ALL EXCEPT PRODUCT!!!!
