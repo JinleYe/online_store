@@ -187,7 +187,7 @@ Review endpoints:
 | `.../reviews/{id} ` | `GET` | Get Review by Id |
 | `.../reviews?title={title} ` | `GET` | Get Review by title|
 | `.../reviews?description={description} ` | `GET` | Get Review by description|
-| `.../reviews? ={dateposted} ` | `GET` | Get Review by datePosted|
+| `.../reviews?dateposted ={Year-Month-Day} ` | `GET` | Get Review by datePosted|
 | `.../reviews?rating={rating} ` | `GET` | Get Review by rating|
 | `.../reviews? ={rating} ` | `GET` | Get Review by rating greater than|
 | `.../reviews?isVerifiedPurchase=false={boolean} ` | `GET` | Get Review by whether it is from a verified purchase|
