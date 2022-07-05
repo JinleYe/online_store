@@ -27,9 +27,9 @@ In this segment of the project, you will find all information pertaining to the 
 ## Tech Stack
 For the backend project, the following technologies/frameworks were used:
 
--Java
--Spring Boot
--An SQL database
+- Java
+- Spring Boot
+- An SQL database
 
 <br/>
 
