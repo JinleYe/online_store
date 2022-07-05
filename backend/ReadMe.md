@@ -170,8 +170,6 @@ This process allowed for the testing of the smallest code in the system that cou
 #### Example of unit testing: 
 
 
-Unit testing:
-
 ![Unit testing](testing-screenshots/unit_testing_example.png
 )
 
@@ -183,7 +181,7 @@ This application was the HTTP client that tested HTTP requests, using a graphica
 #### Example of Postman testing: 
 
 <br>
- Postman:
+
 
 ![Postman Testing](testing-screenshots/User-test/INDEX/INDEX.png)
 
@@ -193,6 +191,8 @@ This process allowed us to evaluate and verify that our Pixelated Paradise API d
 
 <br/>
 Thank you for reading this guide!
+
+<br/ >
 
 ## Acknowledgments:
 We would like to thank the Bright Network Technology Academy team and especially our trainers Anna and Richard!
