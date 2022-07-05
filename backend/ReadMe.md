@@ -188,9 +188,6 @@ Review endpoints:
 | `.../reviews?rating={rating} ` | `GET` | Get Review by rating|
 | `.../reviews? ={ } ` | `GET` | Get Review by rating greater than|
 | `.../reviews?isVerifiedPurchase=false={boolean} ` | `GET` | Get Review by whether it is from a verified purchase|
-
-
-
 | `.../reviews` | `POST` | Post/Create Review |
 | `.../reviews{id}` | `PUT` | Update Review by id |
 | `.../reviews{id}` | `DELETE` | Delete Review by id |
