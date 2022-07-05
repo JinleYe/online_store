@@ -105,9 +105,9 @@ Extension:
 
 ## Minimum Viable Product (MVP):
 For our MVP, we wanted to create an API with full CRUD functionality with 7x classes:
-- X
-- Y
-- Z
+- 
+- 
+- 
 
 
 ## Extensions:
@@ -168,8 +168,8 @@ Product endpoints:
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../products`  | `GET` | Get All Product Entries |
 | `.../products/{id} ` | `GET` | Get Product by Id |
-| `.../products?title={title} ` | `GET` | Get Product by title containing certain words|
-| `.../products?description={description} ` | `GET` | Get Product by description containing certain words|
+| `.../products?title={title} ` | `GET` | Get Product by title|
+| `.../products?description={description} ` | `GET` | Get Product by description|
 | `.../products?price={price}` | `GET` | Get Product with a price less than |
 | `.../products?category={category}` | `GET` | Get Product from a certain category |
 | `.../products` | `POST` | Post/Create Product |
@@ -182,6 +182,15 @@ Review endpoints:
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../reviews`  | `GET` | Get All Review Entries |
 | `.../reviews/{id} ` | `GET` | Get Review by Id |
+| `.../reviews?title={title} ` | `GET` | Get Review by title|
+| `.../reviews?description={description} ` | `GET` | Get Review by description|
+| `.../reviews? ={ } ` | `GET` | Get Review by datePosted|
+| `.../reviews?rating={rating} ` | `GET` | Get Review by rating|
+| `.../reviews? ={ } ` | `GET` | Get Review by rating greater than|
+| `.../reviews?isVerifiedPurchase=false={boolean} ` | `GET` | Get Review by whether it is from a verified purchase|
+
+
+
 | `.../reviews` | `POST` | Post/Create Review |
 | `.../reviews{id}` | `PUT` | Update Review by id |
 | `.../reviews{id}` | `DELETE` | Delete Review by id |
