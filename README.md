@@ -48,12 +48,7 @@ Pixelated Paradise is a form of electronic commerce which allows consumers to di
 <br>
 
 
- ### This project features:
- 
-    - One-to-One, One-to-Many, Many-to-Many and Many-to-One relationships
-    - Derived queries for multiple endpoints
-    - Full CRUD functionality
-    
+
 <br>
 
 ## Table of Contents:
@@ -74,6 +69,21 @@ git clone git@github.com:JinleYe/online_store.git
 4. You can also view the SQL tables by connecting to the h2 datatbase at localhost:8080/h2 and entering the following URL in the 'JDBC URL' section - jdbc:h2:file:./db/online_store. Note: spring.datasource.username=sa
 
 ## Project Structure:
+
+Frontend:
+
+
+
+
+
+Backend:
+
+ ### This project features:
+ 
+    - One-to-One, One-to-Many, Many-to-Many and Many-to-One relationships
+    - Derived queries for multiple endpoints
+    - Full CRUD functionality
+    
 ### Unified Modelling Language Diagrams (UML):
 
 <br>
@@ -113,12 +123,18 @@ For our extension, we wanted to expand on the MVP and challenge ourselves with t
 - Y 
 - Z
 
-## Further Reading:
-Thank you for reading this guide! Please follow the following links for further reading on the frontend and backend sub-projects:
+Please follow the following links for the ReadMe of the frontend and backend sub-projects:
 
 - Frontend Readme: https://github.com/JinleYe/online_store/blob/main/frontend/README.md
 - Backend Readme: https://github.com/JinleYe/online_store/blob/main/backend/ReadMe.md
 
+
+## Further Reading:
+Thank you for reading this guide! 
+
+-
+-
+-
 
 ## Acknowledgments:
 
