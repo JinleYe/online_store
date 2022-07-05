@@ -27,6 +27,7 @@ public class ReviewController {
     public ResponseEntity<List<Review>> getAllReviewsAndFilters(
             @RequestParam Map<String, String> requestParams, Double rating, @RequestParam(name = "dateposted")
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate datePosted, Boolean isVerifiedPurchase
+
     ) {
         String title = requestParams.get("title");
         String description = requestParams.get("description");
