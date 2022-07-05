@@ -164,9 +164,10 @@ Review endpoints:
 ## Testing:
 The project involved different forms of testing including unit testing and testing via Postman. 
 
-Unit testing: This process allowed for the testing of the smallest code in the system that could be logically isolated i.e., the methods and derived queries. 
+### Unit testing: 
+This process allowed for the testing of the smallest code in the system that could be logically isolated i.e., the methods and derived queries. 
 
-### Example of unit testing: 
+#### Example of unit testing: 
 
 
 Unit testing:
@@ -176,9 +177,10 @@ Unit testing:
 
 <br>
 
-Postman testing: This application was the HTTP client that tested HTTP requests, using a graphical user interface, through which we obtained different types of responses that needed to be subsequently validated.  
+### Postman testing: 
+This application was the HTTP client that tested HTTP requests, using a graphical user interface, through which we obtained different types of responses that needed to be subsequently validated.  
 
-### Example of Postman testing: 
+#### Example of Postman testing: 
 
 <br>
  Postman:
