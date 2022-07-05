@@ -11,6 +11,7 @@ In this segment of the project, you will find all information pertaining to the 
 
 
 ## Table of Contents:
+- [Tech Stack](#tech-stack)
 - [UML](#unified-modelling-language-diagrams-uml)
 - [ERD](#entity-relationship-diagrams-erd)
 - [Minimum Viable Product (MVP)](#minimum-viable-product-mvp)
@@ -21,6 +22,16 @@ In this segment of the project, you will find all information pertaining to the 
 - [Further Implementations & Extensions](#further-implementations--extensions)
 - [Acknowledgements](#acknowledgments)
 
+<br/>
+
+## Tech Stack
+For the backend project, the following technologies/frameworks were used:
+
+-Java
+-Spring Boot
+-An SQL database
+
+<br/>
 
 ## Project Structure:
 ### Unified Modelling Language Diagrams (UML):
