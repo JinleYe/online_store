@@ -193,12 +193,6 @@ Postman:
 
 This process allowed us to evaluate and verify that our Pixelated Paradise API did what it was supposed to do; it prevented bugs and improved performance.
 
-
-## Further Implementations:
-Here are a few ideas on how we would like to expand on this API:
-- X
-- Y
-- Z
 <br/>
 Thank you for reading this guide!
 
