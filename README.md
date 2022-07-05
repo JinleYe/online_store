@@ -60,7 +60,7 @@ Pixelated Paradise is a form of electronic commerce which allows consumers to di
 - [ERD](#entity-relationship-diagrams-erd)
 - [Minimum Viable Product (MVP)](#minimum-viable-product-mvp)
 - [Extensions](#extensions)
-- [Further Implementations & Extensions](#further-implementations--extensions)
+- [Further Reading](#further-reading)
 - [Acknowledgements](#acknowledgments)
 
 ## Setup and Instructions for using the Project:
