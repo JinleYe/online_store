@@ -20,7 +20,6 @@ In this segment of the project, you will find all information pertaining to the 
 - [Acknowledgements](#acknowledgments)
 
 
-<br/>
 
 ## Tech Stack
 For the backend project, the following technologies/frameworks were used:
@@ -30,7 +29,6 @@ For the backend project, the following technologies/frameworks were used:
 - An SQL database
 
 
-<br/>
 
 ## Project Structure:
 ### Unified Modelling Language Diagrams (UML):
@@ -60,6 +58,7 @@ Extension:
 
 
 ## Minimum Viable Product (MVP):
+
 For our MVP, we wanted to create an API with full CRUD functionality with 7x classes:
 - 
 - 
@@ -72,7 +71,7 @@ For our extension, we wanted to expand on the MVP and challenge ourselves with t
 - Y 
 - Z
 
-<br/>
+
 
 ## Plain Old Java Objects (POJOs):
 
