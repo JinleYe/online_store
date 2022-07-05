@@ -11,8 +11,8 @@ const Products = ({product}) => {
             </div>
             <ul className="p-list">
             <div className="p-info-text">
-            <li><p><strong>Rating: </strong>{product.rating}</p></li>
             <li><p><strong>Price: </strong>£{product.price}</p></li>
+            <li><p><strong>Rating: </strong>{product.rating}</p></li>
             <li><strong>Description: </strong>{product.description}</li>
             <div className='shopping-cart-btn'>
             <button className="basket-btn"><AiOutlineShoppingCart size="15"/> Add to Basket</button>
