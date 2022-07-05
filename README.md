@@ -1,8 +1,8 @@
 # READ ME (Pixelated Paradise- Capstone Project):
 
-Note: This ReadMe provides a brief overview of the project in its entirety– for a specific ReadMe of the frontend and backend sub-projects please read - [Further Reading](#further-reading)
+Note: This ReadMe provides a brief overview of the project– for a specific ReadMe of the frontend and backend subprojects, please refer to the links in - [Project Structure](#project-structure)
 
-#ADD LOGO IMAGE!! 
+#ADD LOGO IMAGE!!
 
 As a gaming accessory specialist, we want to make your search easy... Here you can browse our vast collection and find all sorts of gaming accessories, from controllers to gaming headsets to gaming chairs! Fancy a new display to break the gaming experience? Wait no longer-  find your perfect match today with our various filters! Whether you’re a beginner or a pro gamer, there is something for everyone!
 
@@ -15,25 +15,25 @@ Take your gaming experience to the next level... choose Pixelated Paradise...
 We are the team behind Pixelated Paradise - 5 members of Cohort 5 from the Bright Network Technology Academy!
 
 
-- Ana Paula Lima 
-    - Github: [https://github.com/AnaPaulaL27], 
+- Ana Paula Lima
+    - Github: [https://github.com/AnaPaulaL27],
     - LinkedIn: [https://www.linkedin.com/in/ana-paula-l-5159a01b3/]
 
-- Sabina Rafique 
+- Sabina Rafique
     - Github: [https://github.com/SabinaRafique],
     - LinkedIn: [https://www.linkedin.com/in/sabina-r-2021321ba/]
-    
- - Kim
+
+- Kim
     - Github: [https://github.com/JinleYe],
-    - LinkedIn: 
-    
-- Adan Abdillahi 
+    - LinkedIn:
+
+- Adan Abdillahi
     - Github: [https://github.com/AdanAbdillahi],
-    - LinkedIn: 
+    - LinkedIn:
 
 - Iman Chaudhry
     - Github: [https://github.com/ImanChaudhry],
-    - LinkedIn: [https://www.linkedin.com/in/imanchaudhry/]      
+    - LinkedIn: [https://www.linkedin.com/in/imanchaudhry/] 
 
 <br>
 
@@ -54,29 +54,47 @@ Pixelated Paradise is a form of electronic commerce which allows consumers to di
 ## Table of Contents:
 - [Setup and Instructions](#setup-and-instructions-for-using-the-project)
 - [Project Structure](#project-structure)
-- [Frontend](#frontend)
-- [Backend](#backend)
-- [Further Reading](#further-reading)
+- [Project Structure](#project-structure)
+  - [Frontend](#frontend)
+  - [Backend](#backend)
 - [Acknowledgements](#acknowledgments)
 
 ## Setup and Instructions for using the Project:
 
-1. Make sure that you have Java 17/18 installed to run Pixelated Paradise API
+### Backend - Server-side
+1. Make sure that you have Java 17/18 installed to run Pixelated Paradise Backend
 2. Clone this repository by typing the following command into your terminal: <br>
-git clone git@github.com:JinleYe/online_store.git
+   git clone git@github.com:JinleYe/online_store.git
 3. You can access the endpoints via an API platform such as Postman or through the browser at https://localhost:8080/{endpoint}
 4. You can also view the SQL tables by connecting to the h2 datatbase at localhost:8080/h2 and entering the following URL in the 'JDBC URL' section - jdbc:h2:file:./db/online_store. Note: spring.datasource.username=sa
+
+### Frontend - Client-side
+
+Once the repository has been cloned, open the 'frontend' folder in Visual Studio code (VSC) and run the following code in the
+VSC in-built terminal:
+
+- npm install
+- npm install @ideal-postcodes/postcode-lookup
+- npm install --save-dev @iconify/react
+- npm install @material/textfield
+- npm start
+
 
 ## Project Structure:
 
 ### Frontend:
+<br/>
 
+#####Homepage:
 
+![Frontend Image]( )
+
+<br>
 
 
 
 ### Backend:
-
+<br/>
 #### Unified Modelling Language Diagrams (UML):
 
 <br>
@@ -104,18 +122,11 @@ Extension:
 
 
 
-Please follow the following links for the ReadMe of the frontend and backend sub-projects:
+Please follow the links below for the ReadMe of the frontend and backend subprojects:
 
 - Frontend Readme: https://github.com/JinleYe/online_store/blob/main/frontend/README.md
 - Backend Readme: https://github.com/JinleYe/online_store/blob/main/backend/ReadMe.md
 
-
-## Further Reading:
-Thank you for reading this guide! 
-
--
--
--
 
 ## Acknowledgments:
 
