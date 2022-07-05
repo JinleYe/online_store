@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import ProductList from "./ProductList";
 import SearchBar from "../components/SearchBar";
 import CheckBox from "../filters/Checkbox";
+import PageCount from "../filters/PageResults";
+import SortBy from "../filters/SortBy";
 
 
 const ProductContainer = () => {
@@ -17,23 +19,28 @@ const ProductContainer = () => {
     const [checkedGamingConsole, setCheckedGamingConsole] = useState(false);
     const [checkedGamingHeadset, setCheckedGamingHeadset] = useState(false);
     const [checkedGamingController, setCheckedGamingController] = useState(false);
+    const [sortedByValue, setSortedByValue] = useState(null);
+    
 
     useEffect(() => {
         fetch("http://localhost:8080/products")
         .then(response => response.json())
         .then(data => setAllProducts(data))
+        console.log("useEffect from {products}")
     }, []);
     
     useEffect(() => {
         fetch(`http://localhost:8080/products?title=${query}`)
           .then(response => response.json())
           .then(data => setProducts(data))
+          console.log("useEffect from {products.title}")
       }, [query]);
 
     useEffect(() => {
         fetch(`http://localhost:8080/products?description=${query}`)
           .then(response => response.json())
           .then(data => setProducts(data))
+          console.log("useEffect from {products.description}")
       }, [query]);
 
 
@@ -44,87 +51,110 @@ const ProductContainer = () => {
             setQuery(updateQuery);
             const updateProducts = [...allProducts]
             setProducts(updateProducts);
-            console.log("query check");
         }
 
         let check = null
 
         if(category === "laptop"){
             check = checkedLaptop
-            console.log("laptop")
-        } else if (category === "gamingkeyboard"){
+        } else if (category === "gamingkeyboard") {
             check = checkedKeyboard
-            console.log("gaming keyboard")
         } else if (category === "gamingchair") {
             check = checkedGamingChair
-            console.log("gaming chair")
         } else if (category === "gamingmouse") {
             check = checkedGamingMouse
-            console.log("gaming mouse")
         } else if (category === "gamingconsole") {
             check = checkedGamingConsole
-            console.log("gaming mouse")
         } else if (category === "gamingheadset") {
             check = checkedGamingHeadset
-            console.log("gaming mouse")
         } else if (category === "gamingcontroller") {
             check = checkedGamingController
-            console.log("gaming controller")
         }
 
         const newProducts = allProducts.filter((allProducts) => {return allProducts.category.toLowerCase().includes(category) })
 
         if(filteredProducts.length > 0){
             if(check === false){
-                const updateProducts = [...filteredProducts, ...newProducts];
-                setFilteredProducts(updateProducts);
                 check = true;
-                console.log("test double filter");
-            }
-            else{
+                const allFilteredProducts = [...filteredProducts, ...newProducts];
+                if(sortedByValue === "lowest") {
+                    const updateProducts = allFilteredProducts.sort((a, b) => a.price - b.price)
+                    setFilteredProducts(updateProducts)
+
+                } else if(sortedByValue === "highest") {
+                    const updateProducts = allFilteredProducts.sort((a, b) => b.price - a.price)
+                    setFilteredProducts(updateProducts)
+
+                } else if(sortedByValue === "a1") {
+                    const updateProducts = allFilteredProducts.sort((a, b) => a.title > b.title ? 1 : (a.title === b.title ? 0 : -1))
+                    setFilteredProducts(updateProducts)
+
+                } else if(sortedByValue === "z1") {
+                    const updateProducts = allFilteredProducts.sort((a, b) => b.title > a.title ? 1 : (a.title === b.title ? 0 : -1))
+                    setFilteredProducts(updateProducts)
+
+                } else {
+                    setFilteredProducts(allFilteredProducts)
+                }
+            } 
+            else {
                 if(newProducts.length < filteredProducts.length) {
                     const resetProducts = filteredProducts.filter((filteredProducts) => !filteredProducts.category.toLowerCase().includes(category))
                     setFilteredProducts(resetProducts);
                     check = false;
-                    console.log("removed " + category + " from results");
-
                 } else {
                     const resetProducts = [];
                     setFilteredProducts(resetProducts);
                     check = false;
-                    console.log("all returned")
                 }
             }
         } else if(check === false){
-            setFilteredProducts(newProducts);
+            // setFilteredProducts(newProducts);
             check = true;
-            console.log("test one filter");
+            console.log("laptop4")
+            if(sortedByValue === "lowest") {
+                const updateProducts = newProducts.sort((a, b) => a.price - b.price)
+                setFilteredProducts(updateProducts)
+            } else if(sortedByValue === "highest") {
+                const updateProducts = newProducts.sort((a, b) => b.price - a.price)
+                setFilteredProducts(updateProducts)
+            } else if(sortedByValue === "a1") {
+                const updateProducts = newProducts.sort((a, b) => a.title > b.title ? 1 : (a.title === b.title ? 0 : -1))
+                setFilteredProducts(updateProducts)
+            }   else if(sortedByValue === "z1") {
+                const updateProducts = newProducts.sort((a, b) => b.title > a.title ? 1 : (a.title === b.title ? 0 : -1))
+                setFilteredProducts(updateProducts)
+            } else {
+                setFilteredProducts(newProducts)
+            }
         }
 
         if(category === "laptop"){
             setCheckedLaptop(check)
-            console.log(checkedLaptop)
-            console.log("laptop changed check")
         } else if (category === "gamingkeyboard"){
             setCheckedKeyboard(check)
-            console.log("gaming keyboard")
         } else if (category === "gamingchair") {
             setCheckedGamingChair(check)
-            console.log("gaming chair")
         } else if (category === "gamingmouse") {
             setCheckedGamingMouse(check)
-            console.log("gaming mouse")
       } else if (category === "gamingconsole") {
         setCheckedGamingConsole (check)
-        console.log("games console")
       } else if (category === "gamingheadset") {
         setCheckedGamingHeadset(check)
-        console.log("gaming headset")
       } else if (category === "gamingcontroller") {
         setCheckedGamingController(check)
-        console.log("gaming controller")
       }
+
+    //   if(sortedByValue === "lowest") {
+
+    //     console.log(filteredProducts)
+    //     const updatedProducts = filteredProducts.sort((a, b) => a.price - b.price)
+    //     console.log(updatedProducts)
+    //     setFilteredProducts(updatedProducts);
+        
+    //   }
     }
+
 
     const clearProductChecks = () => {
         const updatedProducts = [];
@@ -136,30 +166,119 @@ const ProductContainer = () => {
         setCheckedGamingConsole(false)
         setCheckedGamingHeadset(false)
         setCheckedGamingController(false)
-
-        console.log("test")
     }
+
 
       const searchProduct = () => {
         if(filteredProducts.length > 0) {
             const updatedProducts = [];
             setFilteredProducts(updatedProducts);
             clearProductChecks();
-            
         }
       }
 
-      const productsToShow = filteredProducts.length > 0 ? filteredProducts : products
+      const productsToShow = filteredProducts.length > 0 ? filteredProducts : products;
+
+
+      const sortItems = (e) => {
+        setSortedByValue(e);
     
+
+        if(e === "lowest"){
+            if(filteredProducts.length > 0){
+                const updatedProducts = filteredProducts.sort((a, b) => a.price - b.price)
+                const updateAllProducts = [...allProducts]
+                setFilteredProducts(updatedProducts);
+                setProducts(updateAllProducts)
+                console.log("yes filtered")
+
+            } else {
+                const updateProducts = products.sort((a, b) => a.price - b.price);
+                setProducts(updateProducts)
+                setFilteredProducts([])
+            }
+        } else if(e === "highest"){
+            if(filteredProducts.length > 0){
+                const updatedProducts = filteredProducts.sort((a, b) => b.price - a.price)
+                const updateAllProducts = [...allProducts]
+                setFilteredProducts(updatedProducts);
+                setProducts(updateAllProducts)
+            } else {
+                const updateProducts = products.sort((a, b) => b.price - a.price);
+                setProducts(updateProducts)
+                setFilteredProducts([])
+            }
+        } else if(e === "a1") {
+            if(filteredProducts.length > 0) {
+                const updatedProducts = filteredProducts.sort((a,b) => a.title > b.title ? 1 : (a.title === b.title ? 0 : -1))
+                const updateAllProducts = [...allProducts]
+                setFilteredProducts(updatedProducts)
+                setProducts(updateAllProducts)
+            } else {
+                const updateProducts = products.sort((a, b) => a.title > b.title ? 1 : (a.title === b.title ? 0 : -1))
+                setProducts(updateProducts)
+                setFilteredProducts([])
+            } 
+        } else if(e === "z1") {
+            if(filteredProducts.length > 0) {
+                const updatedProducts = filteredProducts.sort((a,b) => b.title > a.title ? 1 : (a.title === b.title ? 0 : -1))
+                const updateAllProducts = [...allProducts]
+                setFilteredProducts(updatedProducts)
+                setProducts(updateAllProducts)
+            } else {
+                const updateProducts = products.sort((a, b) => b.title > a.title ? 1 : (a.title === b.title ? 0 : -1))
+                setProducts(updateProducts)
+                setFilteredProducts([])
+            } 
+        } else if (e === "default") {
+            const updateProducts = [...allProducts]
+            setProducts(updateProducts)
+            setFilteredProducts([])
+        }
+     };
+
+    //   const updateSort = () => {
+    //     sortItems(sortedByValue)
+    //     console.log("voldemort")
+    //   }
+
+
+    // if(sortItems === true) {
+    //     const updateSort = () => {
+    //             sortItems(sortedByValue)
+    //             console.log("voldemort")
+    //           }
+    // }
 
     return (
         <div>
         <h1 className="p-title">All Products</h1>
+       
+         <div className="search-element"> 
         <SearchBar className="Search" getQuery={(q) => setQuery(q)} searchProduct={searchProduct} />
+        </div>  
+
+        <SortBy
+        sortItems={sortItems} />
+
+        <PageCount count={filteredProducts.length > 0 
+            ? filteredProducts.length  + " results"
+            : products.length + " results"}/>
+
         <div className="product-page-wrap">            
         <div className="product-page-checkbox">            
-        <CheckBox className="product-checkbox" filteredByCategory={filteredByCategory} checkedLaptop={checkedLaptop} checkedGamingChair={checkedGamingChair} checkedGamingConsole={checkedGamingConsole} 
-        checkedGamingController={checkedGamingController} checkedGamingHeadset={checkedGamingHeadset} checkedKeyboard={checkedKeyboard} checkedGamingMouse={checkedGamingMouse} clearProductChecks={clearProductChecks}/>
+        <CheckBox 
+        className="product-checkbox" 
+        filteredByCategory={filteredByCategory} 
+        checkedLaptop={checkedLaptop} 
+        checkedGamingChair={checkedGamingChair} 
+        checkedGamingConsole={checkedGamingConsole} 
+        checkedGamingController={checkedGamingController} 
+        checkedGamingHeadset={checkedGamingHeadset} 
+        checkedKeyboard={checkedKeyboard} 
+        checkedGamingMouse={checkedGamingMouse} 
+        clearProductChecks={clearProductChecks}
+        />
         </div>
         <div className="products-page-list">
         <ProductList
@@ -168,7 +287,6 @@ const ProductContainer = () => {
         </div>
         </div>
     );
-    
 }
 
 export default ProductContainer;

@@ -19,6 +19,9 @@ public class Product {
     private String title;
 
     @Column
+    private String rating;
+
+    @Column
     private Double price;
 
     @Column
@@ -49,6 +52,7 @@ public class Product {
     // CONSTRUCTOR
     public Product(String title, Double price, String description, String image,  int stockQuantity, Category category) {
         this.title = title;
+        this.rating = rating;
         this.price = price;
         this.description = description;
         this.image = image;
@@ -70,6 +74,14 @@ public class Product {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getRating() {
+        return rating;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
     }
 
     public Double getPrice() {
@@ -143,12 +155,14 @@ public class Product {
         return "Product{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
+                ", rating='" + rating + '\'' +
                 ", price=" + price +
                 ", description='" + description + '\'' +
                 ", image='" + image + '\'' +
                 ", stockQuantity=" + stockQuantity +
                 ", category=" + category +
                 ", reviews=" + reviews +
+                ", orders=" + orders +
                 '}';
     }
 }

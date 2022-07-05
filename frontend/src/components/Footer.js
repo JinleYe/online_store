@@ -71,7 +71,7 @@ const Footer = () => {
                                 placeholder="Email address"
                                 id="footer-email"/>
 
-                                <div className="btn">
+                                <div className="signup-btn">
                                     <input
                                         type="submit"
                                         value="Sign Up"
@@ -126,7 +126,7 @@ const Footer = () => {
 
             <div className="footer-bottom">
                 <p className="text-xs-center">
-                &copy;{new Date().getFullYear()} All Rights Reserved
+                &copy;{new Date().getFullYear()} Pixelated Paradise Limited. All Rights Reserved
                 </p>
             </div> 
 
