@@ -1,5 +1,7 @@
 # READ ME (Pixelated Paradise- Capstone Project):
 
+Note: This readme provides a brief overview of the project in its entirety– for a specific readme of the frontend and backend sub-projects read: - [Further Reading](#further-reading)
+
 #ADD LOGO IMAGE!! 
 
 As a gaming accessory specialist, we want to make your search easy... Here you can browse our vast collection and find all sorts of gaming accessories, from controllers to gaming headsets to gaming chairs! Fancy a new display to break the gaming experience? Wait no longer-  find your perfect match today with our various filters! Whether you’re a beginner or a pro gamer, there is something for everyone!
@@ -113,7 +115,7 @@ For our extension, we wanted to expand on the MVP and challenge ourselves with t
 
 ## Further Reading:
 Thank you for reading this guide! 
-For further information on the frontend and backend aspect of this project, please follow the following links respectively:
+For further information on the frontend and backend aspects of this project, please follow the following links respectively:
 
 - Frontend Readme: https://github.com/JinleYe/online_store/blob/main/frontend/README.md
 - Backend Readme: https://github.com/JinleYe/online_store/blob/main/backend/ReadMe.md
