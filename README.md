@@ -69,15 +69,15 @@ git clone git@github.com:JinleYe/online_store.git
 
 ## Project Structure:
 
-Frontend:
+## Frontend:
 
 
 
 
 
-Backend:
+## Backend:
 
-### Unified Modelling Language Diagrams (UML):
+# Unified Modelling Language Diagrams (UML):
 
 <br>
 MVP:
@@ -91,7 +91,7 @@ Extension:
 ![Extension UML]( )
 
 
-### Entity Relationship Diagrams (ERD):
+# Entity Relationship Diagrams (ERD):
 <br>
 MVP:
 
