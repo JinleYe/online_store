@@ -171,7 +171,8 @@ Example of unit testing:
 
 Unit testing:
 
-![Unit testing](testing-screenshots/Admin-test/INDEX/INDEX.png)
+![Unit testing](testing-screenshots/unit_testing_example.png
+)
 
 <br>
 
@@ -182,7 +183,7 @@ Example of Postman testing:
 <br>
 Postman:
 
-![Postman Testing]()
+![Postman Testing](testing-screenshots/Admin-test/INDEX/INDEX.png)
 
 <br>
 
