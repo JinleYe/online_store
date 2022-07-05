@@ -3,21 +3,6 @@
 
 
 .desktop9-bot {
-
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  
- 
-}
-@supports (display: grid)
- {
-   .l-grid {
-     /* background: #ffffff; */
-     color: white;
-     display: grid;
-     grid-template-columns: 25% 25% 25% 25%;
-     margin: 3.5em;
-
-
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     background-image: url(./contactimages/contactimage.png);
     background-repeat: no-repeat;
@@ -74,143 +59,113 @@
      .penultimate-column {
       background:  white;
       box-shadow: 0 0 5px #e9e9e9;
-
     }
+    
+     .right-column {
+       background: white;
+       box-shadow: 0 0 5px #e9e9e9;
+     }
+    
 
-    .bottomheader{
+     .columnheaderfont{
       color:darkblue;
-  
-    }
-   .bottomheader, .-column, .right-column {
-     margin: 5px;
-     padding: 30px;
-     border-radius: 0.2em;
-   }
-   .bottomheader{
-     /* background: #265B6A; */
-     grid-column-start: 1;
-     grid-column-end: end;
-   }
-   .leftbottom-column {
-     background: white;
-     box-shadow: 0 0 5px #e9e9e9;
-     position: relative;
-     top:10em;
-     left:-1em;
-     
-   }
-   .center-column {
-     background:  white;
-     box-shadow: 0 0 5px #e9e9e9;
-
-   }
-
-   .penultimate-column {
-    background:  white;
-    box-shadow: 0 0 5px #e9e9e9;
-  }
-  
-   .right-column {
-     background: white;
-     box-shadow: 0 0 5px #e9e9e9;
-   }
-  
-
-   .columnheaderfont{
-    color:darkblue;
-    font-size: medium;
-    position: relative;
-    top:0.5em;
-    
-    
-   }
-
-   #getintouchsubheader{
-    width: 550px;
-    height: 49px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #8A8FB9;
-    
-    }
-
-    /* FORM */
-
-    .getintouchform {
-      height: 650px;
-      width: 650px;
-      text-align:center;
-      padding-top: 30px;
-      margin-bottom: 30px;
-    
-  }
-
-  #getintouch{
-
-   font: weight 900px;;
-   font-size: x-large;
-  }
-  
-  
-  
-  .parent {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
-      grid-gap: 275px;
-      justify-content: space-around;
-      padding: initial;
-      margin-right: 150px;
+      font-size: medium;
       position: relative;
-      right:2.5em;
-      top:1em;
-   
-  }
+      top:0.5em;
+      
+      
+     }
+
+     #getintouchsubheader{
+      position: absolute;
+      width: 550px;
+      height: 49px;
+      right: 134px;
+      top: 80px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #8A8FB9;
+      
+      }
+
+      /* FORM */
+
+      .getintouchform {
+        height: 650px;
+        width: 650px;
+        text-align:center;
+        padding-top: 30px;
+        margin-bottom: 5px;
+      
+    }
+
+    #getintouch{
+
+     font: weight 900px;;
+     font-size: x-large;
+    }
+    
+    
+    
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
+        grid-gap: 275px;
+        justify-content: space-around;
+        padding: initial;
+        margin-right: 150px;
+        position: relative;
+        right:2.5em;
+        top:-12em;
+     
+    }
+    
+    #sendmail{
+      border-Radius: 5;
+      background-color: #fb2e86;
+      font-size: 20px;
+      color:white;
+      min-Width: 200px;
+      min-Height: 43px;
+      position: relative;
+      right:6.5em;
+      bottom:1.5em;
+      border:none;
+      border-radius: 0.3em;
+      box-shadow: 0 0 5px #a499994e;
+
+      
+    }
+
+
+    #sendmail:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px -10px #ffc7a1;
+    }
+    #contactimage{
+      position: relative;
+      right:4.7em;
+      bottom:13em;
+    }
+
+    #subjectbox{
+      min-width: 410px;
+    }
   
-  #sendmail{
-    border-Radius: 5;
-    background-color: #fb2e86;
-    font-size: 20px;
-    color:white;
-    min-Width: 200px;
-    min-Height: 40px;
-    position: relative;
-    right:5em;
-    bottom:1.5em;
-    border:none;
-    border-radius: 0.3em;
-    box-shadow: 0 0 5px #a499994e;
+    #yourmessage{
+      min-height: 8em;
+      
+    }
 
-    
-  }
+ 
 
-
-  #sendmail:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px -10px #cf1263;
-  }
-  #contactimage{
-    position: relative;
-    right:5em;
-    bottom:13em;
-  }
-
-  #subjectbox{
-    min-width: 410px;
-  }
-
-  #yourmessage{
-    min-height: 8em;
-    
+  
+ 
   }
 
 .contact-input{
   background-color:white;
   opacity:90%;
-}
-
-
-
-
 }
