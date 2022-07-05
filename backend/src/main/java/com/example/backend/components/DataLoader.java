@@ -107,10 +107,10 @@ public class DataLoader implements ApplicationRunner {
 
         // ADD ORDERS
         Order order1 = new Order(LocalDate.of(2022, 6, 28), Arrays.asList(product1, product14), customer1);
-        Order order2 = new Order(LocalDate.of(2022, 5, 5), Arrays.asList(product1, product14), customer3);
-        Order order3 = new Order(LocalDate.of(2022, 3, 26), Arrays.asList(product1, product14), customer2);
-        Order order4 = new Order(LocalDate.of(2022, 1, 28), Arrays.asList(product1, product14), customer2);
-        Order order5 = new Order(LocalDate.of(2022, 2, 12), Arrays.asList(product1, product14), customer1);
+        Order order2 = new Order(LocalDate.of(2022, 5, 5), Arrays.asList(product5, product6, product15), customer3);
+        Order order3 = new Order(LocalDate.of(2022, 3, 26), Arrays.asList(product11, product7, product21, product18, product25), customer2);
+        Order order4 = new Order(LocalDate.of(2022, 1, 28), Arrays.asList(product1, product28), customer2);
+        Order order5 = new Order(LocalDate.of(2022, 2, 12), Arrays.asList(product23, product24), customer1);
         orderRepository.saveAll(Arrays.asList(order1, order2, order3, order4, order5));
     }
 
