@@ -79,7 +79,7 @@ This section highlights the POJOS used within the project:
 
 POJO TABLE:
 
-![POJO Table]( )
+![POJO Table](Tables/pojo.png)
 
 
 
