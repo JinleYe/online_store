@@ -26,13 +26,12 @@ const Cart = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, setShop
 
 
 
-
     return (
         
         <div className="cart-container">
             
             <div className="my-cart">
-                {shoppingCart && Object.keys(shoppingCart).length == 0 ? 
+                {shoppingCart && Object.keys(shoppingCart).length == 0 || Object.values(shoppingCart)[1].length == 0 ? 
                     <>
                         <h2 className="empty-cart">Your shopping cart is empty!</h2>
                         <button className="button-49" role="button" onClick={handleShop}>

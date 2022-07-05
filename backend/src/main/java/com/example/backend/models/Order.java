@@ -8,7 +8,7 @@ import java.util.List;
 
 @Entity
 @Table(name ="orders")
-@JsonIgnoreProperties({"customer"})
+//@JsonIgnoreProperties({"customer"})
 public class Order {
 
     @Id
@@ -32,8 +32,8 @@ public class Order {
     private List<Product> products;
 
     @ManyToOne
-    @JoinColumn(name = "customer")
-    @JsonIgnoreProperties(value = "orders")
+    @JoinColumn(name = "customer", nullable = false)
+    @JsonIgnoreProperties({"orders", "reviews", "cart"})
     private Customer customer;
 
 

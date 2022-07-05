@@ -52,6 +52,7 @@ function Desktop9bottom() {
         <TextField id="yourname"
           label="Your Name"
           required
+          className="contact-input"
           style={{
             minWidth: "260px",
             minHeight: "30px",
@@ -63,6 +64,7 @@ function Desktop9bottom() {
         <TextField  type="email" 
           label="Your E-mail"
           required
+          className="contact-input"
           style={{
             minWidth: "260px",
             minHeight: "30px",
@@ -75,6 +77,7 @@ function Desktop9bottom() {
         <TextField id="subjectbox"
           label="Subject"
           required
+          className="contact-input"
           style={{
             minWidth: "546px",
             minHeight: "30px",
@@ -86,9 +89,9 @@ function Desktop9bottom() {
         <TextField id="yourmessage"
           label="Type Your Message"
           required
+          className="contact-input"
           type="textarea"
           multiline = {true}
-
           style={{
             minWidth: "546px",
             minHeight: "30px",
@@ -116,7 +119,7 @@ function Desktop9bottom() {
       </form>
     </div>
 
-    <img id= "contactimage"src={contactimage}  alt="Contact us image"/>
+    {/* <img id= "contactimage"src={contactimage}  alt="Contact us image"/> */}
 
 
 
