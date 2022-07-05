@@ -1,4 +1,4 @@
-# READ ME (Pixelated Paradise- Capstone Project):
+# READ ME (Pixelated Paradise- Capstone Project)
 
 Note: This ReadMe provides a brief overview of the project– for a specific ReadMe of the frontend and backend subprojects, please refer to the links in [Project Structure](#project-structure)
 
