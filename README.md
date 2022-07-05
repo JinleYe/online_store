@@ -1,6 +1,6 @@
 # READ ME (Pixelated Paradise- Capstone Project):
 
-Note: This readme provides a brief overview of the project in its entirety– for a specific readme of the frontend and backend sub-projects read: - [Further Reading](#further-reading)
+Note: This readme provides a brief overview of the project in its entirety– for a specific readme of the frontend and backend sub-projects please read: - [Further Reading](#further-reading)
 
 #ADD LOGO IMAGE!! 
 
@@ -114,8 +114,7 @@ For our extension, we wanted to expand on the MVP and challenge ourselves with t
 - Z
 
 ## Further Reading:
-Thank you for reading this guide! 
-For further information on the frontend and backend aspects of this project, please follow the following links respectively:
+Thank you for reading this guide! Please follow the following links for further reading on the frontend and backend sub-projects:
 
 - Frontend Readme: https://github.com/JinleYe/online_store/blob/main/frontend/README.md
 - Backend Readme: https://github.com/JinleYe/online_store/blob/main/backend/ReadMe.md
