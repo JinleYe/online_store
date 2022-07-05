@@ -20,9 +20,8 @@ This front-end subproject was built using:
 
 ![Desktops]( )
 
-<br>
 
-# Getting Started with Pixelated Paradise App
+## Getting Started with Pixelated Paradise App
 
 #ADD Pixelated Paradise LOGO HERE! 
 
