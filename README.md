@@ -48,7 +48,7 @@ Pixelated Paradise is a form of electronic commerce which allows consumers to di
 <br>
 
 
- ### This API features:
+ ### This project features:
  
     - One-to-One, One-to-Many, Many-to-Many and Many-to-One relationships
     - Derived queries for multiple endpoints
