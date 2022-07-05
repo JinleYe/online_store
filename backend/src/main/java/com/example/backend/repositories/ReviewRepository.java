@@ -14,6 +14,5 @@ public interface ReviewRepository extends JpaRepository<Review, Long> {
     List<Review> findReviewByDescriptionContainingIgnoreCase (String description);
     List<Review> findReviewByDatePosted(LocalDate datePosted);
     List<Review> findReviewByRating(double rating);
-    List<Review> findReviewByRatingGreaterThan(double rating);
     List<Review> findReviewByIsVerifiedPurchase(boolean isVerifiedPurchase);
 }
