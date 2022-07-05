@@ -10,7 +10,7 @@
   }
   
   .image-grid {
-    grid-template-columns: repeat(3, 1fr);
+    
     gap: 3rem;
     align-items: center;
     display: grid;
@@ -47,16 +47,37 @@
   }
   
   .tile-container {
+    grid-template-columns: repeat(5, 1fr);
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+  }
+
+  .tile-container_latest {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 30% 30% 30%;
+  }
+
+  .tile-container_trending_products {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 30% 30% 30%;
   }
   
   .featured-product-title {
     position: relative;
     bottom: 1.25rem;
   }
-  
-  
+.carousel__arrow_carousel__arrow--right{
+
+}
+.carousel__arrow_carousel__arrow--left{
+
+}
   

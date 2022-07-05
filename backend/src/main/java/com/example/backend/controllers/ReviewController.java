@@ -25,10 +25,13 @@ public class ReviewController {
     // INDEX
     @GetMapping
     public ResponseEntity<List<Review>> getAllReviewsAndFilters(
-            @RequestParam Map<String, String> requestParams, Double rating, @RequestParam (name = "dateposted") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate datePosted, Boolean isVerifiedPurchase
+            @RequestParam Map<String, String> requestParams, Double rating, @RequestParam(name = "dateposted")
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate datePosted, Boolean isVerifiedPurchase
+
     ) {
         String title = requestParams.get("title");
         String description = requestParams.get("description");
+
 
         if (title != null) {
             return new ResponseEntity<>(reviewRepository.findReviewByTitleContainingIgnoreCase(title),
@@ -41,9 +44,6 @@ public class ReviewController {
                     HttpStatus.OK);
         } else if (rating != null) {
             return new ResponseEntity<>(reviewRepository.findReviewByRating(rating),
-                    HttpStatus.OK);
-        } else if (rating != null) {
-            return new ResponseEntity<>(reviewRepository.findReviewByRatingGreaterThan(rating),
                     HttpStatus.OK);
         } else if (isVerifiedPurchase != null) {
             return new ResponseEntity<>(reviewRepository.findReviewByIsVerifiedPurchase(isVerifiedPurchase),
