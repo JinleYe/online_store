@@ -150,6 +150,9 @@ Customer endpoints:
 | `.../customers`  | `GET` | Get All Customer Entries |
 | `.../customers/{id} ` | `GET` | Get Customer by Id |
 | `.../customers` | `POST` | Post/Create Customer |
+| `.../customers/{customerId}/{productId}/{num}` | `POST` | Post product to customer cart |
+| `.../customers/remove/{customerId}/{productId}` | `POST` | Remove product from customer cart |
+
 | `.../customers{id}` | `PUT` | Update Customer by id |
 | `.../customers{id}` | `DELETE` | Delete Customer by id |
 
@@ -189,7 +192,6 @@ Review endpoints:
 | `.../reviews?description={description} ` | `GET` | Get Review by description|
 | `.../reviews?dateposted ={Year-Month-Day} ` | `GET` | Get Review by datePosted|
 | `.../reviews?rating={rating} ` | `GET` | Get Review by rating|
-| `.../reviews? ={rating} ` | `GET` | Get Review by rating greater than|
 | `.../reviews?isVerifiedPurchase=false={boolean} ` | `GET` | Get Review by whether it is from a verified purchase|
 | `.../reviews` | `POST` | Post/Create Review |
 | `.../reviews{id}` | `PUT` | Update Review by id |
