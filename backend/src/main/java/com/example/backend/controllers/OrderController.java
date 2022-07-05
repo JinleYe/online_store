@@ -1,8 +1,10 @@
 package com.example.backend.controllers;
 
 
+import com.example.backend.models.Customer;
 import com.example.backend.models.Order;
 import com.example.backend.models.Status;
+import com.example.backend.repositories.CustomerRepository;
 import com.example.backend.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -20,6 +22,9 @@ public class OrderController {
 
     @Autowired
     OrderRepository orderRepository;
+
+    @Autowired
+    CustomerRepository customerRepository;
 
     // INDEX
     @GetMapping
@@ -56,7 +61,16 @@ public class OrderController {
     // POST
     @PostMapping
     public ResponseEntity<Order> createNewOrder(@RequestBody Order order){
-        return new ResponseEntity<>(orderRepository.save(order), HttpStatus.CREATED);
+        var customerId = order.getCustomer().getId();
+        System.out.println(order.getStatus());
+
+        orderRepository.save(order);
+
+        Customer customer = customerRepository.findById(customerId).get();
+        customerRepository.save(customer);
+
+        return new ResponseEntity<>(order, HttpStatus.CREATED);
+
     }
 
 
@@ -86,4 +100,6 @@ public class OrderController {
             orderRepository.deleteById(id);
         }
     }
+
+
 }
