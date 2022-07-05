@@ -83,7 +83,6 @@ VSC in-built terminal:
 ## Project Structure:
 
 ### Frontend:
-<br/>
 
 #### Homepage:
 
@@ -94,7 +93,7 @@ VSC in-built terminal:
 
 
 ### Backend:
-<br/>
+
 #### Unified Modelling Language Diagrams (UML):
 
 <br>
@@ -120,14 +119,14 @@ Extension:
 
 ![Extension ERD]( )
 
-
+<br/>
 
 Please follow the links below for the ReadMe of the frontend and backend subprojects:
 
 - Frontend Readme: https://github.com/JinleYe/online_store/blob/main/frontend/README.md
 - Backend Readme: https://github.com/JinleYe/online_store/blob/main/backend/ReadMe.md
 
-
+<br/>
 ## Acknowledgments:
 
 We would like to thank the Bright Network Technology Academy team and especially our trainers Anna and Richard!
