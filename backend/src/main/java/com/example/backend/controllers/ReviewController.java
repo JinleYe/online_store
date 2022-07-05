@@ -44,9 +44,6 @@ public class ReviewController {
         } else if (rating != null) {
             return new ResponseEntity<>(reviewRepository.findReviewByRating(rating),
                     HttpStatus.OK);
-        } else if (rating != null) {
-            return new ResponseEntity<>(reviewRepository.findReviewByRatingGreaterThan(rating),
-                    HttpStatus.OK);
         } else if (isVerifiedPurchase != null) {
             return new ResponseEntity<>(reviewRepository.findReviewByIsVerifiedPurchase(isVerifiedPurchase),
                     reviewRepository.findReviewByIsVerifiedPurchase(isVerifiedPurchase).isEmpty() ?
