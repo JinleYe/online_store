@@ -31,7 +31,6 @@ public class ReviewController {
         String title = requestParams.get("title");
         String description = requestParams.get("description");
 
-//        @RequestParam(required = false, name = "date") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date
 
         if (title != null) {
             return new ResponseEntity<>(reviewRepository.findReviewByTitleContainingIgnoreCase(title),
