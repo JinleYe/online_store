@@ -115,8 +115,8 @@ For our extension, we wanted to expand on the MVP and challenge ourselves with t
 Thank you for reading this guide! 
 For further information on the frontend and backend aspect of this project, please follow the following links respectively:
 
-- Frontend Readme:
-- Backend Readme: 
+- Frontend Readme: https://github.com/JinleYe/online_store/blob/main/frontend/README.md
+- Backend Readme: https://github.com/JinleYe/online_store/blob/main/backend/ReadMe.md
 
 
 ## Acknowledgments:
