@@ -1,4 +1,31 @@
-# Getting Started with Create React App
+
+READ ME (Pixelated Paradise Capstone Project- Frontend Segment):
+
+#ADD LOGO IMAGE!!
+
+In this segment of the project, you will find information pertaining to the frontend, i.e, the development of the graphical user interface of our Pixelated Paradise website, so that users can view and interact with the website.
+
+## Tech Stack
+This front-end subproject was built using:
+
+- JavaScript + React
+- HTML
+- CSS
+- The Pixelated Paradise API created in the server-side sub-project
+
+
+## Wireframe
+
+
+### The different desktops:
+
+![Desktops]( )
+
+<br>
+
+# Getting Started with Pixelated Paradise App
+
+#ADD Pixelated Paradise LOGO HERE! 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +95,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
