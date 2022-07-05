@@ -1,6 +1,6 @@
 # READ ME (Pixelated Paradise- Capstone Project):
 
-Note: This readme provides a brief overview of the project in its entirety– for a specific readme of the frontend and backend sub-projects please read: - [Further Reading](#further-reading)
+Note: This readme provides a brief overview of the project in its entirety– for a specific readme of the frontend and backend sub-projects please read - [Further Reading](#further-reading)
 
 #ADD LOGO IMAGE!! 
 
