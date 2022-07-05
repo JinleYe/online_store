@@ -1,11 +1,11 @@
 
-READ ME (Pixelated Paradise Capstone Project- Frontend Segment):
+# READ ME (Pixelated Paradise Capstone Project- Frontend Segment):
 
 #ADD LOGO IMAGE!!
 
 In this segment of the project, you will find information pertaining to the frontend, i.e, the development of the graphical user interface of our Pixelated Paradise website, so that users can view and interact with the website.
 
-## Tech Stack
+## Tech Stack 
 This front-end subproject was built using:
 
 - JavaScript + React
