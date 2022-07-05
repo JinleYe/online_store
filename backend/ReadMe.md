@@ -158,9 +158,12 @@ Order endpoints:
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../orders`  | `GET` | Get All Order Entries |
 | `.../orders/{id} ` | `GET` | Get Order by Id |
+| `.../orders/timeofpurchase?timeofpurchase={Year-Month-Day} ` | `GET` | Get Order by time of purchase |
+| `.../orders/search/status={status} ` | `GET` | Get Order by order status |
 | `.../orders` | `POST` | Post/Create Order |
 | `.../orders{id}` | `PUT` | Update Order by id |
 | `.../orders{id}` | `DELETE` | Delete Order by id |
+
 
 
 Product endpoints: 
@@ -184,9 +187,9 @@ Review endpoints:
 | `.../reviews/{id} ` | `GET` | Get Review by Id |
 | `.../reviews?title={title} ` | `GET` | Get Review by title|
 | `.../reviews?description={description} ` | `GET` | Get Review by description|
-| `.../reviews? ={ } ` | `GET` | Get Review by datePosted|
+| `.../reviews? ={dateposted} ` | `GET` | Get Review by datePosted|
 | `.../reviews?rating={rating} ` | `GET` | Get Review by rating|
-| `.../reviews? ={ } ` | `GET` | Get Review by rating greater than|
+| `.../reviews? ={rating} ` | `GET` | Get Review by rating greater than|
 | `.../reviews?isVerifiedPurchase=false={boolean} ` | `GET` | Get Review by whether it is from a verified purchase|
 | `.../reviews` | `POST` | Post/Create Review |
 | `.../reviews{id}` | `PUT` | Update Review by id |
