@@ -1,5 +1,5 @@
 
-# READ ME (Pixelated Paradise Capstone Project- Frontend Segment):
+# READ ME (Pixelated Paradise Capstone Project- Frontend Segment)
 
 #ADD LOGO IMAGE!!
 
