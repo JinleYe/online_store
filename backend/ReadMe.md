@@ -20,6 +20,7 @@ In this segment of the project, you will find all information pertaining to the 
 - [Acknowledgements](#acknowledgments)
 
 
+<br/>
 
 ## Tech Stack
 For the backend project, the following technologies/frameworks were used:
@@ -29,6 +30,7 @@ For the backend project, the following technologies/frameworks were used:
 - An SQL database
 
 
+<br/>
 
 ## Project Structure:
 ### Unified Modelling Language Diagrams (UML):
@@ -70,7 +72,7 @@ For our extension, we wanted to expand on the MVP and challenge ourselves with t
 - Y 
 - Z
 
-
+<br/>
 
 ## Plain Old Java Objects (POJOs):
 
@@ -166,6 +168,7 @@ The following table shows a list of possible commands used alongside: localhost:
 | `.../reviews{id}` | `DELETE` | Delete Review by id |
 
 
+<br/>
 
 ## Testing:
 The project involved different forms of testing including unit testing and testing via Postman. 
