@@ -3,6 +3,7 @@ package com.example.backend.controllers;
 import com.example.backend.models.Review;
 import com.example.backend.repositories.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -24,7 +25,7 @@ public class ReviewController {
     // INDEX
     @GetMapping
     public ResponseEntity<List<Review>> getAllReviewsAndFilters(
-            @RequestParam Map<String, String> requestParams, Double rating, LocalDate datePosted, Boolean isVerifiedPurchase
+            @RequestParam Map<String, String> requestParams, Double rating, @RequestParam (name = "dateposted") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate datePosted, Boolean isVerifiedPurchase
     ) {
         String title = requestParams.get("title");
         String description = requestParams.get("description");

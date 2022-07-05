@@ -1,4 +1,6 @@
 .checkout-container{
-    padding: 150px;
+    padding: 100px;
+    display:flex;
+    flex-direction: row;
 
 }

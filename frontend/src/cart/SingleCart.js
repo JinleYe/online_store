@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import QtyBox from "./QtyBox";
+import './SingleCart.css';
 
 const SingleCart = ({product, quantity, isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, setShoppingCart}) =>{
 
@@ -31,13 +32,15 @@ const SingleCart = ({product, quantity, isLogin, setIsLogin, currUser, setCurrUs
 
     return (
         <>
-            <td><div><img src={product.image} height="100px"/><span>{product.title}</span></div></td>
-            <td>￡{product.price}</td>
+            <td className="product-col"><div className="cart-product"><img src={product.image} height="100px" className="cart-img"/>
+                <div className="cart-product-des">{product.title}</div></div>
+            </td>
+            <td className="product-price">￡{product.price}</td>
             <td>
-                <div>
+                <div className="quantity-box">
                     
-                    <select name="qty" onChange={handleChangeSelect} ref={inputQuant}>
-                        
+                    <select name="qty" onChange={handleChangeSelect} ref={inputQuant} className="quantity-select">
+                        <option value="0">{quantity}</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -47,7 +50,7 @@ const SingleCart = ({product, quantity, isLogin, setIsLogin, currUser, setCurrUs
 
                 </div>
             </td>
-            <td>￡{product.price * quantity}</td>
+            <td className="product-total-price">￡{product.price * quantity}</td>
         </>
     )
 }

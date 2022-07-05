@@ -11,6 +11,7 @@ const Cart = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, setShop
 
     const navigate = useNavigate();
 
+
     useEffect(() => {
         isLogin && fetch(`http://localhost:8080/customers/${currUser.id}`)
                    .then(response => response.json())

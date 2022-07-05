@@ -6,3 +6,90 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+
+.cart-product{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: column-wrap;
+  justify-content:space-around;
+  min-width:100px;
+
+}
+
+.product-col{
+  background-color:transparent;
+  z-index:1;
+}
+
+
+.cart-img{
+
+  box-shadow: 0px 4px 6px #F6F4FD;
+  border-radius:10px;
+  position:relative;
+
+}
+
+.cart-product-des{
+  height:auto;
+  width: 200px;
+  margin-left: 10px;
+  display:flex;
+  align-items: center; 
+  justify-content: left;
+  color:rgb(50, 50, 50);
+  font-size:15px;
+
+}
+
+
+.product-price{
+  color:rgb(50, 50, 50);
+}
+
+
+.quantity-select {
+  /* font-size:12px; */
+ 
+  -webkit-appearance: none;
+  appearance: none;
+  color: white;
+  border: 1px solid #FB2E86;
+  line-height: 1;
+  outline: 0;
+  padding: 0.50em 2.3em 0.50em 0.60em;
+  border-radius: 5px;
+  background-color: black;
+  background-image: linear-gradient(black, black),
+    linear-gradient(-135deg, transparent 50%, #FB2E86 50%),
+    linear-gradient(-225deg, transparent 50%, #FB2E86 50%),
+    linear-gradient(#FB2E86 42%, black 42%);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 1px 100%, 20px 22px, 20px 22px, 20px 100%;
+  background-position: right 20px center, right bottom, right bottom, right bottom;   
+}
+
+.quantity-select:hover {
+  background-image: linear-gradient(black,black),
+    linear-gradient(-135deg, transparent 50%, black 50%),
+    linear-gradient(-225deg, transparent 50%, black 50%),
+    linear-gradient(black 42%, #FB2E86 42%);
+}
+
+select:active {
+  background-image: linear-gradient(black, black),
+    linear-gradient(-135deg, transparent 50%, black 50%),
+    linear-gradient(-225deg, transparent 50%, black 50%),
+    linear-gradient(black 42%, #FB2E86 42%);
+  color: #FB2E86;
+  border-color: black;
+  background-color: black;
+}
+
+
+
+.product-total-price{
+  color:rgb(50, 50, 50);
+}
+
