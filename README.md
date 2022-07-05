@@ -56,6 +56,8 @@ Pixelated Paradise is a form of electronic commerce which allows consumers to di
   - [Backend](#backend)
 - [Acknowledgements](#acknowledgments)
 
+<br>
+
 ## Setup and Instructions for using the Project:
 
 ### Backend - Server-side
