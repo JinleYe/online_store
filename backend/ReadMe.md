@@ -9,7 +9,6 @@ In this segment of the project, you will find all information pertaining to the 
 <br>
 
 
-
 ## Table of Contents:
 - [Tech Stack](#tech-stack)
 - [UML](#unified-modelling-language-diagrams-uml)
@@ -22,7 +21,7 @@ In this segment of the project, you will find all information pertaining to the 
 - [Further Implementations & Extensions](#further-implementations--extensions)
 - [Acknowledgements](#acknowledgments)
 
-<br/>
+
 
 ## Tech Stack
 For the backend project, the following technologies/frameworks were used:
@@ -31,7 +30,7 @@ For the backend project, the following technologies/frameworks were used:
 - Spring Boot
 - An SQL database
 
-<br/>
+
 
 ## Project Structure:
 ### Unified Modelling Language Diagrams (UML):
@@ -74,23 +73,23 @@ For our extension, we wanted to expand on the MVP and challenge ourselves with t
 - Z
 
 
-<br>
+
 ## Plain Old Java Objects (POJOs):
 
 This section highlights the POJOS used within the project:
 
-<br>
+
 POJO TABLE:
 
 ![POJO Table]( )
 
-<br>
+
 
 ## Running the API - List of Possible Commands (CRUD Functionality):
 
 The following table shows a list of possible commands used alongside: localhost:8080/ ...
 
-<br/>
+
 User endpoints: 
 
 | HTTP Request Path                                                        | Request Type | Description                                      |
@@ -163,8 +162,6 @@ Review endpoints:
 | `.../reviews{id}` | `DELETE` | Delete Review by id |
 
 
-
-<br>
 
 ## Testing:
 The project involved different forms of testing including unit testing and testing via Postman. 
