@@ -111,3 +111,11 @@ For our extension, we wanted to expand on the MVP and challenge ourselves with t
 - Y 
 - Z
 
+<br/>
+Thank you for reading this guide!
+
+## Acknowledgments:
+
+We would like to thank the Bright Network Technology Academy team and especially our trainers Anna and Richard!
+![image](https://user-images.githubusercontent.com/103422102/177317511-96fcdc4f-58d2-4a71-b7ff-bcd735394b56.png)
+
