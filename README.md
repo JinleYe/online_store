@@ -126,7 +126,7 @@ Please follow the links below for the ReadMe of the frontend and backend subproj
 - Frontend Readme: https://github.com/JinleYe/online_store/blob/main/frontend/README.md
 - Backend Readme: https://github.com/JinleYe/online_store/blob/main/backend/ReadMe.md
 
-<br/>
+
 ## Acknowledgments:
 
 We would like to thank the Bright Network Technology Academy team and especially our trainers Anna and Richard!
