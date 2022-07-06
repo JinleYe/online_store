@@ -86,7 +86,7 @@ For this segment of the project, the team created a React application to act as 
 
 #### Homepage:
 
-![Frontend Image](diagrams/Unified Modeling Language (UML).png)
+![Frontend Image]()
 
 <br>
 
@@ -101,7 +101,7 @@ This segment of the project involved building the Pixelated Paradise API for the
 <br>
 MVP:
 
-![MVP UML](online_store/diagrams/Unified Modeling Language (UML).png)
+![MVP UML](diagrams/uml.png)
 
 <br>
 
@@ -109,7 +109,7 @@ MVP:
 #### Entity Relationship Diagrams (ERD):
 
 
-![ERD]( )
+![ERD](diagrams/erd.png)
 
 
 
