@@ -30,11 +30,11 @@ For the backend project, the following technologies/frameworks were used:
 
 ## Dependencies
 
-Junit and assertj for testing
-Spring Web
-Spring Boot DevTools
-Spring Data JPA
-H2 Database
+- Junit and assertj for testing
+- Spring Web
+- Spring Boot DevTools
+- Spring Data JPA
+- H2 Database
 
 
 ## Project Structure:
