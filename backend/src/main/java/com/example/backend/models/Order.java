@@ -1,6 +1,7 @@
 package com.example.backend.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -69,6 +70,7 @@ public class Order {
     public void setStatus(Status status) {
         this.status = status;
     }
+
 
     public List<Product> getProducts() {
         return products;

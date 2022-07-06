@@ -6,7 +6,7 @@ import PageCount from "../filters/PageResults";
 import SortBy from "../filters/SortBy";
 
 
-const ProductContainer = () => {
+const ProductContainer = ({currProductId, setCurrProductId}) => {
 
     const [products, setProducts] = useState([]);
     const [query, setQuery] = useState([]);
@@ -237,18 +237,6 @@ const ProductContainer = () => {
         }
      };
 
-    //   const updateSort = () => {
-    //     sortItems(sortedByValue)
-    //     console.log("voldemort")
-    //   }
-
-
-    // if(sortItems === true) {
-    //     const updateSort = () => {
-    //             sortItems(sortedByValue)
-    //             console.log("voldemort")
-    //           }
-    // }
 
     return (
         <div>
@@ -258,12 +246,14 @@ const ProductContainer = () => {
         <SearchBar className="Search" getQuery={(q) => setQuery(q)} searchProduct={searchProduct} />
         </div>  
 
+        <div className="sort-count">
         <SortBy
         sortItems={sortItems} />
 
-        <PageCount count={filteredProducts.length > 0 
+        <PageCount className="product-count" count={filteredProducts.length > 0 
             ? filteredProducts.length  + " results"
             : products.length + " results"}/>
+            </div>
 
         <div className="product-page-wrap">            
         <div className="product-page-checkbox">            
@@ -282,7 +272,9 @@ const ProductContainer = () => {
         </div>
         <div className="products-page-list">
         <ProductList
-            products={productsToShow} />
+            products={productsToShow}
+            currProductId={currProductId}
+            setCurrProductId={setCurrProductId} />
         </div>
         </div>
         </div>

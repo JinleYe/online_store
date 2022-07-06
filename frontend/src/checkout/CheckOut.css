@@ -2,5 +2,6 @@
     padding: 100px;
     display:flex;
     flex-direction: row;
+    flex-wrap: column-wrap;
 
 }

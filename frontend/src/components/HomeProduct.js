@@ -34,6 +34,7 @@ const HomeProduct = () => {
   const handleDecrement = () => {
     if (counter === 0) {
       setCounter(featuredProducts.length - 3);
+
     } else {
       setCounter(counter - 1);
     }

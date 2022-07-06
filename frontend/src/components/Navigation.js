@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import './Navigation.css';
 import {FaUserAlt, FaShoppingCart} from 'react-icons/fa';
 import logo from './logo_images/logo_only.gif';
+import logo2 from './logo_images/PP.png';
 import usePersistedState from './usePersistedState';
 
 const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, setShoppingCart}) => {
@@ -16,8 +17,7 @@ const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, s
     const handleLogOut = () => {
         setIsLogin(!isLogin);
         setCurrUser({});
-        setShoppingCart({});
-        
+        setShoppingCart({});  
     }
 
     // handle update
@@ -35,31 +35,21 @@ const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, s
     }
 
 
-
-
-
-
     return (
-        <nav className="nav-bar">
-            <ul className="nav-ul">
-                <li>
-                <div className="logo-div" onClick={handleUpdate}>
-                    <Link to='/'><img src={logo} height="70px" className="logo-gif"/></Link>
+        <>
+            <nav className="nav-bar">
+                    <div className="logo-div" onClick={handleUpdate}>
+                    <Link to='/'><img src={logo} height="70px" className="logo-gif"/></Link>   
                 </div>
-                </li>
-                
+               
+                <Link to='/'><img src={logo2} height="170px" className="logo-gif2"/></Link>   
+                    
+                <ul className="nav-ul">
                 <ul className="nav-hpc">
                     <li className="nav-li" onClick={handleUpdate}><Link to='/home'>Home</Link></li>
                     <li className="nav-li" onClick={handleUpdate}><Link to='/products'>Products</Link></li>
                     <li className="nav-li" onClick={handleUpdate}><Link to='/contact'>Contact</Link></li>
                 </ul>
-
-                {/* <li>
-                    <Link to='/search'>Search <input type="text"/></Link>
-                </li> */}
-                <li>
-                <SearchBar getQuery={(q) => setQuery(q)} />
-                </li>
 
                 <li>
                 <div className='dropdown'>
@@ -67,7 +57,7 @@ const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, s
                     <div className='dropdown-content'  styleleft="left:0" onClick={handleUpdate}>
                         <Link to='/login' >{isLogin ? "My Orders" : "Log In"}</Link>
                         <Link to='/signup'>{isLogin ? "My Details" : "Sign Up"}</Link>
-                        {isLogin && <a href="#" onClick={handleLogOut}><Link to='/login'>Log Out</Link></a>}
+                        {isLogin && <Link onClick={handleLogOut} to='/login'>Log Out</Link>}
                     </div>
                 </div>
                 <button className="drop-btn" onClick={handleUpdate}><Link to='/cart'><FaShoppingCart/></Link></button>
@@ -75,6 +65,7 @@ const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, s
                 
             </ul>
         </nav>
+        </>
     )
 }
 
