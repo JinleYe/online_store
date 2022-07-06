@@ -9,6 +9,7 @@ In this segment of the project, you will find all information pertaining to the 
 
 ## Table of Contents:
 - [Tech Stack](#tech-stack)
+- [Dependencies](#dependencies)
 - [UML](#unified-modelling-language-diagrams-uml)
 - [ERD](#entity-relationship-diagrams-erd)
 - [Minimum Viable Product (MVP)](#minimum-viable-product-mvp)
@@ -20,7 +21,6 @@ In this segment of the project, you will find all information pertaining to the 
 - [Acknowledgements](#acknowledgments)
 
 
-
 ## Tech Stack
 For the backend project, the following technologies/frameworks were used:
 
@@ -28,6 +28,13 @@ For the backend project, the following technologies/frameworks were used:
 - Spring Boot
 - An SQL database
 
+## Dependencies
+
+Junit and assertj for testing
+Spring Web
+Spring Boot DevTools
+Spring Data JPA
+H2 Database
 
 
 ## Project Structure:
