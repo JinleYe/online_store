@@ -5,9 +5,10 @@ import usePersistedState from '../components/usePersistedState';
 import {FaRegHandPeace} from 'react-icons/fa';
 import {Link, Outlet} from 'react-router-dom';
 
-const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser}) => {
+const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser, currProduct, setCurrProduct}) => {
 
-    const [currProduct, setCurrProduct] = usePersistedState('currProduct', {});
+    //const [currProduct, setCurrProduct] = usePersistedState('currProduct', {});
+    //const [currProduct, setCurrProduct] = useState({});
     const [isOpen, setIsOpen] = usePersistedState('isOpen', false);
     
 
@@ -21,9 +22,11 @@ const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser}
     // const [currRating, setCurrRating] = useState(currProduct.reviews.length == 0 ? 0: parseFloat(currProduct.reviews.map(r => r.rating)
     //                                                          .reduce((a, b) => a+b,0))/currProduct.reviews.length);
 
+    console.log(currProduct)
+    let currRating =  currProduct && Object.keys(currProduct.reviews).length == 0 || Object.values(currProduct)[8].length == 0  ? 0 : parseFloat(currProduct.reviews.map(r => r.rating).reduce((a, b) => a+b,0))/currProduct.reviews.length;
+    //console.log(currRating);
 
-    let currRating = currProduct.reviews && Object.keys(currProduct.reviews).length == 0 ? 0: parseFloat(currProduct.reviews.map(r => r.rating).reduce((a, b) => a+b,0))/currProduct.reviews.length;
-    // console.log(currRating);
+    //let currRating = 0;
 
 
     // rendering the rating color 

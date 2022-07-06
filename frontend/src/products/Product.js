@@ -2,13 +2,14 @@ import {AiOutlineShoppingCart} from 'react-icons/ai';
 import "../styles/Product.css";
 import {Link, useNavigate} from 'react-router-dom';
 
-const Products = ({product, currProductId, setCurrProductId }) => {
-
+const Products = ({product, currProductId, setCurrProductId, currProduct, setCurrProduct }) => {
+    
     const navigate = useNavigate();
 
     const handleToProductDetail = (event) =>{
         event.preventDefault();
         setCurrProductId(product.id);
+        setCurrProduct(product);
         navigate(`../productdetail-${product.id}`);
     }
 

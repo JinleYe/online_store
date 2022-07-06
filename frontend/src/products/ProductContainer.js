@@ -6,7 +6,7 @@ import PageCount from "../filters/PageResults";
 import SortBy from "../filters/SortBy";
 
 
-const ProductContainer = ({currProductId, setCurrProductId}) => {
+const ProductContainer = ({currProductId, setCurrProductId, currProduct, setCurrProduct}) => {
 
     const [products, setProducts] = useState([]);
     const [query, setQuery] = useState([]);
@@ -274,7 +274,9 @@ const ProductContainer = ({currProductId, setCurrProductId}) => {
         <ProductList
             products={productsToShow}
             currProductId={currProductId}
-            setCurrProductId={setCurrProductId} />
+            setCurrProductId={setCurrProductId}
+            currProduct={currProduct}
+            setCurrProduct={setCurrProduct} />
         </div>
         </div>
         </div>

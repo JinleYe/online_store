@@ -2,7 +2,7 @@ import React from "react";
 import Products from "./Product";
 
 
-const ProductsList = ({ products, currProductId, setCurrProductId }) => {
+const ProductsList = ({ products, currProductId, setCurrProductId, currProduct, setCurrProduct }) => {
 
     return (
         <section className="p-cards">
@@ -11,7 +11,9 @@ const ProductsList = ({ products, currProductId, setCurrProductId }) => {
                     key={product.id}
                     product={product}
                     currProductId={currProductId} 
-                    setCurrProductId={setCurrProductId} />
+                    setCurrProductId={setCurrProductId}
+                    currProduct={currProduct} 
+                    setCurrProduct={setCurrProduct} />
                     
             ))}
             
