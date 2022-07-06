@@ -3,8 +3,20 @@
     padding-left: 100px;
     padding-right: 100px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    position: center;
+    justify-content: center;
+    position: relative;
 }
+
+.tick-image {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  /* list-style: none; */
+  margin: 0 auto;
+  position: center;
+}
+
 .desktop8-heading {
     color: darkblue;
     font-size: medium;
@@ -14,19 +26,22 @@
     font-weight: 900;
     font-size: x-large;
     margin-top: 1em;
+    display: flex;
+    justify-content: center;
 }
+
 .desktop8-description {
-    position: center;
-    width: 600px;
-    height: 49px;
-    left: 85px;
-    top: 220px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
     color: #8A8FB9;
+    position: center;
+    left: 2em;
+    top: 1.5em;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+    width: auto;
 }
+
 .continue-shopping-btn {
   background-color: #EA4C89;
   border-radius: 8px;
@@ -34,17 +49,17 @@
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
   font-size: 14px;
   font-weight: 500;
   height: 40px;
   line-height: 20px;
-  list-style: none;
-  margin: 0;
+  /* list-style: none; */
+  margin: 0 auto;
   outline: none;
   padding: 10px 16px;
-  position: relative;
+  position: center;
   text-align: center;
   text-decoration: none;
   transition: color 100ms;
@@ -53,8 +68,9 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+
 #continue-shopping-btn:hover {
     cursor: pointer;
-    background-color: #BD1954;
+    background-color: #9b838c;
     transition: all 0.4s ease-out ;
   }
