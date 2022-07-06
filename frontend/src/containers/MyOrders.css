@@ -35,7 +35,8 @@
 }
 
 .tables {
-    padding: 10px;
+    padding: 10px;    border-radius: 10px;
+
 }
 
 table {
@@ -44,6 +45,15 @@ table {
     width: 100%;
     background-color: white;
     table-layout: fixed;
+  }
+
+  th {
+    background-color: #FB2E86;
+    color: white;
+  }
+
+  td {
+    background-color: #FECEDE;
   }
   
   td, th {
@@ -74,4 +84,9 @@ table {
 
   .order-image {
     width: 100px;
+    /* mix-blend-mode: multiply; */
+  }
+
+  .order-count {
+    padding-left: 20px;
   }

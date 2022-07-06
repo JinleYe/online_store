@@ -6,25 +6,7 @@ const MyOrders = ({currUser})=> {
 const orders = currUser.orders.map(order => (
 
     <div className="order-container"> 
-        
-        {/* <div className="order-no">
-        <h2> Order Number: #{order.timeOfPurchase}-{order.id}</h2>
-        </div>
-
-        <div className="order-details">
-        <ul>
-            <li> Time of Purchase: {order.timeOfPurchase}</li>
-            <li> Order Status: {order.status}</li>
-            <li>{ order.products.map(product => (
-                <ul>
-                <li>Product: {product.title} - Price: £ {product.price} </li>
-                <img  className="my-order-image" src={product.image} alt={product.title}></img>
-                </ul>
-            ))
-            }  </li>
-        </ul>
-        <br/>
-        </div> */}
+       
 <div className="tables">
 <table>
     <thead>
@@ -63,7 +45,7 @@ const orders = currUser.orders.map(order => (
         <div className="my-orders-container">
         <h1 className="orders-title">{currUser.name}'s Order History</h1>
 
-        <PageCount count={currUser.orders.length > 0 
+        <PageCount className="order-count" count={currUser.orders.length > 0 
             ? currUser.orders.length  + " results"
             : "No orders placed. Click on Place a New Order to make your first purchase"}/>
 
