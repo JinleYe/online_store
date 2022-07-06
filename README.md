@@ -23,11 +23,11 @@ We are the team behind Pixelated Paradise - 5 members of Cohort 5 from the Brigh
 
 - Kim
     - Github: [https://github.com/JinleYe],
-    - LinkedIn:
+    - LinkedIn: https://www.linkedin.com/in/jinle-ye-6b133720a/
 
 - Adan Abdillahi
     - Github: [https://github.com/AdanAbdillahi],
-    - LinkedIn:
+    - LinkedIn:https://www.linkedin.com/in/adan-abdillahi-93125a191/
 
 - Iman Chaudhry
     - Github: [https://github.com/ImanChaudhry],
@@ -99,9 +99,9 @@ This segment of the project involved building the Pixelated Paradise API for the
 #### Unified Modelling Language Diagrams (UML):
 
 <br>
-MVP:
 
-![MVP UML](diagrams/uml.png)
+
+![UML](diagrams/uml.png)
 
 <br>
 
@@ -121,11 +121,10 @@ Please follow the links below for the ReadMe of the frontend and backend subproj
 
 ## Further Implementations:
 
--
--
--
--
--
+In the future, we would like to build upon this project by implementing the following functionality/features:
+- Chatbot feature
+- Email the contents of the basket/order
+- Admin functionality
 
 ## Acknowledgments:
 
