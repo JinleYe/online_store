@@ -1,3 +1,4 @@
+import PageCount from "../filters/PageResults";
 import "./MyOrders.css"
 
 const MyOrders = ({currUser})=> {
@@ -61,6 +62,11 @@ const orders = currUser.orders.map(order => (
     return (
         <div className="my-orders-container">
         <h1 className="orders-title">{currUser.name}'s Order History</h1>
+
+        <PageCount count={currUser.orders.length > 0 
+            ? currUser.orders.length  + " results"
+            : "No orders placed. Click on Place a New Order to make your first purchase"}/>
+
         <div className="orders">
         {orders} 
         <div className="order-button">
