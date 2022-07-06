@@ -143,4 +143,4 @@ Please follow the links below for the ReadMe of the frontend and backend subproj
 
 ## Acknowledgments:
 
-We would like to thank the Bright Network Technology Academy team and especially our trainers Anna and Richard!
+We would like to thank the Bright Network Technology Academy team, and a special shouout to Iain, Anna and Richard!
