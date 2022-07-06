@@ -100,21 +100,20 @@
 /* ------ right box of cart page ------ */
 
 .cart-right{
-    margin-top:100px;
-    margin-left:50px;
+    margin-top:60px;
+    /* margin-left:50px; */
     display: flex;
     flex-direction: column;
     min-width:300px;
     background-color:#fb2e8727;
     
-    
     height:300px;
 
     padding-top:30px;
-
     
 
 }
+
 
 .cart-values{
     
@@ -127,12 +126,33 @@
     flex-direction: row;
     justify-content: space-between;
     
+    
+}
+
+.value-li{
+    display: flex;
+    align-items: center;
+    font-family: 'Josefin Sans';
+}
+.value-price{
+    font-family: Arial;
 }
 
 .total-value{
     margin-top:20px;
     font-size:18px;
     font-weight:700;
+    display:flex;
+    align-items:center;
+}
+
+.total-price{
+    margin-top:20px;
+    font-size:18px;
+    font-family: Arial;
+    font-weight:700;
+    display:flex;
+    align-items:bottom;
 }
 
 

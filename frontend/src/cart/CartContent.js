@@ -89,17 +89,17 @@ const CartContent = ({shoppingCart, setShoppingCart, isLogin, setIsLogin, currUs
             <div className="cart-right">
                 <ul className="cart-values">
                     <li className="value-li">Order value:</li>
-                    <li className="value-li">￡{orderValue}</li>
+                    <li className="value-price">￡{parseFloat(orderValue).toFixed(2)}</li>
                 </ul>
 
                 <ul className="cart-values">
                     <li className="value-li">Delivery:</li>
-                    <li className="value-li">￡5</li>
+                    <li className="value-price">￡5</li>
                 </ul>
 
                 <ul className="cart-values">
                     <li className="total-value">Total:</li>
-                    <li className="total-value">￡{orderValue+5}</li>
+                    <li className="total-price">￡{(parseFloat(orderValue)+5).toFixed(2)}</li>
                 </ul>
 
                 <button className="checkout-btn"><Link to="/checkout">Proceed To Checkout</Link></button>

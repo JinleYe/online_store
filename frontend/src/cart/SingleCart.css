@@ -46,6 +46,7 @@ input[type=number] {
 
 .product-price{
   color:rgb(50, 50, 50);
+  font-family: Arial;
 }
 
 
@@ -91,5 +92,6 @@ select:active {
 
 .product-total-price{
   color:rgb(50, 50, 50);
+  font-family: Arial;
 }
 

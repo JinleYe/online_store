@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 
 @Entity
@@ -129,7 +130,7 @@ public class Customer {
     public void setOrders(List<Order> orders) {
         this.orders = orders;
     }
-
+    @JsonManagedReference
     public List<Review> getReviews() {
         return reviews;
     }
