@@ -86,7 +86,7 @@ For this segment of the project, the team created a React application to act as 
 
 #### Homepage:
 
-![Frontend Image]( )
+![Frontend Image](diagrams/Unified Modeling Language (UML).png)
 
 <br>
 
