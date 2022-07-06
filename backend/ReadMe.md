@@ -6,21 +6,18 @@
 
 In this segment of the project, you will find all information pertaining to the backend, i.e, the server-side logic that powers the functionality of Pixelated Paradise from behind the scenes... It includes all the code needed to build out the database, server, and application. The backend development will work in tandem with the front end to deliver the final product to the end user.
 
-<br>
-
 
 ## Table of Contents:
 - [Tech Stack](#tech-stack)
+- [Dependencies](#dependencies)
 - [UML](#unified-modelling-language-diagrams-uml)
 - [ERD](#entity-relationship-diagrams-erd)
 - [Minimum Viable Product (MVP)](#minimum-viable-product-mvp)
-- [Extensions](#extensions)
 - [Plain Old Java Objects (POJOs)](#plain-old-java-objects-pojos)
 - [Running the API - List of Possible Commands (CRUD Functionality):](#running-the-api---list-of-possible-commands-crud-functionality)
 - [Testing:](#testing)
 - [Further Implementations & Extensions](#further-implementations--extensions)
 - [Acknowledgements](#acknowledgments)
-
 
 
 ## Tech Stack
@@ -30,6 +27,13 @@ For the backend project, the following technologies/frameworks were used:
 - Spring Boot
 - An SQL database
 
+## Dependencies
+
+- Junit and assertj for testing
+- Spring Web
+- Spring Boot DevTools
+- Spring Data JPA
+- H2 Database
 
 
 ## Project Structure:
@@ -58,20 +62,20 @@ Extension:
 
 ![Extension ERD]( )
 
+<br/>
 
 ## Minimum Viable Product (MVP):
-For our MVP, we wanted to create an API with full CRUD functionality with 7x classes:
-- 
-- 
-- 
+For our MVP, we wanted to create an API with full CRUD functionality with 6x classes:
+- Admin
+- Cart
+- Category
+- Customer
+- Order
+- Product
+- Review
+- Status
 
-
-## Extensions:
-For our extension, we wanted to expand on the MVP and challenge ourselves with the following extensions:
-- X
-- Y 
-- Z
-
+<br/>
 
 
 ## Plain Old Java Objects (POJOs):
@@ -81,7 +85,7 @@ This section highlights the POJOS used within the project:
 
 POJO TABLE:
 
-![POJO Table]( )
+![POJO Table](Tables/pojo.png)
 
 
 
@@ -90,7 +94,7 @@ POJO TABLE:
 The following table shows a list of possible commands used alongside: localhost:8080/ ...
 
 
-User endpoints: 
+### User endpoints: 
 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
@@ -99,8 +103,9 @@ User endpoints:
 | `.../users{id}` | `PUT` | Update User by id |
 | `.../users{id}` | `DELETE` | Delete User by id |
 
+<br/>
 
-Admin endpoints: 
+### Admin endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../admins`  | `GET` | Get All Admin Entries |
@@ -109,8 +114,9 @@ Admin endpoints:
 | `.../admins{id}` | `PUT` | Update Admin by id |
 | `.../admins{id}` | `DELETE` | Delete Admin by id |
 
+<br/>
 
-Product endpoints: 
+### Product endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../products`  | `GET` | Get All Product Entries |
@@ -123,8 +129,9 @@ Product endpoints:
 | `.../products{id}` | `PUT` | Update Product by id |
 | `.../products{id}` | `DELETE` | Delete Product by id |
 
+<br/>
 
-Customer endpoints: 
+### Customer endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../customers`  | `GET` | Get All Customer Entries |
@@ -135,7 +142,9 @@ Customer endpoints:
 | `.../customers{id}` | `PUT` | Update Customer by id |
 | `.../customers{id}` | `DELETE` | Delete Customer by id |
 
-Order endpoints: 
+<br/>
+
+### Order endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../orders`  | `GET` | Get All Order Entries |
@@ -146,8 +155,9 @@ Order endpoints:
 | `.../orders{id}` | `PUT` | Update Order by id |
 | `.../orders{id}` | `DELETE` | Delete Order by id |
 
+<br/>
 
-Review endpoints: 
+### Review endpoints: 
 | HTTP Request Path                                                        | Request Type | Description                                      |
 |:-------------------------------------------------------------------------|:-------------|:-------------------------------------------------|
 | `.../reviews`  | `GET` | Get All Review Entries |
@@ -162,29 +172,31 @@ Review endpoints:
 | `.../reviews{id}` | `DELETE` | Delete Review by id |
 
 
+<br/>
 
 ## Testing:
 The project involved different forms of testing including unit testing and testing via Postman. 
 
-Unit testing: This process allowed for the testing of the smallest code in the system that could be logically isolated i.e., the methods and derived queries. 
+### Unit testing: 
+This process allowed for the testing of the smallest code in the system that could be logically isolated i.e., the methods and derived queries. 
 
-Example of unit testing: 
+#### Example of unit testing: 
 
-<br>
-Unit testing:
 
-![Unit testing]()
-
-<br>
-
-Postman testing: This application was the HTTP client that tested HTTP requests, using a graphical user interface, through which we obtained different types of responses that needed to be subsequently validated.  
-
-Example of Postman testing: 
+![Unit testing](testing-screenshots/unit_testing_example.png
+)
 
 <br>
-Postman:
 
-![Postman Testing]()
+### Postman testing: 
+This application was the HTTP client that tested HTTP requests, using a graphical user interface, through which we obtained different types of responses that needed to be subsequently validated.  
+
+#### Example of Postman testing: 
+
+<br>
+
+
+![Postman Testing](testing-screenshots/User-test/INDEX/INDEX.png)
 
 <br>
 
@@ -192,6 +204,8 @@ This process allowed us to evaluate and verify that our Pixelated Paradise API d
 
 <br/>
 Thank you for reading this guide!
+
+
 
 ## Acknowledgments:
 We would like to thank the Bright Network Technology Academy team and especially our trainers Anna and Richard!

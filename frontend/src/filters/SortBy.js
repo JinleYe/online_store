@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from "react";
+import "../styles/SortBy.css";
 
 const SortBy = ({sortItems}) => {
 
@@ -13,7 +14,7 @@ const SortBy = ({sortItems}) => {
 
     return (
         <div className='filter-sort'> {" "}
-        <select onChange ={(e) => sortByDropdown(e)}>
+        <select className="sortby" onChange ={(e) => sortByDropdown(e)}>
             <option value="default">Sort By:</option>
             <option  value="lowest">Lowest Price</option>
             <option  value="highest">Highest Price</option>

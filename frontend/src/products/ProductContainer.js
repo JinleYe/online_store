@@ -237,18 +237,6 @@ const ProductContainer = ({currProductId, setCurrProductId}) => {
         }
      };
 
-    //   const updateSort = () => {
-    //     sortItems(sortedByValue)
-    //     console.log("voldemort")
-    //   }
-
-
-    // if(sortItems === true) {
-    //     const updateSort = () => {
-    //             sortItems(sortedByValue)
-    //             console.log("voldemort")
-    //           }
-    // }
 
     return (
         <div>
@@ -258,12 +246,14 @@ const ProductContainer = ({currProductId, setCurrProductId}) => {
         <SearchBar className="Search" getQuery={(q) => setQuery(q)} searchProduct={searchProduct} />
         </div>  
 
+        <div className="sort-count">
         <SortBy
         sortItems={sortItems} />
 
-        <PageCount count={filteredProducts.length > 0 
+        <PageCount className="product-count" count={filteredProducts.length > 0 
             ? filteredProducts.length  + " results"
             : products.length + " results"}/>
+            </div>
 
         <div className="product-page-wrap">            
         <div className="product-page-checkbox">            
