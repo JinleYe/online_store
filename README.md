@@ -101,7 +101,7 @@ This segment of the project involved building the Pixelated Paradise API for the
 <br>
 MVP:
 
-![MVP UML]( )
+![MVP UML](diagrams/Unified Modeling Language (UML).png)
 
 <br>
 
