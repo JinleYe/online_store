@@ -13,7 +13,6 @@ In this segment of the project, you will find all information pertaining to the 
 - [UML](#unified-modelling-language-diagrams-uml)
 - [ERD](#entity-relationship-diagrams-erd)
 - [Minimum Viable Product (MVP)](#minimum-viable-product-mvp)
-- [Extensions](#extensions)
 - [Plain Old Java Objects (POJOs)](#plain-old-java-objects-pojos)
 - [Running the API - List of Possible Commands (CRUD Functionality):](#running-the-api---list-of-possible-commands-crud-functionality)
 - [Testing:](#testing)
@@ -66,16 +65,15 @@ Extension:
 <br/>
 
 ## Minimum Viable Product (MVP):
-For our MVP, we wanted to create an API with full CRUD functionality with 7x classes:
-- 
-- 
-- 
-
-## Extensions:
-For our extension, we wanted to expand on the MVP and challenge ourselves with the following extensions:
-- X
-- Y 
-- Z
+For our MVP, we wanted to create an API with full CRUD functionality with 6x classes:
+- Admin
+- Cart
+- Category
+- Customer
+- Order
+- Product
+- Review
+- Status
 
 <br/>
 
