@@ -8,7 +8,6 @@ As a gaming accessory specialist, we want to make your search easy... Here you c
 
 Take your gaming experience to the next level... choose Pixelated Paradise...
 
-<br>
 
 ## Who we are:
 We are the team behind Pixelated Paradise - 5 members of Cohort 5 from the Bright Network Technology Academy!
@@ -24,27 +23,25 @@ We are the team behind Pixelated Paradise - 5 members of Cohort 5 from the Brigh
 
 - Kim
     - Github: [https://github.com/JinleYe],
-    - LinkedIn:
+    - LinkedIn: https://www.linkedin.com/in/jinle-ye-6b133720a/
 
 - Adan Abdillahi
     - Github: [https://github.com/AdanAbdillahi],
-    - LinkedIn:
+    - LinkedIn:https://www.linkedin.com/in/adan-abdillahi-93125a191/
 
 - Iman Chaudhry
     - Github: [https://github.com/ImanChaudhry],
     - LinkedIn: [https://www.linkedin.com/in/imanchaudhry/] 
 
-<br>
 
 
 ## Project Overview:
 As part of the Bright Network Technology Academy, we were assigned a group project where the team was completely free to reign. The aim was  to design and build a full-stack application to provide a service or solve a problem, within a two week period. As a group we decided to create an application to provide a service.
 
-<br>
 
 Pixelated Paradise is a form of electronic commerce which allows consumers to directly buy gaming goods over the Internet using a web browser or a mobile app. The application permits shoppers to use "search" and "filter" features to find specific models, brands or items. Once a particular product has been found, the shopping cart feature allows consumers to accumulate multiple items and adjust quantities, just like filling a physical shopping cart or basket in a conventional store... Not keen on checking out? At Pixelated Paradise you can even sign up and sign in to save items for later purchase!
 
-<br>
+
 
 
 
@@ -56,7 +53,7 @@ Pixelated Paradise is a form of electronic commerce which allows consumers to di
 - [Further Implementations](#further-implementations)
 - [Acknowledgements](#acknowledgments)
 
-<br>
+
 
 ## Setup and Instructions for using the Project:
 
@@ -80,7 +77,7 @@ VSC in-built terminal:
 
 Please note, the front-end application should run on ‘localhost:3000’ unless you have another application running on this host - if so, you will have the option to run this on another host i.e. localhost:3001. This will not affect the running of the project.
 
-<br>
+
 
 ## Project Structure:
 
@@ -89,7 +86,7 @@ For this segment of the project, the team created a React application to act as 
 
 #### Homepage:
 
-![Frontend Image]( )
+![Frontend Image]()
 
 <br>
 
@@ -102,45 +99,33 @@ This segment of the project involved building the Pixelated Paradise API for the
 #### Unified Modelling Language Diagrams (UML):
 
 <br>
-MVP:
 
-![MVP UML]( )
+
+![UML](diagrams/uml.png)
 
 <br>
-
-Extension:
-
-![Extension UML]( )
 
 
 #### Entity Relationship Diagrams (ERD):
-<br>
-MVP:
 
-![MVP ERD]( )
 
-<br>
-Extension:
+![ERD](diagrams/erd.png)
 
-![Extension ERD]( )
 
-<br/>
 
 Please follow the links below for the ReadMe of the frontend and backend subprojects:
 
 - Frontend Readme: https://github.com/JinleYe/online_store/blob/main/frontend/README.md
 - Backend Readme: https://github.com/JinleYe/online_store/blob/main/backend/ReadMe.md
 
-<br>
 
 ## Further Implementations:
 
--
--
--
--
--
+In the future, we would like to build upon this project by implementing the following functionality/features:
+- Chatbot feature
+- Email the contents of the basket/order
+- Admin functionality
 
 ## Acknowledgments:
 
-We would like to thank the Bright Network Technology Academy team and especially our trainers Anna and Richard!
+We would like to thank the Bright Network Technology Academy team, and a special shouout to Iain, Anna and Richard!

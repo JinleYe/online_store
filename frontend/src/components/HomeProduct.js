@@ -12,6 +12,8 @@ import vrheadset from "../images/vrheadset.png";
 import joystick from "../images/joystick.png";
 import ps5controller from "../images/ps5controller.png";
 import leftArrow from "../images/left-arrow.png";
+import keyboard from "../images/keyboard.png";
+import gamingmonitor from "../images/gamingmonitor.png";
 import rightArrow from "../images/right-arrow.png";
 import Tile from "./Tile";
 import { useState } from "react";
@@ -22,23 +24,23 @@ const HomeProduct = () => {
   const [counter, setCounter] = useState(0);
 
   const handleIncrement = () => {
-    if (counter === featuredProducts.length - 1 ) {
+    if (counter === featuredProducts.length - 3) {
       setCounter(0);
     } else {
-      setCounter(counter + 1);
+      setCounter(counter +1);
     }
   };
 
   const handleDecrement = () => {
     if (counter === 0) {
-      setCounter(featuredProducts.length - 1);
-      
+      setCounter(featuredProducts.length - 3);
+
     } else {
       setCounter(counter - 1);
     }
   };
 
-  const featuredProducts = [headset, desktop, laptop,headset, desktop ];
+  const featuredProducts = [headset, desktop, laptop, gamingmonitor, keyboard];
 
   const colors = ["#0088FE", "#00C49F", "#FFBB28"];
 
@@ -58,8 +60,8 @@ const HomeProduct = () => {
 
           {/* {setImageURL(headset)} */}
           <Tile imageURL={featuredProducts[counter]} title="Headsets" />
-          <Tile imageURL={featuredProducts[counter + 1]} title="Desktops" />
-          <Tile imageURL={featuredProducts[counter + 2 ]} title="Laptops" />
+          <Tile imageURL={featuredProducts[counter +1]} title="Desktops" />
+          <Tile imageURL={featuredProducts[counter +2]} title="Laptops" />
           <img
             src={rightArrow}
             alt="right arrow"

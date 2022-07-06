@@ -10,7 +10,7 @@
   }
   
   .image-grid {
-    
+  
     gap: 3rem;
     align-items: center;
     display: grid;
@@ -20,18 +20,20 @@
   .outer-featured-container {
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    padding: 1rem;
+    padding: 7rem;
     margin: 0.5rem;
     flex: 1 0 30%;
     max-width: 1500px;
     height: 400px;
     align-items: center;
+    padding-left: 175px;
+    padding-right: 175px;
   }
   
   .featured-product-title {
     text-align: center;
     color: #000000;
-    font-size: 20px;
+    font-size: 50px;
     font-family: "Josefin Sans";
     font-size: 22px;
     font-weight: bold;
@@ -39,10 +41,9 @@
   .featured-product-title1 {
     text-align: center;
     color: #000000;
-    font-size: 50px;
     padding-bottom: 20px;
     font-family: "Josefin Sans";
-    font-size: 22px;
+    font-size: 35px;
     font-weight: bold;
   }
   
@@ -80,4 +81,6 @@
 .carousel__arrow_carousel__arrow--left{
 
 }
+
+
   
