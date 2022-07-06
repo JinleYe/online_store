@@ -1,7 +1,77 @@
-.my_orders-container{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
+.my-orders-container {
+    padding-top: 100px;
 }
+
+.orders-title {
+    display: flex;
+    justify-content: center; 
+    padding-top: 20px; 
+}
+
+.orders {
+    padding: 50px;
+}
+
+.order-details {
+    border-style: solid;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+
+}
+
+.order-container ul {
+    list-style-type: none;
+}
+
+.my-order-image {
+    width: 100px;
+}
+
+.order-no {
+    background-color: blue;
+    border-style: solid;
+}
+
+.tables {
+    padding: 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    table-layout: fixed;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    list-style-type: none;
+  }
+
+  .order-button {
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
+
+  .order-history-btn {
+    border-style: none;
+    background-color: #FB2E86;
+    color: white;
+    border-radius: 3px;
+    padding: 13px;
+  }
+
+  .order-history-btn:hover {
+    background-color: #FB2E86;
+  }
+
+  .order-image {
+    width: 100px;
+  }

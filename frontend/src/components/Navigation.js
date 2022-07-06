@@ -57,9 +57,9 @@ const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, s
                 {/* <li>
                     <Link to='/search'>Search <input type="text"/></Link>
                 </li> */}
-                <li>
+                {/* <li>
                 <SearchBar getQuery={(q) => setQuery(q)} />
-                </li>
+                </li> */}
 
                 <li>
                 <div className='dropdown'>
@@ -67,7 +67,7 @@ const Navigation = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, s
                     <div className='dropdown-content'  styleleft="left:0" onClick={handleUpdate}>
                         <Link to='/login' >{isLogin ? "My Orders" : "Log In"}</Link>
                         <Link to='/signup'>{isLogin ? "My Details" : "Sign Up"}</Link>
-                        {isLogin && <a href="#" onClick={handleLogOut}><Link to='/login'>Log Out</Link></a>}
+                        {isLogin && <Link onClick={handleLogOut} to='/login'>Log Out</Link>}
                     </div>
                 </div>
                 <button className="drop-btn" onClick={handleUpdate}><Link to='/cart'><FaShoppingCart/></Link></button>
