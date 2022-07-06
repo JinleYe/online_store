@@ -9,6 +9,8 @@ import SignUp from './containers/SignUp';
 import MyOrders from './containers/MyOrders';
 import MyDetails from './containers/MyDetails';
 import ProductDetail from './products/ProductDetail';
+import Description from './products/Description';
+import Review from './products/Review';
 
 import Cart from './cart/Cart';
 import {useEffect, useState} from 'react';
@@ -58,6 +60,10 @@ function App() {
                                                                                 setCurrProductId={setCurrProductId}
                                                                                 currUser={currUser} 
                                                                                 setCurrUser={setCurrUser} />}>                                    
+            <Route path="description" element={<Description currProductId={currProductId}
+                                                            setCurrProductId={setCurrProductId}/>} />
+            <Route path="review" element={<Review currProductId={currProductId}
+                                                  setCurrProductId={setCurrProductId}/>} />
           </Route>
 
           <Route path='/contact' element={<Contact />}></Route>

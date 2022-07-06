@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import {AiFillStar} from 'react-icons/ai';
 import usePersistedState from '../components/usePersistedState';
 import {FaRegHandPeace} from 'react-icons/fa';
+import {Link, Outlet} from 'react-router-dom';
 
 const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser}) => {
 
@@ -111,6 +112,14 @@ const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser}
                                 </div>
                     }
                 </div>
+            </div>
+
+            <div className="pink-container">
+                    <ul className="detail-title-ul">
+                        <li><Link to={"/productdetail-"+currProductId+"/description"}>Description</Link></li>
+                        <li><Link to={"/productdetail-"+currProductId+"/review"}>Reviews</Link></li>
+                    </ul>
+                    <Outlet />
             </div>
         
         </div>

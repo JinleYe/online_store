@@ -1,5 +1,6 @@
 package com.example.backend.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
@@ -7,7 +8,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "reviews")
-@JsonIgnoreProperties({"customer"})
+//@JsonIgnoreProperties({"cart", "orders", "product", "products", "reviews"})
 public class Review {
 
     @Id
@@ -109,7 +110,7 @@ public class Review {
     public void setProduct(Product product) {
         this.product = product;
     }
-
+    @JsonBackReference
     public Customer getCustomer() {
         return customer;
     }
