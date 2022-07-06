@@ -84,7 +84,7 @@ table {
 
   .order-image {
     width: 100px;
-    /* mix-blend-mode: multiply; */
+    mix-blend-mode: multiply;
   }
 
   .order-count {
