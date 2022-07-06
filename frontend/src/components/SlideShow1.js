@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import slide1 from './slideImages/slideback1.png';
-import slide2 from './slideImages/Lenovo.webp';
+import slide1 from './slideImages/slide1new.gif';
+import slide2 from './slideImages/slide2new.gif';
 import slide3 from './slideImages/gaming1.png';
 import remote from './slideImages/Group_40.png';
 import { Icon } from '@iconify/react';
@@ -49,15 +49,7 @@ const delay = 4500;
        
         {images.map((image, index) => (
           <div className="slide" key={index}>
-              <span className="controller-img">
-              {image == slide1 && <><img  src={remote} height="390px" width="490px"/> 
-                {/* <h1 className="slidewords-img">PS4 V2 </h1>
-                <h1 className="slidewords-img">DualShock 4</h1>
-                <h3 className="slidewords2-img">Wireless controller for PlayStation 4</h3> */}
-                </>
-                
-              }
-              </span>
+              
  
               <img className ="slideShow_img" src = {image}/>
 
