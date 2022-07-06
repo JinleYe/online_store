@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import {Link, useNavigate} from 'react-router-dom';
+import './OrderItems.css';
+import '../cart/CartContent.css';
 
 
 const OrderItems = ({shoppingCart, setShoppingCart, currUser, setCurrUser}) => {
@@ -15,10 +17,10 @@ const OrderItems = ({shoppingCart, setShoppingCart, currUser, setCurrUser}) => {
     }, [shoppingCart])
 
     const itemMap = shoppingCart.products.map(product => {return(
-        <li>
-            <div><img src={product.image} height="60px"/></div>
-            <div>{product.title}</div>
-            <div>{product.price}</div>
+        <li className="product-li">
+            <div className="img-box"><img src={product.image} height="50px" /></div>
+            <div className="title-box">{product.title}</div>
+            <div className="price-box">￡{product.price}</div>
         </li>
     )})
 
@@ -70,20 +72,20 @@ const OrderItems = ({shoppingCart, setShoppingCart, currUser, setCurrUser}) => {
             <div className="cart-right">
                 <ul className="cart-values">
                     <li className="value-li">Order value:</li>
-                    <li className="value-li">￡{orderValue}</li>
+                    <li className="value-price">￡{parseFloat(orderValue).toFixed(2)}</li>
                 </ul>
 
                 <ul className="cart-values">
                     <li className="value-li">Delivery:</li>
-                    <li className="value-li">￡5</li>
+                    <li className="value-price">￡5</li>
                 </ul>
 
                 <ul className="cart-values">
-                    <li className="value-li">Total:</li>
-                    <li className="value-li">￡{orderValue+5}</li>
+                    <li className="total-value">Total:</li>
+                    <li className="total-price">￡{(parseFloat(orderValue)+5).toFixed(2)}</li>
                 </ul>
 
-                <button className="checkout-btn" onClick={handlePlaceOrder}>Place Order</button>
+                <button className="checkout-btn" onClick={handlePlaceOrder}><a href="/">Place Order</a></button>
             </div>
         </div>
     );
