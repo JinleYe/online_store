@@ -105,21 +105,11 @@ MVP:
 
 <br>
 
-Extension:
-
-![Extension UML]( )
-
 
 #### Entity Relationship Diagrams (ERD):
-<br>
-MVP:
 
-![MVP ERD]( )
 
-<br>
-Extension:
-
-![Extension ERD]( )
+![ERD]( )
 
 
 
