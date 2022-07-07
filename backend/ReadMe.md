@@ -9,8 +9,6 @@ In this segment of the project, you will find all information pertaining to the 
 ## Table of Contents:
 - [Tech Stack](#tech-stack)
 - [Dependencies](#dependencies)
-- [UML](#unified-modelling-language-diagrams-uml)
-- [ERD](#entity-relationship-diagrams-erd)
 - [Minimum Viable Product (MVP)](#minimum-viable-product-mvp)
 - [Plain Old Java Objects (POJOs)](#plain-old-java-objects-pojos)
 - [Running the API - List of Possible Commands (CRUD Functionality):](#running-the-api---list-of-possible-commands-crud-functionality)
@@ -38,30 +36,6 @@ For the backend project, the following technologies/frameworks were used:
 ## Project Structure:
 ### Unified Modelling Language Diagrams (UML):
 
-<br>
-MVP:
-
-![MVP UML]( )
-
-<br>
-
-Extension:
-
-![Extension UML]( )
-
-
-### Entity Relationship Diagrams (ERD):
-<br>
-MVP:
-
-![MVP ERD]( )
-
-<br>
-Extension:
-
-![Extension ERD]( )
-
-<br/>
 
 ## Minimum Viable Product (MVP):
 For our MVP, we wanted to create an API with full CRUD functionality with 6x classes:
