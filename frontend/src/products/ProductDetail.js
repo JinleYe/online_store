@@ -71,7 +71,7 @@ const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser,
 
     const handleAddProduct = (event) => {
         event.preventDefault();
-        setIsOpen(!isOpen);
+        
         if(!isOpen && isLogin){
             fetch(`http://localhost:8080/customers/${currUser.id}/${currProduct.id}/1`, 
                 {
@@ -110,7 +110,7 @@ const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser,
                     </ul>
                     <h3>£{currProduct.price}</h3>
                     <p>1 Year Warranty</p>
-                    <button onClick={() => handleAddProduct()}>Add To Cart</button>
+                    <button onClick={handleAddProduct}>Add To Cart</button>
                     {isOpen &&  <PopUp  isOpen={isOpen}
                                         setIsOpen={setIsOpen}
                                         currProduct={currProduct} />
