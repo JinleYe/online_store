@@ -79,13 +79,15 @@ const HomeProduct = () => {
           <Tile item={featuredProducts[counter +1]} />
           <Tile item={featuredProducts[counter +2]}/>
           
-          <img
+          {/* <img
             src={rightArrow}
             alt="right arrow"
             onClick={handleIncrement}
             className="carousel__arrow_carousel__arrow--right"
-          />
+          /> */}
 
+<p alt="left arrow"
+            onClick={handleDecrement} className ="tileArrow"><FiArrowRight /></p>
 
         </div>
         <br />
