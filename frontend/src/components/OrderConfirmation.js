@@ -1,5 +1,5 @@
 import React from "react";
-import "./OrderConfirmation.css";
+import "../styles/OrderConfirmation.css";
 
 
 function OrderConfirmation() {

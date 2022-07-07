@@ -1,5 +1,5 @@
 import {FaRegHandPeace} from 'react-icons/fa';
-import '../ProductDetail.css';
+import '../../styles/PopUp.css';
 const PopUp = ({isOpen, setIsOpen, currProduct}) =>{
     console.log("pop up")
 

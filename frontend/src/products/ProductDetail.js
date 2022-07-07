@@ -1,4 +1,4 @@
-import './ProductDetail.css';
+import '../styles/PopUp.css';
 import { useState, useEffect } from 'react';
 import {AiFillStar} from 'react-icons/ai';
 import usePersistedState from '../components/usePersistedState';
