@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import {OneStar, TwoStar, ThreeStar, FourStar, FiveStar} from './stars/Star';
+import {OneStar, TwoStar, ThreeStar, FourStar, FiveStar} from './components/Star';
 
 const Review = ({currProductId, selectedProductId}) => {
     const [currReviews, setCurrReviews] = useState([]);
