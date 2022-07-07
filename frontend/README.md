@@ -21,3 +21,8 @@ This front-end subproject was built using:
 ![Desktops](../diagrams/wireframe.png)
 
 
+## Acknowledgments:
+We would like to thank the Bright Network Technology Academy team and especially our trainers Anna and Richard!
+
+
+
