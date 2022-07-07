@@ -83,7 +83,7 @@
   
   #footer-email-btn:hover {
     cursor: pointer;
-    background-color: #BD1954;
+    background-color: rgb(194, 159, 255);
     transition: all 0.4s ease-out ;
   }
   

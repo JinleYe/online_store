@@ -2,12 +2,12 @@
     border-style: solid;
     /* border-color: lightgray; */
     border: none;
-    box-shadow: 2px 4px #FB2E86;
+    box-shadow: 3px 3px rgb(255, 143, 216), 6px 6px rgb(250, 188, 250), 9px 9px rgb(251, 229, 247);
     background-color: white;
     width: 500px;
     border-radius: 20px;
     padding-left: 5px;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
     
 }
 

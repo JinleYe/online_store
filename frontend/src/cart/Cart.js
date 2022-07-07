@@ -37,7 +37,7 @@ const Cart = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, setShop
 
 
     return (
-        
+        <div className="cart-container-body">
         <div className="cart-container">
             
             <div className="my-cart">
@@ -58,6 +58,7 @@ const Cart = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, setShop
             </div>
     
             <div className="total-div"></div>
+        </div>
         </div>
     )
 }

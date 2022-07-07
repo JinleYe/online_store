@@ -14,7 +14,7 @@
 }
 
 .reset-button {
-   background-color: #FB2E86;
+   background-color: rgb(255, 126, 210);
    /* background-color: #FECEDE; */
    color: white;
    border-radius: 10px;
@@ -25,7 +25,8 @@
 }
 
 .reset-button:hover {
-    background-color: rgb(194, 159, 255);
+    background-color: rgb(255, 225, 159);
+    color: black;
     transition: 0.5s;
 }
 
@@ -37,4 +38,8 @@
 .category-selection p {
     padding: 2px;
     margin-left: 5px;
+}
+
+.category-selection p:hover {
+    color: rgb(198, 164, 255);
 }
