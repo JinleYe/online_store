@@ -29,7 +29,7 @@ function Offer(){
           <br/>
           <p  className='columnfont'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida. </p>  </div>
         
-          <div className="right-column">
+          <div className="penultimate-column">
           <img id= "column3img"src={premium}/>
           <h3 className='columnheaderfont'> Quality Product</h3>   
           <br/>

@@ -2,10 +2,12 @@ import './ProductDetail.css';
 import { useState, useEffect } from 'react';
 import {AiFillStar} from 'react-icons/ai';
 import usePersistedState from '../components/usePersistedState';
+import PopUp from './components/PopUp';
 import {FaRegHandPeace} from 'react-icons/fa';
 import {Link, Outlet} from 'react-router-dom';
 
-const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser, currProduct, setCurrProduct}) => {
+
+const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser, currProduct, setCurrProduct, isLogin}) => {
 
     //const [currProduct, setCurrProduct] = usePersistedState('currProduct', {});
     //const [currProduct, setCurrProduct] = useState({});
@@ -22,7 +24,7 @@ const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser,
     // const [currRating, setCurrRating] = useState(currProduct.reviews.length == 0 ? 0: parseFloat(currProduct.reviews.map(r => r.rating)
     //                                                          .reduce((a, b) => a+b,0))/currProduct.reviews.length);
 
-    console.log(currProduct)
+
     let currRating =  currProduct && Object.keys(currProduct.reviews).length == 0 || Object.values(currProduct)[8].length == 0  ? 0 : parseFloat(currProduct.reviews.map(r => r.rating).reduce((a, b) => a+b,0))/currProduct.reviews.length;
     //console.log(currRating);
 
@@ -69,25 +71,27 @@ const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser,
 
     const handleAddProduct = (event) => {
         event.preventDefault();
+        setIsOpen(!isOpen);
+        if(!isOpen && isLogin){
+            fetch(`http://localhost:8080/customers/${currUser.id}/${currProduct.id}/1`, 
+                {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                }
+            )
 
-        fetch(`http://localhost:8080/customers/${currUser.id}/${currProduct.id}/1`, 
-            {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' }
-            }
-        )
-
-        fetch(`http://localhost:8080/customers/${currUser.id}`)
-        .then(response => response.json())
-        .then(data => setCurrUser(data))
-
+            fetch(`http://localhost:8080/customers/${currUser.id}`)
+            .then(response => response.json())
+            .then(data => setCurrUser(data))
+        }
         setIsOpen(!isOpen);
     }
 
-    const handleClose = (event) => {
-        event.preventDefault();
-        setIsOpen(!isOpen);
-    }
+    // const handleClose = () => {
+    //     // event.preventDefault();
+    //     console.log("from handle closse")
+    //     setIsOpen(false);
+    // }
 
     return (
         <div className="detail-container">
@@ -106,14 +110,19 @@ const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser,
                     </ul>
                     <h3>£{currProduct.price}</h3>
                     <p>1 Year Warranty</p>
-                    <button onClick={handleAddProduct}>Add To Cart</button>
-                    {isOpen &&  <div className="popup-box">
+                    <button onClick={() => handleAddProduct()}>Add To Cart</button>
+                    {isOpen &&  <PopUp  isOpen={isOpen}
+                                        setIsOpen={setIsOpen}
+                                        currProduct={currProduct} />
+                    }
+
+                    {/* {isOpen &&  <div className="popup-box">
                                     <div className="box">
-                                        <div className="close-icon" onClick={handleClose}>x</div>
+                                        <div className="close-icon" onClick={() => setIsOpen(false)}>x</div>
                                         <p><FaRegHandPeace/>{currProduct.title} has been added to your cart!</p>
                                     </div>
                                 </div>
-                    }
+                    } */}
                 </div>
             </div>
 

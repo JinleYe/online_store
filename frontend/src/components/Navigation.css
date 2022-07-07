@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
 .nav-bar{
     position:fixed;
     width:100%;
@@ -7,6 +9,7 @@
     text-decoration: none;
     z-index: 4;
     display: flex;
+    font-family: 'VT323', monospace;
     /* justify-content: space-evenly; */
 
 }
@@ -31,8 +34,9 @@
     list-style:none;
     align-items: baseline;
     box-sizing: border-box;
-    font-size:16px;
-    font-weight:500;
+    font-size:24px;
+    /* font-weight:500; */
+    text-transform: uppercase;
 }
 
 .nav-hpc{
@@ -45,7 +49,7 @@
     align-items: center;
     /* box-sizing: border-box; */
     padding: 100px;
-    margin-left: 70px;
+    /* margin-left: 10px; */
 }
 
 
@@ -60,7 +64,44 @@
 
 .nav-li > a:hover{
     text-decoration:none;
-    color: #FB2E86;
+    -webkit-animation:rainbow 2s infinite;
+-ms-animation:rainbow 2s infinite;
+-o-animation:rainbow 2s infinite;
+animation:rainbow 2s infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+}
+@-ms-keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+}
+@-o-keyframes rainbow {
+    0% {color: #ff64a7}
+    20% {color: rgb(194, 159, 255)}
+    40% {color: rgb(156, 223, 250)}
+    60% {color: rgb(182, 255, 182)}
+    80% {color: rgb(251, 251, 175)}
+    100% {color: rgb(255, 236, 174)}
+}
+@keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+
 } 
 
 
@@ -84,7 +125,46 @@
 }
 
 .drop-btn:hover{
-    color:#FB2E86;
+    text-decoration:none;
+    -webkit-animation:rainbow 2s infinite;
+-ms-animation:rainbow 2s infinite;
+-o-animation:rainbow 2s infinite;
+animation:rainbow 2s infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+}
+@-ms-keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+}
+@-o-keyframes rainbow {
+    0% {color: #ff64a7}
+    20% {color: rgb(194, 159, 255)}
+    40% {color: rgb(156, 223, 250)}
+    60% {color: rgb(182, 255, 182)}
+    80% {color: rgb(251, 251, 175)}
+    100% {color: rgb(255, 236, 174)}
+}
+@keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+
+
 }
 
 .drop-btn > a{
