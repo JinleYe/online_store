@@ -5,9 +5,10 @@
     /* justify-content: flex-start; */
     justify-content: center;
     /* background-color:white; */
+    background-color: rgb(38, 38, 38);;
     /* background-image: url('https://i.redd.it/bay71o229zp81.jpg'); */
     padding-bottom: 200px;
-    font-family: 'Josefin Sans';
+    /* font-family: 'Josefin Sans'; */
     color:#9096B2;
 
 }
@@ -22,18 +23,26 @@
 
     /* width:360px; */
     border: solid transparent;
-    border-radius:5px;
+    border-radius:15px;
     padding-left: 50px;
     padding-right: 50px;
 
-    box-shadow: 0 0px 10px 5px rgb(218, 217, 217);
+    box-shadow: 3px 3px rgb(255, 143, 216), 6px 6px rgb(250, 188, 250), 9px 9px rgb(251, 229, 247);
+
+    /* box-shadow: 0 0px 10px 5px rgb(218, 217, 217); */
 }
 
 .sign-up-title{
     padding-top:20px;
     text-align: center;
     color: black;
-    font-family: 'Josefin Sans';
+    /* font-family: 'Josefin Sans'; */
+    text-transform: uppercase;
+    font-family: 'VT323', monospace;
+    font-size: 70px;
+    /* font-size: 80px; */
+    text-shadow:  2px 2px #FB2E86, 4px 4px rgb(157, 100, 255), 6px 6px rgb(255, 211, 90);
+    color: rgb(255, 143, 216);
 }
 
 .other-sign-up{
@@ -71,12 +80,12 @@
     height: 30px;
 
     border-radius: 5px;
-    background-color:black;
+    background-color:rgb(255, 126, 210);
 
     font-size:30px;
     /* margin: 5px 2px; */
     padding: 5px;
-    color:#FB2E86;
+    color: white;
 }
 
 
@@ -91,7 +100,8 @@
     border: 0;
     border-color:transparent; 
     border-radius: 5px;
-    background-color:black;
+    background-color:rgb(255, 126, 210);
+    color: white;
 
 /* shadow */
 /* -webkit-box-shadow: 0 8px 6px -6px rgb(126, 126, 126);
@@ -125,9 +135,10 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
     font-size:30px;
     /* margin: 5px 2px; */
     padding: 5px;
-    color:#FB2E86;
+    color:white;
     border-radius: 5px;
-    background-color:black;
+    background-color:rgb(255, 126, 210);
+    border-color: transparent;
 }
 
 .other-sign-up-button-github{
@@ -135,7 +146,7 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
     border: 0;
     border-color:transparent; 
 
-    background-color:black;
+    background-color:rgb(255, 126, 210);
     border-radius: 5px;
 
 }
@@ -143,7 +154,7 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
 .other-sign-up-button-github:hover{
     border-style: none;
     border: 0;
-    border-color:transparent; 
+    /* border-color:transparent;  */
     background-color: black;
     color:white;
     border-radius: 5px;
@@ -152,7 +163,7 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
 
 .other-sign-up-icons-github:hover{
 
-    background-color:black;
+    background-color: black;
     color: white;
     text-decoration:none;
     border-radius: 5px;
@@ -169,8 +180,9 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
     padding: 5px;
     padding-bottom: 5px;
     border-radius: 5px;
-    color:#FB2E86;
-    background-color:black;
+    color:white;
+    background-color:rgb(255, 126, 210);
+    border-style: transparent;
 
     width: 40px;
     height: 30px;
@@ -181,7 +193,7 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
     border: 0;
     border-color:transparent; 
     border-radius: 5px;
-    background-color:black;
+    background-color:rgb(255, 126, 210);
     /* shadow */
     /* -webkit-box-shadow: 0 8px 6px -6px rgb(126, 126, 126);
     -moz-box-shadow: 0 8px 6px -6px rgb(126, 126, 126);
@@ -213,8 +225,9 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
     padding: 5px;
     /* padding-bottom: 6px; */
     border-radius: 5px;
-    color:#FB2E86;
-    background-color:black;
+    color:white;
+    /* background-color:black; */
+    background-color: rgb(255, 126, 210);
 
     width: 40px;
     height: 30px;
@@ -225,7 +238,7 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
     border: 0;
     border-color:transparent; 
     border-radius: 5px;
-    background-color:black;
+    background-color:rgb(255, 126, 210);
 }
     
 .other-sign-up-button-google:hover{
@@ -258,12 +271,13 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
     background:white;
     padding: 0 10px;
     /* font-family: 'Red Hat Mono', monospace; */
-    font-family: 'Josefin Sans';
+    /* font-family: 'Josefin Sans'; */
  }
 
 
  .sign-up-input-box{
     border-style: solid;
+    border-radius: 10px;
     padding: 20px;
     height:25px;
     width: 297px;
@@ -272,7 +286,7 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
     border-width: 1px;
     margin-top: 10px;
 
-    font-family: 'Josefin Sans';
+    /* font-family: 'Josefin Sans'; */
 
  }
 
@@ -314,24 +328,29 @@ box-shadow: 0 8px 6px -6px rgb(126, 126, 126); */
     position: relative;
     left: 0%;
 
-    border-radius: 3px;
-    border-style: solid;
+    border-style: none;
+    /* border-style: solid;
     border-color:#FB2E86;
-    background-color:#FB2E86;
+    background-color:#FB2E86; */
+    border-radius: 10px;
+    background-color: rgb(255, 126, 210);
+    color: white;
     
     color: white;
     font-size: 18px;
-    font-family: 'Josefin Sans';
+    /* font-family: 'Josefin Sans'; */
 }
 
 .sign-up-btn:hover{
-    background-color: black;
-    border-color: white;
-    color: #FB2E86;
-    cursor: pointer;
+    /* background-color: rgb(255, 126, 210);
+    color: white;
+    cursor: pointer; */
+    background-color: rgb(255, 225, 159);
+    color: black;
+    transition: 0.5s;
 
-    box-shadow: 0 0 10px 0 #FB2E86 inset, 0 0 20px 2px #FB2E86;
-    border: 3px solid #FB2E86;
+    /* box-shadow: 0 0 10px 0 #FB2E86 inset, 0 0 20px 2px #FB2E86; */
+    /* border: 3px solid #FB2E86; */
 }
 
 /* attempting to add 'memory' to pressing link --failed: page refreshing won't resort colour */
