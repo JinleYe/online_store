@@ -1,24 +1,20 @@
 
 # READ ME (Pixelated Paradise Capstone Project- Backend Segment)
 
-#ADD LOGO IMAGE!! 
-
+![Desktops](../logo.png)
 
 In this segment of the project, you will find all information pertaining to the backend, i.e, the server-side logic that powers the functionality of Pixelated Paradise from behind the scenes... It includes all the code needed to build out the database, server, and application. The backend development will work in tandem with the front end to deliver the final product to the end user.
 
 
 ## Table of Contents:
 - [Tech Stack](#tech-stack)
-- [UML](#unified-modelling-language-diagrams-uml)
-- [ERD](#entity-relationship-diagrams-erd)
+- [Dependencies](#dependencies)
 - [Minimum Viable Product (MVP)](#minimum-viable-product-mvp)
-- [Extensions](#extensions)
 - [Plain Old Java Objects (POJOs)](#plain-old-java-objects-pojos)
 - [Running the API - List of Possible Commands (CRUD Functionality):](#running-the-api---list-of-possible-commands-crud-functionality)
 - [Testing:](#testing)
 - [Further Implementations & Extensions](#further-implementations--extensions)
 - [Acknowledgements](#acknowledgments)
-
 
 
 ## Tech Stack
@@ -28,47 +24,24 @@ For the backend project, the following technologies/frameworks were used:
 - Spring Boot
 - An SQL database
 
+## Dependencies
 
-
-## Project Structure:
-### Unified Modelling Language Diagrams (UML):
-
-<br>
-MVP:
-
-![MVP UML]( )
-
-<br>
-
-Extension:
-
-![Extension UML]( )
-
-
-### Entity Relationship Diagrams (ERD):
-<br>
-MVP:
-
-![MVP ERD]( )
-
-<br>
-Extension:
-
-![Extension ERD]( )
-
-<br/>
+- Junit and assertj for testing
+- Spring Web
+- Spring Boot DevTools
+- Spring Data JPA
+- H2 Database
 
 ## Minimum Viable Product (MVP):
-For our MVP, we wanted to create an API with full CRUD functionality with 7x classes:
-- 
-- 
-- 
-
-## Extensions:
-For our extension, we wanted to expand on the MVP and challenge ourselves with the following extensions:
-- X
-- Y 
-- Z
+For our MVP, we wanted to create an API with full CRUD functionality with 6x classes:
+- Admin
+- Cart
+- Category
+- Customer
+- Order
+- Product
+- Review
+- Status
 
 <br/>
 

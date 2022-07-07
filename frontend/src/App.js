@@ -8,6 +8,9 @@ import Login from './containers/Login';
 import SignUp from './containers/SignUp';
 import MyOrders from './containers/MyOrders';
 import MyDetails from './containers/MyDetails';
+import ProductDetail from './products/ProductDetail';
+import Description from './products/Description';
+import Review from './products/Review';
 
 import Cart from './cart/Cart';
 import {useEffect, useState} from 'react';
@@ -25,6 +28,10 @@ function App() {
   const [currUser, setCurrUser] = usePersistedState('currUser', {});
 
   const [shoppingCart, setShoppingCart] = usePersistedState('shoppingCart', []);
+
+  const [currProductId, setCurrProductId] = usePersistedState('currProductId', 1);
+
+  const [currProduct, setCurrProduct] = usePersistedState('currProduct', {});
 
   useEffect(() => {
     isLogin && fetch(`http://localhost:8080/customers/${currUser.id}`)
@@ -48,7 +55,24 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/home' element={<Home />}></Route>
-          <Route path='/products' element={<ProductContainer />}></Route>
+          <Route path='/products' element={<ProductContainer currProductId={currProductId}
+                                                             setCurrProductId={setCurrProductId}
+                                                             currProduct={currProduct} 
+                                                             setCurrProduct={setCurrProduct}/>}>                                                  
+          </Route>
+          <Route path={"/productdetail-"+currProductId} element={<ProductDetail currProductId={currProductId}
+                                                                                setCurrProductId={setCurrProductId}
+                                                                                currUser={currUser} 
+                                                                                setCurrUser={setCurrUser}
+                                                                                currProduct={currProduct} 
+                                                                                setCurrProduct={setCurrProduct}
+                                                                                isLogin={isLogin} />}>                                    
+            <Route path="description" element={<Description currProductId={currProductId}
+                                                            setCurrProductId={setCurrProductId}/>} />
+            <Route path="review" element={<Review currProductId={currProductId}
+                                                  setCurrProductId={setCurrProductId}/>} />
+          </Route>
+
           <Route path='/contact' element={<Contact />}></Route>
 
 

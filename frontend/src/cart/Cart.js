@@ -33,31 +33,38 @@ const Cart = ({isLogin, setIsLogin, currUser, setCurrUser, shoppingCart, setShop
         navigate('/products');
     }
 
-
+    useEffect(() => {
+        shoppingCart && Object.keys(shoppingCart).length == 0 || Object.values(shoppingCart)[1].length == 0 ?
+        document.querySelector('.cart-container-body').style.backgroundColor="rgb(38, 38, 38)" : document.querySelector('.cart-container-body').style.backgroundColor="white"
+    },[shoppingCart])
 
 
     return (
-        
+        <div className="cart-container-body">
         <div className="cart-container">
             
             <div className="my-cart">
                 {shoppingCart && Object.keys(shoppingCart).length == 0 || Object.values(shoppingCart)[1].length == 0 ? 
-                    <>
+                    <>  
+                        
                         <h2 className="empty-cart">Your shopping cart is empty!</h2>
                         <button className="button-49" role="button" onClick={handleShop}>
                         LET'S SHOP
                         </button>
+                        
                     </> : 
+                    
                     <CartContent shoppingCart={shoppingCart}
                                  setShoppingCart={setShoppingCart}
                                  isLogin={isLogin} 
                                  setIsLogin={setIsLogin}
                                  currUser={currUser} 
                                  setCurrUser={setCurrUser} />}
-                
+                    
             </div>
     
             <div className="total-div"></div>
+        </div>
         </div>
     )
 }

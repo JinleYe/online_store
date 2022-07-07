@@ -1,7 +1,112 @@
-.my_orders-container{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
+.my-orders-container {
+    padding-top: 100px;
+    background-color: rgb(38, 38, 38);
 }
+
+.orders-title {
+    display: flex;
+    justify-content: center; 
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-family: 'VT323', monospace;
+    font-size: 80px;
+    text-shadow: 2px 2px #FB2E86, 4px 4px rgb(157, 100, 255), 6px 6px rgb(255, 211, 90);
+    color:rgb(255, 143, 216); 
+}
+
+.orders {
+    padding: 50px;
+}
+
+.order-details {
+    border-style: solid;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+
+}
+
+.order-container ul {
+    list-style-type: none;
+}
+
+.my-order-image {
+    width: 100px;
+}
+
+.order-no {
+    border-style: solid;
+}
+
+.tables {
+    padding: 10px;
+    
+
+}
+
+.order-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    /* background-color: white; */
+    table-layout: fixed;
+
+  }
+
+.order-tr > th {
+    background-color: rgb(254, 106, 192);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+
+  }
+
+.order-body-tr > td {
+    background-color: rgb(251, 229, 247)
+  }
+  
+  .order-body-tr > td, .order-tr > th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    list-style-type: none;
+  }
+
+  .order-button {
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    padding-top: 20px;
+    margin-left: 60px
+  }
+
+  .order-history-btn {
+    border-style: none;
+    background-color: rgb(254, 106, 192);
+    color: white;
+    border-radius: 15px;
+    padding: 13px;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+
+  .order-history-btn:hover {
+    background-color: rgb(255, 225, 159);
+    color: black;
+    transition: 0.5s;
+
+  }
+
+  .order-image {
+    width: 100px;
+    mix-blend-mode: multiply;
+  }
+
+  .order-count {
+    padding-left: 35px;
+    color: white;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }

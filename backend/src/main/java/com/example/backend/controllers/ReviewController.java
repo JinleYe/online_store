@@ -25,7 +25,7 @@ public class ReviewController {
     // INDEX
     @GetMapping
     public ResponseEntity<List<Review>> getAllReviewsAndFilters(
-            @RequestParam Map<String, String> requestParams, Double rating, @RequestParam(name = "dateposted")
+            @RequestParam Map<String, String> requestParams, Double rating, @RequestParam(required = false, name = "dateposted")
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate datePosted, Boolean isVerifiedPurchase
 
     ) {

@@ -2,8 +2,10 @@
 
 .sign-up-container{
     display: flex;
+    /* justify-content: flex-start; */
     justify-content: center;
-    background-color:white;
+    /* background-color:white; */
+    /* background-image: url('https://i.redd.it/bay71o229zp81.jpg'); */
     padding-bottom: 200px;
     font-family: 'Josefin Sans';
     color:#9096B2;

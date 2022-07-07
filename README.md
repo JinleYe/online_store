@@ -2,7 +2,8 @@
 
 Note: This ReadMe provides a brief overview of the project– for a specific ReadMe of the frontend and backend subprojects, please refer to the links in [Project Structure](#project-structure)
 
-#ADD LOGO IMAGE!!
+![Logo Image](logo.png)
+
 
 As a gaming accessory specialist, we want to make your search easy... Here you can browse our vast collection and find all sorts of gaming accessories, from controllers to gaming headsets to gaming chairs! Fancy a new display to break the gaming experience? Wait no longer-  find your perfect match today with our various filters! Whether you’re a beginner or a pro gamer, there is something for everyone!
 
@@ -23,11 +24,11 @@ We are the team behind Pixelated Paradise - 5 members of Cohort 5 from the Brigh
 
 - Kim
     - Github: [https://github.com/JinleYe],
-    - LinkedIn:
+    - LinkedIn: https://www.linkedin.com/in/jinle-ye-6b133720a/
 
 - Adan Abdillahi
     - Github: [https://github.com/AdanAbdillahi],
-    - LinkedIn:
+    - LinkedIn:https://www.linkedin.com/in/adan-abdillahi-93125a191/
 
 - Iman Chaudhry
     - Github: [https://github.com/ImanChaudhry],
@@ -86,7 +87,7 @@ For this segment of the project, the team created a React application to act as 
 
 #### Homepage:
 
-![Frontend Image]( )
+![Frontend Image](homepage.png)
 
 <br>
 
@@ -99,27 +100,17 @@ This segment of the project involved building the Pixelated Paradise API for the
 #### Unified Modelling Language Diagrams (UML):
 
 <br>
-MVP:
 
-![MVP UML]( )
+
+![UML](diagrams/uml.png)
 
 <br>
-
-Extension:
-
-![Extension UML]( )
 
 
 #### Entity Relationship Diagrams (ERD):
-<br>
-MVP:
 
-![MVP ERD]( )
 
-<br>
-Extension:
-
-![Extension ERD]( )
+![ERD](diagrams/erd.png)
 
 
 
@@ -131,11 +122,10 @@ Please follow the links below for the ReadMe of the frontend and backend subproj
 
 ## Further Implementations:
 
--
--
--
--
--
+In the future, we would like to build upon this project by implementing the following functionality/features:
+- Chatbot feature
+- Email the contents of the basket/order
+- Admin functionality
 
 ## Acknowledgments:
 

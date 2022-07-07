@@ -1,48 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
 .nav-bar{
     position:fixed;
-    
     width:100%;
     height:70px;
     align-items: center;
     background-color:black;
     text-decoration: none;
     z-index: 4;
-    
-}
+    display: flex;
+    font-family: 'VT323', monospace;
+    /* justify-content: space-evenly; */
 
-.nav-ul{
-    /* margin-top: 8px; */
-    display:flex;
-    justify-content:space-evenly;
-    list-style:none;
-    align-items: center;
-    box-sizing: border-box;
-    font-size:16px;
-    font-weight:500;
 }
 
 .logo-gif{
-    position: relative;
+    /* position: relative;
     margin-top:0;
     padding-top: 0;
-    bottom:-3px;
+    bottom:-3px; */
+    margin-left: 30px;
+}
 
+.logo-gif2 {
+    margin: 10px;
+    margin-bottom: 2px;
+}
+
+
+.nav-ul{
+    display: flex;
+    justify-content:space-evenly;
+    list-style:none;
+    align-items: baseline;
+    box-sizing: border-box;
+    font-size:24px;
+    /* font-weight:500; */
+    text-transform: uppercase;
 }
 
 .nav-hpc{
-    background-color: black;
+    /* background-color: black; */
     display: flex; 
     /* flex-direction: row;
     flex-wrap: column-wrap; */
     list-style: none;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-items: center;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    padding: 100px;
+    /* margin-left: 10px; */
 }
 
 
 .nav-li{
-    margin-left: 40px;
+    margin: 80px;
 } 
 
 .nav-li > a{
@@ -52,7 +64,44 @@
 
 .nav-li > a:hover{
     text-decoration:none;
-    color: #FB2E86;
+    -webkit-animation:rainbow 2s infinite;
+-ms-animation:rainbow 2s infinite;
+-o-animation:rainbow 2s infinite;
+animation:rainbow 2s infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+}
+@-ms-keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+}
+@-o-keyframes rainbow {
+    0% {color: #ff64a7}
+    20% {color: rgb(194, 159, 255)}
+    40% {color: rgb(156, 223, 250)}
+    60% {color: rgb(182, 255, 182)}
+    80% {color: rgb(251, 251, 175)}
+    100% {color: rgb(255, 236, 174)}
+}
+@keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+
 } 
 
 
@@ -61,24 +110,61 @@
 .dropdown {
     position: relative;
     display: inline-block;
-
-
+    margin-left: 70px;
 }
 
 .drop-btn {
     background-color: #000000;
     color: white;
-    padding: 16px;
+    margin: 16px;
     font-size: 18px;
     /* font-family: 'Red Hat Mono', monospace; */
     font-weight: 600;
     border: none;
     cursor: pointer;
-
 }
 
 .drop-btn:hover{
-    color:#FB2E86;
+    text-decoration:none;
+    -webkit-animation:rainbow 2s infinite;
+-ms-animation:rainbow 2s infinite;
+-o-animation:rainbow 2s infinite;
+animation:rainbow 2s infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+}
+@-ms-keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+}
+@-o-keyframes rainbow {
+    0% {color: #ff64a7}
+    20% {color: rgb(194, 159, 255)}
+    40% {color: rgb(156, 223, 250)}
+    60% {color: rgb(182, 255, 182)}
+    80% {color: rgb(251, 251, 175)}
+    100% {color: rgb(255, 236, 174)}
+}
+@keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+
+
 }
 
 .drop-btn > a{
@@ -111,10 +197,51 @@
 }
 
 .dropdown-content a:hover {
-    background-color: #FB2E86; 
-    color: white;
-
+    text-decoration:none;
+    -webkit-animation:rainbow2 2s infinite;
+-ms-animation:rainbow2 2s infinite;
+-o-animation:rainbow2 2s infinite;
+animation:rainbow2 2s infinite;
+color: white;
 }
+
+@-webkit-keyframes rainbow2 {
+    0% {background-color: #ff64a7}
+20% {background-color: rgb(194, 159, 255)}
+40% {background-color: rgb(156, 223, 250)}
+60% {background-color: rgb(182, 255, 182)}
+80% {background-color: rgb(251, 251, 175)}
+100% {background-color: rgb(255, 236, 174)}
+}
+@-ms-keyframes rainbow2 {
+    0% {background-color: #ff64a7}
+20% {background-color: rgb(194, 159, 255)}
+40% {background-color: rgb(156, 223, 250)}
+60% {background-color: rgb(182, 255, 182)}
+80% {background-color: rgb(251, 251, 175)}
+100% {background-color: rgb(255, 236, 174)}
+}
+@-o-keyframes rainbow2 {
+    0% {background-color: #ff64a7}
+20% {background-color: rgb(194, 159, 255)}
+40% {background-color: rgb(156, 223, 250)}
+60% {background-color: rgb(182, 255, 182)}
+80% {background-color: rgb(251, 251, 175)}
+100% {background-color: rgb(255, 236, 174)}
+}
+@keyframes rainbow2 {
+    0% {background-color: #ff64a7}
+20% {background-color: rgb(194, 159, 255)}
+40% {background-color: rgb(156, 223, 250)}
+60% {background-color: rgb(182, 255, 182)}
+80% {background-color: rgb(251, 251, 175)}
+100% {background-color: rgb(255, 236, 174)}
+}
+
+
+    
+
+
 .dropdown:hover .dropdown-content {
     display: block;
 
@@ -125,11 +252,3 @@
     border-radius: 10%; 
 
 } */
-
-
-
-
-
-
-
-

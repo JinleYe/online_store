@@ -1,19 +1,36 @@
 import { useState, useEffect, useRef } from "react";
-import slide1 from './slideImages/slideback1.png';
-import slide2 from './slideImages/Lenovo.webp';
+import slide1 from './slideImages/slide1new.gif';
+import slide2 from './slideImages/slide2new.gif';
 import slide3 from './slideImages/gaming1.png';
-import remote from './slideImages/Group_40.png';
 import { Icon } from '@iconify/react';
 import './SlideShow1.css';
+import { useNavigate } from "react-router-dom";
 
 
 const colors = ["#0088FE", "#00C49F", "#FFBB28"];
 
+const video1 = "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt7f806cb08ad5d99f/61d908612e109d6c649d3b87/Disruption_VAL_DESKTOP_1730x720.mp4";
+const video2 = "https://webstatic.hoyoverse.com/upload/contentweb/2022/03/08/ee4bd2d72b7446aab4aa63019373449d_2578887134885281577.mp4"
+const video3 = "https://www.leagueoflegends.com/static/hero-0632cbf2872c5cc0dffa93d2ae8a29e8.webm";
+
+const videos = [video1, video2, video3];
+// const navigate = useNavigate();
+
+// function handleNavigate(){
+//   navigate('./products');
+// }
+
 const images = [slide1, slide2, slide3];
-const delay = 4500;
+const delay = 7000;
 
   
   function SlideShow1() {
+    const navigate = useNavigate();
+
+  function handleNavigate(){
+    navigate('../products');
+  }
+
     const [index, setIndex] = useState(0);
     const timeoutRef = useRef(null);
   
@@ -46,29 +63,39 @@ const delay = 4500;
          
         className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}vw, 0, 0)` }} >
-       
-        {images.map((image, index) => (
+        {/* <span className="poster-cover"> */}
+        {videos.map((video, index) => (
+          <>
           <div className="slide" key={index}>
               <span className="controller-img">
-              {image == slide1 && <><img  src={remote} height="390px" width="490px"/> 
-                {/* <h1 className="slidewords-img">PS4 V2 </h1>
-                <h1 className="slidewords-img">DualShock 4</h1>
-                <h3 className="slidewords2-img">Wireless controller for PlayStation 4</h3> */}
-                </>
-                
-              }
               </span>
- 
-              <img className ="slideShow_img" src = {image}/>
 
-        <button id="slideButton1" >
-        <p id= "buyNow">SHOP GAMING ACCESSORIES <Icon id="arrow" icon="bi:arrow-right" /></p>
-       </button>
-       
+              <video muted loop playsinline autoPlay className="poster-video">
+                <source src= {video} type="video/mp4"/>
+              </video>
+              <div className="poster-cover"></div>
+              
+              
+              <video muted loop playsinline autoPlay className="second-video">
+                <source src= {video} type="video/mp4"/>
+              </video>
+              <span className="border-line">
+              </span>
+
+              {video == video2 && <>
+                {/* <a href="./products"> */}
+                <button className="poster-btn" onClick={handleNavigate}>
+                  GEAR UP<Icon id="arrow" icon="bi:arrow-right" />    
+                 
+                </button>
+                {/* </a>   */}
+                </>
+              }
 
           </div> 
-        ))}
 
+        </>
+        ))}
 
           </div>
   

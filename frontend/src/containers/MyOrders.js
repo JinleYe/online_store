@@ -1,67 +1,62 @@
-import { ratingClasses } from "@mui/material";
-import { useEffect, useState } from "react";
-import desktop from "../images/desktop.png";
-import Products from "../products/Product";
+import PageCount from "../filters/PageCount";
 import "./MyOrders.css"
 
-
-
-const MyOrders = ({currUser, setCurrUser})=> {
-    console.log(currUser.name);
-    // const [orders, setOrders] = useState([])
-
-    // useEffect(() => {
-    //     fetch(`http://localhost:8080/orders`)
-    //                .then(response => response.json())
-    //                .then(data => setOrders(data))
-    //                 console.log(orders);
-    //   },[orders])  
-
-// useffect, fetch here
-
+const MyOrders = ({currUser})=> {
+  
 const orders = currUser.orders.map(order => (
 
-    <div> 
-        <h2>{order.title}</h2>
-        <p> ORDER NUMBER: {order.id}</p>
-        <p> TIME OF PURCHASE: {order.timeOfPurchase}</p>
-        <p> ORDER STATUS: {order.status}</p>
-        {/* <p> PRODUCT CATEGORY: {order.product.category}</p> */}
-        {/* <p> ORDER DESCRIPTION: {order.products}</p> */}
-        <img src={desktop} alt="image" />
-        { order.products.map(product => (
-            <div>
-                <p>product title: {product.title} </p>
-                <p>product title: {product.price} </p>
-            </div>
-        ))
-}
+    <div className="order-container"> 
+       
+<div className="tables">
+<table className="order-table">
+    <thead>
+  <tr className="order-tr">
+    <th>Order Number</th>
+    <th>Date Ordered</th>
+    <th>Order Status</th>
+    <th>Products</th>
+    <th>Price</th>
+    <th>Images</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr className="order-body-tr">
+    <td>#{order.timeOfPurchase}-{order.id}</td>
+    <td>{order.timeOfPurchase}</td>
+    <td>{order.status}</td>
+    <td>{ order.products.map(product => (
+                <li>{product.title}</li>))} 
+            </td>
+    <td>{ order.products.map(product => (
+            <li>£ {product.price}</li>))} 
+    </td>
+    <td><img className="order-image" src={order.products[0].image}></img></td>
+  </tr>
+  </tbody>
+  </table>
+  {/* <br/> */}
+
+    </div>
     </div>
 ))
 
-
-
-
-    
-
-
-
-// const reviews = currUser.reviews.map(review => (
-//     <div> 
-//         <h2>{review.title}</h2>
-//         <p>TITLE OF REVIEW: {review.title}</p>
-//         <p>RATING: {review.rating}</p>
-//         <p>  DATE OF REVIEW POSTED:{review.datePosted}</p>
-//         <p> ITEM DESCRIPTION: {review.description}</p>
-//         <img src={desktop} alt="image" />
-//     </div>
-// ))
-
-
     return (
-        <div className="my_orders-container">
+        <div className="my-orders-container">
+        <h1 className="orders-title">{currUser.name}'s Order History</h1>
+
+<div className="order-count">
+        <PageCount  count={currUser.orders.length > 0 
+            ? currUser.orders.length  + " results"
+            : "No orders placed. Click on Place a New Order to make your first purchase"}/>
+            </div>
+
+        <div className="orders">
         {orders} 
-        {/* {reviews} */}
+        <div className="order-button">
+        <a href="./products" ><button className="order-history-btn">Place A New Order</button></a>
+        </div>
+        </div>
         </div>
     )
 }

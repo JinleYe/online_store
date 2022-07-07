@@ -1,7 +1,7 @@
 
 # READ ME (Pixelated Paradise Capstone Project- Frontend Segment)
 
-#ADD LOGO IMAGE!!
+![logo](../logo.png)
 
 In this segment of the project, you will find information pertaining to the frontend, i.e, the development of the graphical user interface of our Pixelated Paradise website. The frontend development will work in tandem with the backend to deliver the final product to the end user.
 
@@ -16,9 +16,13 @@ This front-end subproject was built using:
 
 ## Wireframe
 
-
 ### The different desktops:
 
-![Desktops]( )
+![Desktops](../diagrams/wireframe.png)
+
+
+## Acknowledgments:
+We would like to thank the Bright Network Technology Academy team and especially our trainers Anna and Richard!
+
 
 

@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import ProductList from "./ProductList";
 import SearchBar from "../components/SearchBar";
 import CheckBox from "../filters/Checkbox";
-import PageCount from "../filters/PageResults";
+import PageCount from "../filters/PageCount";
 import SortBy from "../filters/SortBy";
 
+import "../styles/Product.css";
 
-const ProductContainer = () => {
+
+const ProductContainer = ({currProductId, setCurrProductId, currProduct, setCurrProduct}) => {
 
     const [products, setProducts] = useState([]);
     const [query, setQuery] = useState([]);
@@ -237,33 +239,23 @@ const ProductContainer = () => {
         }
      };
 
-    //   const updateSort = () => {
-    //     sortItems(sortedByValue)
-    //     console.log("voldemort")
-    //   }
-
-
-    // if(sortItems === true) {
-    //     const updateSort = () => {
-    //             sortItems(sortedByValue)
-    //             console.log("voldemort")
-    //           }
-    // }
 
     return (
-        <div>
+        <div className="products-page">
         <h1 className="p-title">All Products</h1>
        
          <div className="search-element"> 
         <SearchBar className="Search" getQuery={(q) => setQuery(q)} searchProduct={searchProduct} />
         </div>  
 
+        <div className="sort-count" id="filter-sort">
         <SortBy
         sortItems={sortItems} />
 
-        <PageCount count={filteredProducts.length > 0 
+        <PageCount className="product-count" count={filteredProducts.length > 0 
             ? filteredProducts.length  + " results"
             : products.length + " results"}/>
+            </div>
 
         <div className="product-page-wrap">            
         <div className="product-page-checkbox">            
@@ -282,7 +274,11 @@ const ProductContainer = () => {
         </div>
         <div className="products-page-list">
         <ProductList
-            products={productsToShow} />
+            products={productsToShow}
+            currProductId={currProductId}
+            setCurrProductId={setCurrProductId}
+            currProduct={currProduct}
+            setCurrProduct={setCurrProduct} />
         </div>
         </div>
         </div>
