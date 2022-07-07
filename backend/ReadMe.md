@@ -32,11 +32,6 @@ For the backend project, the following technologies/frameworks were used:
 - Spring Data JPA
 - H2 Database
 
-
-## Project Structure:
-### Unified Modelling Language Diagrams (UML):
-
-
 ## Minimum Viable Product (MVP):
 For our MVP, we wanted to create an API with full CRUD functionality with 6x classes:
 - Admin
