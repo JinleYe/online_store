@@ -36,11 +36,9 @@ const Login = ({isLogin, setIsLogin, currUser, setCurrUser}) => {
             return
         };
 
-        // isAdmin ? setCurrAdmin(curr[0]) : setCurrUser(curr[0]);
         setCurrUser(curr[0]);
         setIsLogin(!isLogin);
-        navigate('/home');
-
+        navigate('/home')
     }
 
 
