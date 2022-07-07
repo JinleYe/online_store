@@ -113,7 +113,7 @@ const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser,
                     <li><strong>Price: </strong> £{currProduct.price}</li>
                     <li>1 Year Warranty</li>
                     
-                    <button onClick={() => handleAddProduct()}>Add To Cart</button>
+                    <button onClick={handleAddProduct}>Add To Cart</button>
 
                     {isOpen &&  <PopUp  isOpen={isOpen}
                                         setIsOpen={setIsOpen}
