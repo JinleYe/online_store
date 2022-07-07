@@ -8,6 +8,7 @@ const ProductsList = ({ products, currProductId, setCurrProductId, currProduct, 
         <section className="p-cards">
             {products.map((product) => (
                 <Products
+                className="card"
                     key={product.id}
                     product={product}
                     currProductId={currProductId} 

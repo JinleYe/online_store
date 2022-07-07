@@ -1,12 +1,10 @@
+
 .sortby {
-    border: 1;
-    vertical-align: middle;
-    background: transparent;
-    border-radius: 3px;
-    margin-left: 10px;
+    border: 0;
+    border-radius: 10px;
 }
 
 .sort-count {
-    display: flex;
-    justify-content: start;
+    font-size: 14px;
 }
+

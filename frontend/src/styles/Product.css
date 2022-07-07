@@ -1,16 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+.products-page {
+    background-color: rgb(242, 242, 242);
+}
+
 .p-title {
     /* padding: 20px 10px 0px; */
     padding-top: 130px;
     padding-bottom: 20px;
+    /* margin-left: 50px; */
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
+    font-family: 'VT323', monospace;
+    font-size: 80px;
+    text-shadow:  2px 2px #FB2E86, 4px 4px rgb(194, 159, 255), 6px 6px rgb(255, 215, 96);
+    color:black;
+    
 }
 
 .p-item {
     padding: 10px;
     margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 7px 6px rgba(133, 132, 132, 0.15);
+    border-radius: 15px;
+    /* box-shadow: 0 7px 6px rgba(133, 132, 132, 0.15); */
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    
+    
 }
 
 .p-item-info {
@@ -20,15 +39,39 @@
 }
 
 .p-img {
-    width: 100%;
-    padding-top: 10px;
-    flex-basis: 40%
+    width: 250px;
+    margin-top: -80px;
+
+    
+
 }
 
 .p-info-text {
-    padding-left: 20px;
+    padding-left: 40px;
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+
 }
 
+.p-item h1 {
+    text-transform: uppercase;
+    margin-left: 290px;
+    margin-top: 50px;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+
+}
+
+.p-item h1:hover {
+    color:#FB2E86;
+    transition: 2s;
+}
+
+.p-item strong {
+    text-transform: uppercase;
+    
+}
 .p-img-div {
     display: inline-block;
 }
@@ -46,9 +89,17 @@
     border-style: none;
     background-color: #FB2E86;
     color: white;
-    border-radius: 3px;
-    padding: 1%;
-    
+    border-radius: 10px;
+    padding: 2%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-right: -10px;
+    font-size: 14px;
+}
+
+.basket-btn:hover {
+    background-color: rgb(194, 159, 255);
+    transition: 0.5s;
 }
 
 .shopping-cart-btn {
@@ -74,3 +125,29 @@
 .product-page-checkbox {
   overflow-y: auto;
 }
+
+.card {
+    background-color: white;
+}
+
+#filter-sort {
+    background-color: white;
+    width: 240px;
+    /* margin: 5px; */
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    border-radius: 15px;
+    margin-left: 40px;
+    
+    
+ }
+
+ .count  {
+    margin-right: 50px;
+    padding-left: 30px;
+    margin-top: 7px;
+ }
+
+ 

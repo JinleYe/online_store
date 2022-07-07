@@ -1,4 +1,3 @@
-
 /* WHATS ON OFFER */
 
 .offer-container {
@@ -12,12 +11,12 @@
       color: white;
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
-      padding: 3em;
+      /* padding: 3em; */
     }
   
 
     .header {
-      color: #151875;
+      color: black;
       position: relative;
       left: 0em;
     }
@@ -33,8 +32,10 @@
       grid-column-start: 1;
       grid-column-end: end;
     }
+
+    
     .left-column {
-      background: white;
+      background: rgb(255, 161, 221);
       box-shadow:  rgba(0, 0, 0, 0.115) 0px 3px 8px;
     }
     .center-column {
@@ -62,7 +63,7 @@
      }
   
     .columnheaderfont {
-      color: darkblue;
+      color: black;
       font-size: medium;
       position: relative;
       top: 0.5em;
@@ -85,9 +86,14 @@
     }
     #offertext {
       
-      color: #151875;
-      font-size: 35px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      color: rgb(255, 143, 216);
+      font-family: 'VT323', monospace;
+      font-size: 80px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow:  2px 2px #FB2E86, 4px 4px rgb(157, 100, 255), 6px 6px rgb(255, 211, 90);
+      /* font-size: 35px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
   }
   }
  

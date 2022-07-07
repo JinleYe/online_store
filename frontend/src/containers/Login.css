@@ -2,8 +2,9 @@
 
 .sign-up-container{
     display: flex;
-    justify-content: center;
-    background-color:white;
+    justify-content: flex-start;
+    /* background-color:white; */
+    background-image: url('https://i.redd.it/bay71o229zp81.jpg');
     padding-bottom: 200px;
     font-family: 'Josefin Sans';
     color:#9096B2;
@@ -24,7 +25,7 @@
     padding-left: 50px;
     padding-right: 50px;
 
-    box-shadow: 0 0px 10px 5px rgb(218, 217, 217);
+    /* box-shadow: 0 0px 10px 5px rgb(218, 217, 217); */
 }
 
 .sign-up-title{
