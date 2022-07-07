@@ -95,7 +95,7 @@ For this segment of the project, the team created a React application to act as 
 
 ### Backend:
 
-This segment of the project involved building the Pixelated Paradise API for the user to interact with. Below you will find images of our 'Unified Modelling Language Diagrams' and 'Entity Relationship Diagrams'.
+This segment of the project involved building the Pixelated Paradise API for the user to interact with. Below you will find images of our 'Unified Modelling Language Diagram' and 'Entity Relationship Diagram'.
 
 #### Unified Modelling Language Diagrams (UML):
 
