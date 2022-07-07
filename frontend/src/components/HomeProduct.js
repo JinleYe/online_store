@@ -84,7 +84,7 @@ const HomeProduct = () => {
             alt="right arrow"
             onClick={handleIncrement}
             className="carousel__arrow_carousel__arrow--right"
-          /> */}
+          />
 
 
         </div>
