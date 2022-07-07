@@ -8,17 +8,17 @@ export default function CheckBox({filteredByCategory, clearProductChecks, checke
       <div className="checkbox">
         <h4 className="checkbox-title">Categories</h4>
         <div className="category-selection">
-          <input
+          <p><input
           type="checkbox"
           id="1"
           name="category"
           value="Laptop"
           checked={checkedLaptop}
           onChange={() => filteredByCategory("laptop")}
-          /> Laptop
-          <br/>
+          /> Laptop </p>
           
-
+          
+          <p>
           <input
           type="checkbox"
           id="2"
@@ -26,9 +26,9 @@ export default function CheckBox({filteredByCategory, clearProductChecks, checke
           value="Keyboard"
           checked={checkedKeyboard}
           onChange={() => filteredByCategory("gamingkeyboard")}
-          /> Keyboard
-          <br/>
-
+          /> Keyboard </p>
+          
+<p>
           <input
           type="checkbox"
           id="3"
@@ -36,9 +36,9 @@ export default function CheckBox({filteredByCategory, clearProductChecks, checke
           value="Gaming Chair"
           checked={checkedGamingChair}
           onChange={() => filteredByCategory("gamingchair")}
-          /> Gaming Chair
-          <br/>
-
+          /> Gaming Chair </p>
+          
+<p>
           <input
           type="checkbox"
           id="4"
@@ -46,9 +46,9 @@ export default function CheckBox({filteredByCategory, clearProductChecks, checke
           value="Gaming Mouse"
           checked={checkedGamingMouse}
           onChange={() => filteredByCategory("gamingmouse")}
-          /> Gaming Mouse
-          <br/>
-
+          /> Gaming Mouse </p>
+          
+<p>
           <input
           type="checkbox"
           id="5"
@@ -56,9 +56,9 @@ export default function CheckBox({filteredByCategory, clearProductChecks, checke
           value="Games Console"
           checked={checkedGamingConsole}
           onChange={() => filteredByCategory("gamingconsole")}
-          /> Games Console
-          <br/>
-
+          /> Games Console </p>
+          
+<p>
           <input
           type="checkbox"
           id="6"
@@ -66,9 +66,9 @@ export default function CheckBox({filteredByCategory, clearProductChecks, checke
           value="Gaming Headset"
           checked={checkedGamingHeadset}
           onChange={() => filteredByCategory("gamingheadset")}
-          /> Gaming Headset
-           <br/>
-
+          /> Gaming Headset </p>
+           
+<p>
           <input
           type="checkbox"
           id="7"
@@ -76,7 +76,7 @@ export default function CheckBox({filteredByCategory, clearProductChecks, checke
           value="Gaming Controller"
           checked={checkedGamingController}
           onChange={() => filteredByCategory("gamingcontroller")}
-          /> Gaming Controller
+          /> Gaming Controller </p>
           </div>
 
           <div className="btn">

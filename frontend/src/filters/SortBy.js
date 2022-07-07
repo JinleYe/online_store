@@ -13,7 +13,7 @@ const SortBy = ({sortItems}) => {
     
 
     return (
-        <div className='filter-sort'> {" "}
+        <div id='filter-sort'> {" "}
         <select className="sortby" onChange ={(e) => sortByDropdown(e)}>
             <option value="default">Sort By:</option>
             <option  value="lowest">Lowest Price</option>

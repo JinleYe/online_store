@@ -51,18 +51,18 @@
        
      }
      .center-column {
-       background:  white;
+       background:  rgb(235, 168, 255);
        box-shadow: 0 0 5px #e9e9e9;
 
      }
 
      .penultimate-column {
-      background:  white;
+      background:  rgb(164, 255, 199);
       box-shadow: 0 0 5px #e9e9e9;
     }
     
      .right-column {
-       background: white;
+       background: rgb(150, 255, 243);
        box-shadow: 0 0 5px #e9e9e9;
      }
     

@@ -18,6 +18,7 @@ import rightArrow from "../images/right-arrow.png";
 import Tile from "./Tile";
 import { useState } from "react";
 import SubTitle from "./SubTitle";
+import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 
 const HomeProduct = () => {
   const [imageURL, setImageURL] = useState(headset);
@@ -49,30 +50,39 @@ const HomeProduct = () => {
   return (
 
       <div className="outer-featured-container">
-        <h1 className="featured-product-title1"> Featured Products</h1>
+        <h1 className="featured-product-title1"> FEATURED PRODUCTS</h1>
         <div className="tile-container">
-          <img
+          {/* <img
             src={leftArrow}
             alt="left arrow"
             onClick={handleDecrement}
             className="carousel__arrow_carousel__arrow--left"
-          />
+          /> */}
+
+<p alt="right arrow"
+            onClick={handleDecrement} className ="tileArrow"><FiArrowLeft /></p>
 
           {/* {setImageURL(headset)} */}
           <Tile imageURL={featuredProducts[counter]} title="Headsets" />
           <Tile imageURL={featuredProducts[counter +1]} title="Desktops" />
           <Tile imageURL={featuredProducts[counter +2]} title="Laptops" />
-          <img
+
+          <p alt="right arrow"
+            onClick={handleIncrement} className ="tileArrow"><FiArrowRight /></p>
+          {/* <img
             src={rightArrow}
             alt="right arrow"
             onClick={handleIncrement}
             className="carousel__arrow_carousel__arrow--right"
-          />
+          /> */}
+
+
         </div>
         <br />
         <br />
         <br />
-        <SubTitle subTitle="Latest Products" />
+        {/* <SubTitle subTitle="Latest Products" /> */}
+        <h1 className="featured-product-title1"> LATEST PRODUCTS</h1>
         <br />
         <br />
         <div className="tile-container_latest">
@@ -86,7 +96,8 @@ const HomeProduct = () => {
         <br />
         <br />
         <br />
-        <SubTitle subTitle="Trending Products" />
+        {/* <SubTitle subTitle="Trending Products" /> */}
+        <h1 className="featured-product-title1"> TRENDING PRODUCTS</h1>
         <br />
         <br />
         <div className="tile-container_trending_products">

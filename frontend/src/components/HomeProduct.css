@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+
+
 .featured-products {
     background-color: rgb(242, 199, 215);
     border-radius: 20px;
-    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    /* box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5); */
     padding: 1rem;
     margin: 1rem;
     flex: 1 0 30%;
@@ -18,9 +22,10 @@
     justify-content: space-between;
   }
   .outer-featured-container {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+    /* background-image: URL("https://c4.wallpaperflare.com/wallpaper/379/284/878/genshin-impact-genshin-landscape-hd-wallpaper-preview.jpg"); */
     border-radius: 20px;
-    padding: 7rem;
+    padding: 2rem;
     margin: 0.5rem;
     flex: 1 0 30%;
     max-width: 1500px;
@@ -33,19 +38,22 @@
   .featured-product-title {
     text-align: center;
     color: #000000;
-    font-size: 50px;
-    font-family: "Josefin Sans";
+    /* font-family: 'VT323', monospace; */
     font-size: 22px;
     font-weight: bold;
+    text-transform: uppercase;
+    
   }
   .featured-product-title1 {
     text-align: center;
-    color: #000000;
+    color: rgb(255, 143, 216);
     padding-bottom: 20px;
-    font-family: "Josefin Sans";
-    font-size: 35px;
+    font-family: 'VT323', monospace;
+    font-size: 80px;
     font-weight: bold;
-  }
+    text-transform: uppercase;
+    text-shadow:  2px 2px #FB2E86, 4px 4px rgb(157, 100, 255), 6px 6px rgb(255, 211, 90);
+    }
   
   .tile-container {
     grid-template-columns: repeat(5, 1fr);
@@ -53,6 +61,57 @@
     justify-content: center;
     align-items: center;
     grid-template-columns: 5% 30% 30% 30% 5%;
+  }
+
+  .tileArrow {
+    font-size: 200px;
+    color: rgb(255, 236, 183);
+    display: flex;
+    z-index: 100;
+  }
+
+  .tileArrow:hover {
+    text-decoration:none;
+    -webkit-animation:rainbow 2s infinite;
+-ms-animation:rainbow 2s infinite;
+-o-animation:rainbow 2s infinite;
+animation:rainbow 2s infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+}
+@-ms-keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+}
+@-o-keyframes rainbow {
+    0% {color: #ff64a7}
+    20% {color: rgb(194, 159, 255)}
+    40% {color: rgb(156, 223, 250)}
+    60% {color: rgb(182, 255, 182)}
+    80% {color: rgb(251, 251, 175)}
+    100% {color: rgb(255, 236, 174)}
+}
+@keyframes rainbow {
+    0% {color: #ff64a7}
+20% {color: rgb(194, 159, 255)}
+40% {color: rgb(156, 223, 250)}
+60% {color: rgb(182, 255, 182)}
+80% {color: rgb(251, 251, 175)}
+100% {color: rgb(255, 236, 174)}
+
+
+
   }
 
   .tile-container_latest {
