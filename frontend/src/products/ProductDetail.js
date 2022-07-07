@@ -87,11 +87,6 @@ const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser,
         setIsOpen(!isOpen);
     }
 
-    // const handleClose = () => {
-    //     // event.preventDefault();
-    //     console.log("from handle closse")
-    //     setIsOpen(false);
-    // }
 
     return (
         <div className="detail-container">
