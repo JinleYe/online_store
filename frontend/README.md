@@ -19,6 +19,6 @@ This front-end subproject was built using:
 
 ### The different desktops:
 
-![Desktops](frontend/diagrams/wireframe.png)
+![Desktops](diagrams/wireframe.png)
 
 
