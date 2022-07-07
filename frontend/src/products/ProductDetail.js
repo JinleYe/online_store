@@ -7,6 +7,7 @@ import {FaRegHandPeace} from 'react-icons/fa';
 import {Link, Outlet} from 'react-router-dom';
 import "../styles/ProductDetail.css";
 import Description from './Description';
+import {AiOutlineShoppingCart} from 'react-icons/ai';
 
 
 const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser, currProduct, setCurrProduct, isLogin}) => {
@@ -113,7 +114,7 @@ const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser,
                     <li><strong>Price: </strong> £{currProduct.price}</li>
                     <li>1 Year Warranty</li>
                     
-                    <button onClick={handleAddProduct}>Add To Cart</button>
+                    <button onClick={handleAddProduct}><AiOutlineShoppingCart size="15"/>Add To Cart</button>
 
                     {isOpen &&  <PopUp  isOpen={isOpen}
                                         setIsOpen={setIsOpen}

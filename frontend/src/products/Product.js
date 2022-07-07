@@ -26,7 +26,7 @@ const Products = ({product, currProductId, setCurrProductId, currProduct, setCur
             <li><p><strong>Rating: </strong>{product.rating}</p></li>
             <li><strong>Description: </strong>{product.description}</li>
             <div className='shopping-cart-btn'>
-            <button className="basket-btn" onClick={handleToProductDetail}><AiOutlineShoppingCart size="15"/>View product</button>
+            <button className="basket-btn" onClick={handleToProductDetail}>View product</button>
             </div>
             </div>
             {/* <li><strong>Stock Availability: </strong>{product.stockQuantity}</li> */}

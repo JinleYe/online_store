@@ -55,27 +55,29 @@ input[type=number] {
  
   -webkit-appearance: none;
   appearance: none;
-  color: white;
+  color: rgb(50, 50, 50);
   border: 1px solid #FB2E86;
+  /* border: solid; */
   line-height: 1;
   outline: 0;
   padding: 0.50em 2.3em 0.50em 0.60em;
   border-radius: 5px;
-  background-color: black;
-  background-image: linear-gradient(black, black),
+  /* background-color: rgb(255, 225, 159); */
+  background-image: linear-gradient(white, white),
     linear-gradient(-135deg, transparent 50%, #FB2E86 50%),
     linear-gradient(-225deg, transparent 50%, #FB2E86 50%),
-    linear-gradient(#FB2E86 42%, black 42%);
+    linear-gradient(#FB2E86 42%, white 42%);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 1px 100%, 20px 22px, 20px 22px, 20px 100%;
   background-position: right 20px center, right bottom, right bottom, right bottom;   
 }
 
 .quantity-select:hover {
-  background-image: linear-gradient(black,black),
-    linear-gradient(-135deg, transparent 50%, black 50%),
-    linear-gradient(-225deg, transparent 50%, black 50%),
-    linear-gradient(black 42%, #FB2E86 42%);
+  background-image: linear-gradient(white, white),
+    linear-gradient(-135deg, transparent 50%, rgb(255, 225, 159) 50%),
+    linear-gradient(-225deg, transparent 50%, rgb(255, 225, 159) 50%),
+    linear-gradient(rgb(255, 225, 159) 42%, white 42%);
+    border: 1px solid rgb(254, 194, 64);
 }
 
 select:active {
