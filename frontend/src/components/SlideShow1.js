@@ -30,20 +30,20 @@ const delay = 7000;
       }
     }
   
-    // useEffect(() => {
-    //   resetTimeout();
-    //   timeoutRef.current = setTimeout(
-    //     () =>
-    //       setIndex((prevIndex) =>
-    //         prevIndex === colors.length - 1 ? 0 : prevIndex + 1
-    //       ),
-    //     delay
-    //   );
+    useEffect(() => {
+      resetTimeout();
+      timeoutRef.current = setTimeout(
+        () =>
+          setIndex((prevIndex) =>
+            prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+          ),
+        delay
+      );
   
-    //   return () => {
-    //     resetTimeout();
-    //   };
-    // }, [index]);
+      return () => {
+        resetTimeout();
+      };
+    }, [index]);
 
 
     
