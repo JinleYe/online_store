@@ -56,11 +56,13 @@ const FourStar = () => {
 const FiveStar = () => {
     return (
         <ul className="rating-ul">
-            <li><AiFillStar className="one-star" color="yellow"/></li>
-            <li><AiFillStar className="two-star" color="yellow"/></li>
-            <li><AiFillStar className="three-star" color="yellow"/></li>
-            <li><AiFillStar className="four-star" color="yellow"/></li>
-            <li><AiFillStar className="five-star" color="yellow"/></li>
+            <li><AiFillStar className="one-star" color="#FFD345"/></li>
+            <li><AiFillStar className="two-star" color="#FFD345"/></li>
+            <li><AiFillStar className="three-star" color="#FFD345"/></li>
+            <li><AiFillStar className="four-star" color="#FFD345"/></li>
+            <li><AiFillStar className="five-star" color="#FFD345"/></li>
+            
+            
         </ul>
     );
 }

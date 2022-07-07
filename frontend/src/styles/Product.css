@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
 .products-page {
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(38, 38, 38);
 }
 
 .p-title {
@@ -14,8 +14,8 @@
     text-transform: uppercase;
     font-family: 'VT323', monospace;
     font-size: 80px;
-    text-shadow:  2px 2px #FB2E86, 4px 4px rgb(194, 159, 255), 6px 6px rgb(255, 215, 96);
-    color:black;
+    text-shadow:  2px 2px #FB2E86, 4px 4px rgb(157, 100, 255), 6px 6px rgb(255, 211, 90);
+    color: rgb(255, 143, 216);
     
 }
 
@@ -26,10 +26,8 @@
     /* box-shadow: 0 7px 6px rgba(133, 132, 132, 0.15); */
     background-color: white;
     padding-left: 40px;
-    padding-right: 40px;
-
-    
-    
+    padding-right: 40px; 
+    margin-bottom: 30px; 
 }
 
 .p-item-info {
@@ -41,9 +39,6 @@
 .p-img {
     width: 250px;
     margin-top: -80px;
-
-    
-
 }
 
 .p-info-text {
@@ -51,7 +46,6 @@
     font-size: 16px;
     display: block;
     margin-top: 10px;
-
 }
 
 .p-item h1 {
@@ -60,12 +54,11 @@
     margin-top: 50px;
     font-family: 'VT323', monospace;
     font-size: 40px;
-
 }
 
 .p-item h1:hover {
-    color:#FB2E86;
-    transition: 2s;
+    color:rgb(198, 164, 255);
+    transition: 0.2s;
 }
 
 .p-item strong {
@@ -87,7 +80,7 @@
 
 .basket-btn {
     border-style: none;
-    background-color: #FB2E86;
+    background-color: rgb(255, 126, 210);
     color: white;
     border-radius: 10px;
     padding: 2%;
@@ -98,7 +91,8 @@
 }
 
 .basket-btn:hover {
-    background-color: rgb(194, 159, 255);
+    background-color: rgb(255, 225, 159);
+    color: black;
     transition: 0.5s;
 }
 

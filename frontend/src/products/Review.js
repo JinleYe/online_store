@@ -33,8 +33,8 @@ const Review = ({currProductId, selectedProductId}) => {
                 <h4>{r.title}</h4>
                 {r.verifiedPurchase && <div>"Verified Purchase"</div>}
                 <p>{handleRating(r)}</p>
-                <p>{r.datePosted}</p>
-                <p>{r.description}</p>
+                <p className="reviewInfo">{r.datePosted}</p>
+                <p className="reviewInfo">{r.description}</p>
             </div>
         );
     })

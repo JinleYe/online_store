@@ -1,4 +1,4 @@
-import PageCount from "../filters/PageResults";
+import PageCount from "../filters/PageCount";
 import "./MyOrders.css"
 
 const MyOrders = ({currUser})=> {

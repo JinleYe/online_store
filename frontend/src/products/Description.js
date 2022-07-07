@@ -21,7 +21,7 @@ const Description = ({currProductId, selectedProductId}) => {
             </div>
 
             <div className="more-details">
-                <h4>More details</h4>
+                
                 <p><AiOutlineArrowRight /> Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam arcu, nulla lobortis justo netus dis. Eu in fringilla vulputate nunc nec. Dui, massa viverr .</p>
                 <p><AiOutlineArrowRight /> Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam arcu, nulla lobortis justo netus dis. Eu in fringilla vulputate nunc nec. Dui, massa viverr .</p>
                 <p><AiOutlineArrowRight />Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam arcu, nulla lobortis justo netus dis. Eu in fringilla vulputate nunc nec. Dui, massa viverr .</p>
