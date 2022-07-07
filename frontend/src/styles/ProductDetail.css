@@ -10,7 +10,7 @@
     font-family: 'VT323', monospace;
     font-size: 80px;
     text-shadow: 2px 2px #FB2E86, 4px 4px rgb(157, 100, 255), 6px 6px rgb(255, 211, 90);
-    color:rgb(255, 143, 216);;
+    color:rgb(255, 143, 216);
     margin-bottom: 40px;
     margin-top: -30px;
 }
@@ -135,6 +135,7 @@
 }
 
 .reviewsLink {
+    text-transform: uppercase;
     font-size: 30px;
     font-family: 'VT323', monospace;
     text-decoration: none;

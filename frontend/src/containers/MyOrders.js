@@ -45,9 +45,11 @@ const orders = currUser.orders.map(order => (
         <div className="my-orders-container">
         <h1 className="orders-title">{currUser.name}'s Order History</h1>
 
-        <PageCount className="order-count" count={currUser.orders.length > 0 
+<div className="order-count">
+        <PageCount  count={currUser.orders.length > 0 
             ? currUser.orders.length  + " results"
             : "No orders placed. Click on Place a New Order to make your first purchase"}/>
+            </div>
 
         <div className="orders">
         {orders} 
