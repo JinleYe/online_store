@@ -119,8 +119,6 @@ function Desktop9bottom() {
       </form>
     </div>
 
-    {/* <img id= "contactimage"src={contactimage}  alt="Contact us image"/> */}
-
 
 
     </div >
