@@ -30,20 +30,20 @@ const delay = 7000;
       }
     }
   
-    useEffect(() => {
-      resetTimeout();
-      timeoutRef.current = setTimeout(
-        () =>
-          setIndex((prevIndex) =>
-            prevIndex === colors.length - 1 ? 0 : prevIndex + 1
-          ),
-        delay
-      );
+    // useEffect(() => {
+    //   resetTimeout();
+    //   timeoutRef.current = setTimeout(
+    //     () =>
+    //       setIndex((prevIndex) =>
+    //         prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+    //       ),
+    //     delay
+    //   );
   
-      return () => {
-        resetTimeout();
-      };
-    }, [index]);
+    //   return () => {
+    //     resetTimeout();
+    //   };
+    // }, [index]);
 
 
     
@@ -55,37 +55,37 @@ const delay = 7000;
         style={{ transform: `translate3d(${-index * 100}vw, 0, 0)` }} >
         {/* <span className="poster-cover"> */}
         {videos.map((video, index) => (
+          <>
           <div className="slide" key={index}>
               <span className="controller-img">
-              {/* {video == video1 && <><img  src={remote} height="390px" width="490px"/> 
-                <h1 className="slidewords-img">PS4 V2 </h1>
-                <h1 className="slidewords-img">DualShock 4</h1>
-                <h3 className="slidewords2-img">Wireless controller for PlayStation 4</h3>
-                </>
-                
-              } */}
+              </span>
+
+              <video muted loop playsinline autoPlay className="poster-video">
+                <source src= {video} type="video/mp4"/>
+              </video>
+              <div className="poster-cover"></div>
+              
+              
+              <video muted loop playsinline autoPlay className="second-video">
+                <source src= {video} type="video/mp4"/>
+              </video>
+              <span className="border-line">
+              </span>
+
               {video == video2 && <>
                 <button className="poster-btn" >
                   GEAR UP<Icon id="arrow" icon="bi:arrow-right" />
                 </button>
                 </>
-                
               }
+              
+              
 
-              </span>
- 
-              {/* <img className ="slideShow_img" src = {image}/> */}
-              <video muted loop playsinline autoPlay className="poster-video">
-                <source src= {video} type="video/mp4"/>
-              </video>
-              <div className="poster-cover"></div>
-
-            {/* <button id="slideButton1" >
-              <p id= "buyNow">GEAR UP<Icon id="arrow" icon="bi:arrow-right" /></p>
-            </button> */}
-       
-
+            
+            
           </div> 
+
+        </>
         ))}
 
           {/* </span> */}

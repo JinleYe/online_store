@@ -73,7 +73,7 @@ const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser,
 
     const handleAddProduct = (event) => {
         event.preventDefault();
-        setIsOpen(!isOpen);
+        
         if(!isOpen && isLogin){
             fetch(`http://localhost:8080/customers/${currUser.id}/${currProduct.id}/1`, 
                 {
@@ -113,11 +113,13 @@ const ProductDetail = ({currProductId, selectedProductId, currUser, setCurrUser,
                         <li><AiFillStar className="five-star" color="grey"/></li>
                         <li>({currProduct.reviews.length})</li>
                     </ul>
+
                     <li><Description /></li>
                     <li><strong>Price: </strong> £{currProduct.price}</li>
                     <li>1 Year Warranty</li>
                     
                     <button onClick={() => handleAddProduct()}>Add To Cart</button>
+
                     {isOpen &&  <PopUp  isOpen={isOpen}
                                         setIsOpen={setIsOpen}
                                         currProduct={currProduct} />
