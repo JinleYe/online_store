@@ -1,4 +1,5 @@
 import "./HomeProduct.css";
+import FeaturedTile from "./FeaturedTile"
 import headset from "../images/Headset.png";
 import desktop from "../images/desktop.png";
 import laptop from "../images/laptop.png";
@@ -41,11 +42,19 @@ const HomeProduct = () => {
     }
   };
 
-  const featuredProducts = [headset, desktop, laptop, gamingmonitor, keyboard];
+  const featuredProducts = 
+  [{"name": "Headset", "image": headset},
+  {"name": "Desktop", "image": desktop},
+  {"name": "Laptop", "image": laptop},
+  {"name": "Gaming Monitor", "image": gamingmonitor},
+  {"name": "Mechanical Keyboard", "image": keyboard}]
+
+  // console.log(featuredProducts[0].img)
+
 
   const colors = ["#0088FE", "#00C49F", "#FFBB28"];
 
-
+// console.log(counter)
 
   return (
 
@@ -63,18 +72,19 @@ const HomeProduct = () => {
             onClick={handleDecrement} className ="tileArrow"><FiArrowLeft /></p>
 
           {/* {setImageURL(headset)} */}
-          <Tile imageURL={featuredProducts[counter]} title="Headsets" />
-          <Tile imageURL={featuredProducts[counter +1]} title="Desktops" />
-          <Tile imageURL={featuredProducts[counter +2]} title="Laptops" />
-
-          <p alt="right arrow"
-            onClick={handleIncrement} className ="tileArrow"><FiArrowRight /></p>
-          {/* <img
+          
+          
+        
+          <Tile item={featuredProducts[counter]} />
+          <Tile item={featuredProducts[counter +1]} />
+          <Tile item={featuredProducts[counter +2]}/>
+          
+          <img
             src={rightArrow}
             alt="right arrow"
             onClick={handleIncrement}
             className="carousel__arrow_carousel__arrow--right"
-          /> */}
+          />
 
 
         </div>
@@ -86,12 +96,12 @@ const HomeProduct = () => {
         <br />
         <br />
         <div className="tile-container_latest">
-          <Tile imageURL={mouse} title="G205 Gaming Mouse " />
-          <Tile imageURL={legionlaptop} title="Lenovo Legion 5 Pro" />
-          <Tile imageURL={ps5} title="Playstation 5" />
-          <Tile imageURL={ps5headset} title="Wireless Headphones" />
-          <Tile imageURL={oculus} title="Oculus Quest 2" />
-          <Tile imageURL={xboxcontroller} title="Xbox Series X Controller" />
+          <FeaturedTile imageURL={mouse} title="G205 Gaming Mouse " />
+          <FeaturedTile imageURL={legionlaptop} title="Lenovo Legion 5 Pro" />
+          <FeaturedTile imageURL={ps5} title="Playstation 5" />
+          <FeaturedTile imageURL={ps5headset} title="Wireless Headphones" />
+          <FeaturedTile imageURL={oculus} title="Oculus Quest 2" />
+          <FeaturedTile imageURL={xboxcontroller} title="Xbox Series X Controller" />
         </div>
         <br />
         <br />
@@ -101,9 +111,9 @@ const HomeProduct = () => {
         <br />
         <br />
         <div className="tile-container_trending_products">
-          <Tile imageURL={vrheadset} title="VR Headset" />
-          <Tile imageURL={joystick} title="Atari 2600 Joystick" />
-          <Tile imageURL={ps5controller} title="PS5 Dualshock Controller" />
+          <FeaturedTile imageURL={vrheadset} title="VR Headset" />
+          <FeaturedTile imageURL={joystick} title="Atari 2600 Joystick" />
+          <FeaturedTile imageURL={ps5controller} title="PS5 Dualshock Controller" />
         </div>
 
       </div>

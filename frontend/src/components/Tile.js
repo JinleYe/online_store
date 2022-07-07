@@ -5,13 +5,12 @@ import laptop from "../images/laptop.png";
 import "./Tile.css"
 
 
-const Tile = (props) => {
-    const {imageURL, title} = props
+const Tile = ({item}) => {
   return (
     <div className="featured-products-container">
       <div className="featured-tile">
-        <img className="featured-product-image" src={imageURL} alt="image" />
-        <p className="featured-product-title">{title}</p>
+        <img className="featured-product-image" src={item.image} alt="image" />
+        <p className="featured-product-title">{item.name}</p>
       </div>
     </div>
   );

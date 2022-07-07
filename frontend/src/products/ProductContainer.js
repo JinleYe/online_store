@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ProductList from "./ProductList";
 import SearchBar from "../components/SearchBar";
 import CheckBox from "../filters/Checkbox";
-import PageCount from "../filters/PageResults";
+import PageCount from "../filters/PageCount";
 import SortBy from "../filters/SortBy";
 
 import "../styles/Product.css";

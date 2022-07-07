@@ -197,10 +197,51 @@ animation:rainbow 2s infinite;
 }
 
 .dropdown-content a:hover {
-    background-color: #FB2E86; 
-    color: white;
-
+    text-decoration:none;
+    -webkit-animation:rainbow2 2s infinite;
+-ms-animation:rainbow2 2s infinite;
+-o-animation:rainbow2 2s infinite;
+animation:rainbow2 2s infinite;
+color: white;
 }
+
+@-webkit-keyframes rainbow2 {
+    0% {background-color: #ff64a7}
+20% {background-color: rgb(194, 159, 255)}
+40% {background-color: rgb(156, 223, 250)}
+60% {background-color: rgb(182, 255, 182)}
+80% {background-color: rgb(251, 251, 175)}
+100% {background-color: rgb(255, 236, 174)}
+}
+@-ms-keyframes rainbow2 {
+    0% {background-color: #ff64a7}
+20% {background-color: rgb(194, 159, 255)}
+40% {background-color: rgb(156, 223, 250)}
+60% {background-color: rgb(182, 255, 182)}
+80% {background-color: rgb(251, 251, 175)}
+100% {background-color: rgb(255, 236, 174)}
+}
+@-o-keyframes rainbow2 {
+    0% {background-color: #ff64a7}
+20% {background-color: rgb(194, 159, 255)}
+40% {background-color: rgb(156, 223, 250)}
+60% {background-color: rgb(182, 255, 182)}
+80% {background-color: rgb(251, 251, 175)}
+100% {background-color: rgb(255, 236, 174)}
+}
+@keyframes rainbow2 {
+    0% {background-color: #ff64a7}
+20% {background-color: rgb(194, 159, 255)}
+40% {background-color: rgb(156, 223, 250)}
+60% {background-color: rgb(182, 255, 182)}
+80% {background-color: rgb(251, 251, 175)}
+100% {background-color: rgb(255, 236, 174)}
+}
+
+
+    
+
+
 .dropdown:hover .dropdown-content {
     display: block;
 
