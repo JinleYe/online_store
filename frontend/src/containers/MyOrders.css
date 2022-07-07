@@ -39,7 +39,7 @@
 
 }
 
-table {
+.order-table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -47,16 +47,16 @@ table {
     table-layout: fixed;
   }
 
-  th {
+.order-tr > th {
     background-color: #FB2E86;
     color: white;
   }
 
-  td {
+.order-body-tr > td {
     background-color: #FECEDE;
   }
   
-  td, th {
+  .order-body-tr > td, .order-tr > th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;

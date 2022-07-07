@@ -65,7 +65,8 @@ function App() {
                                                                                 currUser={currUser} 
                                                                                 setCurrUser={setCurrUser}
                                                                                 currProduct={currProduct} 
-                                                                                setCurrProduct={setCurrProduct} />}>                                    
+                                                                                setCurrProduct={setCurrProduct}
+                                                                                isLogin={isLogin} />}>                                    
             <Route path="description" element={<Description currProductId={currProductId}
                                                             setCurrProductId={setCurrProductId}/>} />
             <Route path="review" element={<Review currProductId={currProductId}

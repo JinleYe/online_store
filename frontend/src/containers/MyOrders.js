@@ -8,9 +8,9 @@ const orders = currUser.orders.map(order => (
     <div className="order-container"> 
        
 <div className="tables">
-<table>
+<table className="order-table">
     <thead>
-  <tr>
+  <tr className="order-tr">
     <th>Order Number</th>
     <th>Date Ordered</th>
     <th>Order Status</th>
@@ -21,7 +21,7 @@ const orders = currUser.orders.map(order => (
   </thead>
 
   <tbody>
-  <tr>
+  <tr className="order-body-tr">
     <td>#{order.timeOfPurchase}-{order.id}</td>
     <td>{order.timeOfPurchase}</td>
     <td>{order.status}</td>
