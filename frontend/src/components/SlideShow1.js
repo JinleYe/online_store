@@ -2,9 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import slide1 from './slideImages/slide1new.gif';
 import slide2 from './slideImages/slide2new.gif';
 import slide3 from './slideImages/gaming1.png';
-import remote from './slideImages/Group_40.png';
 import { Icon } from '@iconify/react';
 import './SlideShow1.css';
+import { useNavigate } from "react-router-dom";
 
 
 const colors = ["#0088FE", "#00C49F", "#FFBB28"];
@@ -14,13 +14,23 @@ const video2 = "https://webstatic.hoyoverse.com/upload/contentweb/2022/03/08/ee4
 const video3 = "https://www.leagueoflegends.com/static/hero-0632cbf2872c5cc0dffa93d2ae8a29e8.webm";
 
 const videos = [video1, video2, video3];
+// const navigate = useNavigate();
 
+// function handleNavigate(){
+//   navigate('./products');
+// }
 
 const images = [slide1, slide2, slide3];
 const delay = 7000;
 
   
   function SlideShow1() {
+    const navigate = useNavigate();
+
+  function handleNavigate(){
+    navigate('../products');
+  }
+
     const [index, setIndex] = useState(0);
     const timeoutRef = useRef(null);
   
@@ -30,20 +40,20 @@ const delay = 7000;
       }
     }
   
-    // useEffect(() => {
-    //   resetTimeout();
-    //   timeoutRef.current = setTimeout(
-    //     () =>
-    //       setIndex((prevIndex) =>
-    //         prevIndex === colors.length - 1 ? 0 : prevIndex + 1
-    //       ),
-    //     delay
-    //   );
+    useEffect(() => {
+      resetTimeout();
+      timeoutRef.current = setTimeout(
+        () =>
+          setIndex((prevIndex) =>
+            prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+          ),
+        delay
+      );
   
-    //   return () => {
-    //     resetTimeout();
-    //   };
-    // }, [index]);
+      return () => {
+        resetTimeout();
+      };
+    }, [index]);
 
 
     
@@ -73,22 +83,20 @@ const delay = 7000;
               </span>
 
               {video == video2 && <>
-                <button className="poster-btn" >
-                  GEAR UP<Icon id="arrow" icon="bi:arrow-right" />
+                {/* <a href="./products"> */}
+                <button className="poster-btn" onClick={handleNavigate}>
+                  GEAR UP<Icon id="arrow" icon="bi:arrow-right" />    
+                 
                 </button>
+                {/* </a>   */}
                 </>
               }
-              
-              
 
-            
-            
           </div> 
 
         </>
         ))}
 
-          {/* </span> */}
           </div>
   
         <div className="slideshowDots">

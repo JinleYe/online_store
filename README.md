@@ -2,7 +2,8 @@
 
 Note: This ReadMe provides a brief overview of the project– for a specific ReadMe of the frontend and backend subprojects, please refer to the links in [Project Structure](#project-structure)
 
-#ADD LOGO IMAGE!!
+![Logo Image](logo.png)
+
 
 As a gaming accessory specialist, we want to make your search easy... Here you can browse our vast collection and find all sorts of gaming accessories, from controllers to gaming headsets to gaming chairs! Fancy a new display to break the gaming experience? Wait no longer-  find your perfect match today with our various filters! Whether you’re a beginner or a pro gamer, there is something for everyone!
 
@@ -86,7 +87,7 @@ For this segment of the project, the team created a React application to act as 
 
 #### Homepage:
 
-![Frontend Image]()
+![Frontend Image](homepage.png)
 
 <br>
 
@@ -94,7 +95,7 @@ For this segment of the project, the team created a React application to act as 
 
 ### Backend:
 
-This segment of the project involved building the Pixelated Paradise API for the user to interact with. Below you will find images of our 'Unified Modelling Language Diagrams' and 'Entity Relationship Diagrams'.
+This segment of the project involved building the Pixelated Paradise API for the user to interact with. Below you will find images of our 'Unified Modelling Language Diagram' and 'Entity Relationship Diagram'.
 
 #### Unified Modelling Language Diagrams (UML):
 
